@@ -23,6 +23,12 @@ ExportedObj/
 *.svd
 *.pdb
 
+Wwise/GGJ2018_Wwise/.cache
+/Wwise/GGJ2018_Wwise/**/*.cache
+Wwise/GGJ2018_Wwise/GeneratedSoundBanks
+Wwise/GGJ2018_Wwise/IncrementalSoundBankData.xml
+Assets/StreamingAssets/Audio/GeneratedSoundBanks/
+
 # Unity3D generated meta files
 *.pidb.meta
 
