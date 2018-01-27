@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 33476527859464326}
   - component: {fileID: 23043303720429498}
   - component: {fileID: 135595180686039210}
-  - component: {fileID: 114768117434814286}
   - component: {fileID: 114769864468713134}
   m_Layer: 8
   m_Name: PortB
@@ -78,7 +77,6 @@ GameObject:
   - component: {fileID: 33867157062350982}
   - component: {fileID: 23762599840369480}
   - component: {fileID: 135592334593057920}
-  - component: {fileID: 114395554767138716}
   - component: {fileID: 114314940900237564}
   m_Layer: 8
   m_Name: PortA
@@ -324,28 +322,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plug: {fileID: 0}
---- !u!114 &114395554767138716
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1914359939030518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bff99ef5785a8e4fa64e8844bb66e83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114768117434814286
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1261160698337256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bff99ef5785a8e4fa64e8844bb66e83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114769864468713134
 MonoBehaviour:
   m_ObjectHideFlags: 1

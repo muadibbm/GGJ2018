@@ -9,45 +9,30 @@ public class Plug : Unit {
     public Port port;
     public LayerMask cableWall;
 
+    private bool selected = false;
     private Collider _collider;
     private Rigidbody _rigidbody;
 
-    public override void Select() {
+    private void Awake() {
+        this._collider = this.GetComponent<Collider>();
+        this._rigidbody = this.GetComponent<Rigidbody>();
+    }
 
+    public override void Select() {
+        this.selected = true;
     }
 
     public override void Release(Unit unit) {
-
+        this.selected = false;
     }
 
-    //private void Awake() {
-    //    this._collider = this.GetComponent<Collider>();
-    //    this._rigidbody = this.GetComponent<Rigidbody>();
-    //    Interactable interactable = this.GetComponent<Interactable>();
-    //    interactable.OnBegin += SelectPlug;
-    //}
-    //
-    //public void SelectPlug() {
-    //    if (Bootstrap.instance.ps.currentInteractingPlug == null) {
-    //        Bootstrap.instance.ps.currentInteractingPlug = this;
-    //    }
-    //    this._collider.isTrigger = true;
-    //    this._rigidbody.useGravity = false;
-    //}
-    //
-    //public void ReleasePlug() {
-    //    if (Bootstrap.instance.ps.currentInteractingPlug == this) {
-    //        Bootstrap.instance.ps.currentInteractingPlug = null;
-    //    }
-    //    this._collider.isTrigger = (this.port != null);
-    //    this._rigidbody.useGravity = (this.port == null);
-    //}
-    //
-    //private void Update() {
-    //    if(Bootstrap.instance.ps.currentInteractingPlug == this) {
-    //        this.transform.position = GetPlugPositionOnPlane();
-    //    }
-    //}
+    private void Update() {
+        this._collider.isTrigger = (this.port != null) && this.selected;
+        this._rigidbody.useGravity = (this.port == null) && !this.selected;
+        if (this.selected) {
+            this.transform.position = GetPlugPositionOnPlane();
+        }
+    }
 
     private Vector3 GetPlugPositionOnPlane() {
         Vector3 pos = this.transform.position;

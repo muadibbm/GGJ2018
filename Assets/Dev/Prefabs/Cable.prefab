@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4014539837658140}
-  - component: {fileID: 114834218339626612}
   - component: {fileID: 114044070669362508}
   - component: {fileID: 54860414305856726}
   - component: {fileID: 65262013272999956}
@@ -38,7 +37,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4741504063779424}
-  - component: {fileID: 114897425250301964}
   - component: {fileID: 114436428481647172}
   - component: {fileID: 54864805243248400}
   - component: {fileID: 65860875928395012}
@@ -250,28 +248,6 @@ MonoBehaviour:
   cableWall:
     serializedVersion: 2
     m_Bits: 512
---- !u!114 &114834218339626612
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1040950967305800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bff99ef5785a8e4fa64e8844bb66e83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114897425250301964
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1116776979141418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bff99ef5785a8e4fa64e8844bb66e83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!137 &137433413790845376
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
