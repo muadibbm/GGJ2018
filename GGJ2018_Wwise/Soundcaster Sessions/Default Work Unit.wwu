@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8A804BED-1E09-468D-9E90-E4825896FE11}" SchemaVersion="75">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{8A804BED-1E09-468D-9E90-E4825896FE11}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8A804BED-1E09-468D-9E90-E4825896FE11}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Mechanical" ID="{3A51AE85-94E5-4FEA-B3E5-7DAAB136699E}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Yaw_Start" ID="{63A52507-CB76-480E-8C70-21B67D2CCDD5}" WorkUnitID="{6FADA0D0-1E74-4878-80CE-2A44705BC74C}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Yaw_Stop" ID="{2758B041-EAB4-448A-95ED-D979E7B635B2}" WorkUnitID="{6FADA0D0-1E74-4878-80CE-2A44705BC74C}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

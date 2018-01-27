@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6FADA0D0-1E74-4878-80CE-2A44705BC74C}" SchemaVersion="75">
+	<Events>
+		<WorkUnit Name="Machine" ID="{6FADA0D0-1E74-4878-80CE-2A44705BC74C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Yaw_Start" ID="{63A52507-CB76-480E-8C70-21B67D2CCDD5}">
+					<ChildrenList>
+						<Action Name="Play" ID="{E93B9529-9CF5-4847-A6EB-CB114403D757}" ShortID="510865291" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3E2B05BB-9228-4870-ABEA-A585C7312536}" Global="false">
+									<ObjectRef Name="Yaw_Start" ID="{5E5CC977-3E3C-48F2-99D2-6F9C711675EC}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{82BE9AC1-1C0A-4FBD-AA16-EB9F464303DD}" ShortID="986372442" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+								<Property Name="FadeCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{C2BE6BEB-92FF-4510-8BBC-85A63725865D}" Global="false">
+									<ObjectRef Name="Yaw_Mechanical" ID="{32235406-1C3B-4589-983F-7DF3BFE8BAD6}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{B0F6E26D-5B9E-49DE-AE0C-BCEAB5E23434}" ShortID="749761588" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{6247578C-FEA5-4197-94EC-F5CB5028D1FC}" Global="false">
+									<ObjectRef Name="Yaw_Metal" ID="{18923C3A-8D14-4445-BB90-7DF70B79A234}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Yaw_Stop" ID="{2758B041-EAB4-448A-95ED-D979E7B635B2}">
+					<ChildrenList>
+						<Action Name="Break" ID="{C7184993-1E44-47EB-BE18-9CDB5C1F5987}" ShortID="54001965" Type="Break" Scope="One" Global="true">
+							<ElementList>
+								<Element ID="{98E249D6-2184-4FC6-98CC-4D69268998CB}" Global="true">
+									<ObjectRef Name="YawMech_Lp" ID="{9D5DE134-08E4-48E0-B292-422E833F6A5F}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Break" ID="{700BCEAA-A3B4-4C25-A9A8-2CDCABCC2495}" ShortID="275951693" Type="Break" Scope="One" Global="true">
+							<ElementList>
+								<Element ID="{D81934D8-15F2-4360-B01C-A0B3643D6167}" Global="true">
+									<ObjectRef Name="YawMetal_Lp" ID="{AB045048-96EF-4DF8-8557-D94F9661531D}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{EEC5B161-6793-4A92-B90E-E8AC80830F58}" ShortID="883942990" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C4E13D01-A182-4C87-85C8-23A278A7F0A4}" Global="false">
+									<ObjectRef Name="Yaw_Stop" ID="{B4B6CA13-C843-4C5B-A325-FF0337CC567F}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
