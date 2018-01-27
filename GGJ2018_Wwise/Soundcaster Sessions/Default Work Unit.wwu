@@ -11,6 +11,14 @@
 						</Module>
 						<Module>
 							<ObjectRef Name="Yaw_Stop" ID="{2758B041-EAB4-448A-95ED-D979E7B635B2}" WorkUnitID="{6FADA0D0-1E74-4878-80CE-2A44705BC74C}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Pitch_Start" ID="{255D9717-FD85-4415-8532-FC02DBF77A94}" WorkUnitID="{6FADA0D0-1E74-4878-80CE-2A44705BC74C}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Pitch_Stop" ID="{A7333D16-31BF-41FB-9CD0-310199329663}" WorkUnitID="{6FADA0D0-1E74-4878-80CE-2A44705BC74C}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 					</ModuleList>
