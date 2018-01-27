@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 
-public class Output : Unit {
+[RequireComponent(typeof(Collider))]
+public class Port : Unit {
 
-    public enum Type { Power }
-    public Type type;
-    public Port port;
+    public Plug plug;
 
     public override void Select() {
 

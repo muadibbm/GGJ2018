@@ -2,12 +2,15 @@
 
 public class Input : Unit {
 
-    public Unit connectedUnit;
+    public enum Type { Yaw, Pitch, Shoot, Reload, Shield }
+    public Type type;
+    public Port port;
 
-    private Interactable port;
+    public override void Select() {
 
-    void Awake() {
-        this.port = GetComponentInChildren<Interactable>();
     }
 
+    public override void Release(Unit unit) {
+
+    }
 }

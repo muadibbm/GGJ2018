@@ -1,16 +1,19 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(Collider))]
 public class Module : Unit {
 
-    public Unit connectedUnitA;
-    public Unit connectedUnitB;
+    public enum Type { ButtonClick, ButtonHold, Handlebar }
+    public Type type;
 
-    public Interactable module;
-    public Interactable portA;
-    public Interactable portB;
+    public Port portA;
+    public Port portB;
 
-    void Awake() {
-        //portA.OnBegin += test;
-        //portA.OnEnd += test2;
+    public override void Select() {
+
+    }
+
+    public override void Release(Unit unit) {
+
     }
 }
