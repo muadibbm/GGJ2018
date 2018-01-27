@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C2916FB8-DD28-4E40-B4F4-BA3056B17C8E}" SchemaVersion="75">
+	<Events>
+		<WorkUnit Name="Interactive" ID="{C2916FB8-DD28-4E40-B4F4-BA3056B17C8E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Jacks_In" ID="{646BF753-C759-4167-BCC6-768A36EAF022}">
+					<ChildrenList>
+						<Action Name="Play" ID="{9A2E39C7-99E7-4763-855B-A8B5FF729B93}" ShortID="297003151" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{998D6086-BBD8-4F62-AC4F-353AC4F81E95}" Global="false">
+									<ObjectRef Name="Jacks_In" ID="{DCA93FCF-0C22-49DF-86D2-8E6ED9E1FEAC}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Jacks_Out" ID="{9E665030-0602-4A8A-AC22-BB466BD0B394}">
+					<ChildrenList>
+						<Action Name="Play" ID="{99353BB5-BA42-4767-8D9B-FD9934C7B5FB}" ShortID="834864894" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{151309EF-D4BF-4C9B-BE81-29D6751C0468}" Global="false">
+									<ObjectRef Name="Jacks_Out" ID="{785574D3-DC5D-4056-8190-FFE0C1570C7D}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
