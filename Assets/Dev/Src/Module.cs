@@ -103,14 +103,16 @@ public class Module : Unit {
 
     private void Activate(Port port) {
         Input.Type input = this.GetInput(port);
-        if (input == Input.Type.NULL) return;
+        if (input == Input.Type.NULL) {
+            this.Diactivate();
+            return;
+        }
         this.connectedInput = (Input)(port.plug.connectedTo.port.connectedTo);
         this.connectedInput.Activate(this);
     }
 
     private void Diactivate() {
         if (this.connectedInput) {
-            Debug.Log("diactivate");
             this.connectedInput.Diactivate(this);
             this.connectedInput = null;
         }
