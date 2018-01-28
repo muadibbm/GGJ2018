@@ -11,6 +11,8 @@ public class Bootstrap : MonoBehaviour {
 
     public CoreGame cg;
 
+    public AkAmbient music;
+
     void Awake () {
         if (instance != null) Destroy(this);
         instance = this;
@@ -21,5 +23,9 @@ public class Bootstrap : MonoBehaviour {
         this.cg = this.gameObject.AddComponent<CoreGame>();
 
         DontDestroyOnLoad(this.gameObject);
+    }
+
+    void Start() {
+        AkSoundEngine.PostEvent((uint)(int)this.music.eventID, this.music.gameObject);
     }
 }

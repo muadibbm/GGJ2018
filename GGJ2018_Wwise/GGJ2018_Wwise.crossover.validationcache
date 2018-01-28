@@ -27,7 +27,7 @@
 	<ValidationCacheItem File="C:\users\crossover\My Documents\WwiseProjects\GGJ2018_Wwise\Triggers\Default Work Unit.wwu" DateLow="3314184832" DateHigh="30643933"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3314184832" DateHigh="30643933"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="2873658240" DateHigh="30630310"/>
-	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Actor-Mixer Hierarchy\GGJ_Master.wwu" DateLow="3816612352" DateHigh="30644313"/>
+	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Actor-Mixer Hierarchy\GGJ_Master.wwu" DateLow="4217593472" DateHigh="30644343"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Attenuations\Default Work Unit.wwu" DateLow="2986612352" DateHigh="30644313"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Audio Devices\Default Work Unit.wwu" DateLow="3314184832" DateHigh="30643933"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="3314184832" DateHigh="30643933"/>
@@ -36,16 +36,17 @@
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="3314184832" DateHigh="30643933"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Effects\Default Work Unit.wwu" DateLow="3314184832" DateHigh="30643933"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Effects\Factory Effects.wwu" DateLow="2863658240" DateHigh="30630310"/>
-	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Events\Ambience.wwu" DateLow="2841837568" DateHigh="30644167"/>
+	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Events\Ambience.wwu" DateLow="1912299136" DateHigh="30644334"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Events\Creature.wwu" DateLow="1916285312" DateHigh="30644303"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Events\Default Work Unit.wwu" DateLow="2021837568" DateHigh="30644167"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Events\Interactive.wwu" DateLow="2209682816" DateHigh="30644254"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Events\Machine.wwu" DateLow="3406804864" DateHigh="30644166"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Events\Weapons.wwu" DateLow="4156612352" DateHigh="30644313"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Game Parameters\Default Work Unit.wwu" DateLow="2293734400" DateHigh="30644225"/>
-	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\GGJ2018_Wwise.crossover.wsettings" DateLow="3932233728" DateHigh="30644332"/>
-	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\GGJ2018_Wwise.wproj" DateLow="1486216192" DateHigh="30644148"/>
+	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\GGJ2018_Wwise.crossover.wsettings" DateLow="4177593472" DateHigh="30644343"/>
+	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\GGJ2018_Wwise.wproj" DateLow="4217593472" DateHigh="30644343"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3314184832" DateHigh="30643933"/>
+	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Interactive Music Hierarchy\Protector.wwu" DateLow="4237593472" DateHigh="30644343"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3314184832" DateHigh="30643933"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Mixing Sessions\Default Work Unit.wwu" DateLow="3314184832" DateHigh="30643933"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Modulators\Default Work Unit.wwu" DateLow="3314184832" DateHigh="30643933"/>
@@ -53,7 +54,7 @@
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Queries\Default Work Unit.wwu" DateLow="3314184832" DateHigh="30643933"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Queries\Factory Queries.wwu" DateLow="2863658240" DateHigh="30630310"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\SoundBanks\Default Work Unit.wwu" DateLow="3314184832" DateHigh="30643933"/>
-	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\SoundBanks\Master.wwu" DateLow="2209682816" DateHigh="30644254"/>
+	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\SoundBanks\Master.wwu" DateLow="4237593472" DateHigh="30644343"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="2293734400" DateHigh="30644225"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\States\Default Work Unit.wwu" DateLow="3314184832" DateHigh="30643933"/>
 	<ValidationCacheItem File="Y:\GGJ2018\GGJ2018_Wwise\Switches\Default Work Unit.wwu" DateLow="3314184832" DateHigh="30643933"/>
