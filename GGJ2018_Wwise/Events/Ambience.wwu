@@ -17,6 +17,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Music" ID="{99A88324-0B36-4A50-975D-35BE976BE347}">
+					<ChildrenList>
+						<Action Name="Play" ID="{E48682F7-3B8C-4444-B235-F167A3EDBC7D}" ShortID="504623948" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{29492F36-6775-4F40-9683-AB105D6B8088}" Global="false">
+									<ObjectRef Name="Protector_Theme" ID="{458E66A0-E2ED-4771-9E9F-5906588E223B}" WorkUnitID="{4694514D-6E78-4B77-99B2-A4C8EE92B0D5}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
