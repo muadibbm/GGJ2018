@@ -24,6 +24,7 @@
 				<Event Id="4085851028" Name="Button_Down" ObjectPath="\Events\Interactive\Button_Down"/>
 				<Event Id="1972958575" Name="Button_Up" ObjectPath="\Events\Interactive\Button_Up"/>
 				<Event Id="4160132020" Name="Creature_Angry" ObjectPath="\Events\Creature\Creature_Angry"/>
+				<Event Id="3326610637" Name="Creature_Death" ObjectPath="\Events\Creature\Creature_Death"/>
 				<Event Id="2843321372" Name="Creature_Hit" ObjectPath="\Events\Creature\Creature_Hit"/>
 				<Event Id="3964388558" Name="Creature_Hurt" ObjectPath="\Events\Creature\Creature_Hurt"/>
 				<Event Id="2410886409" Name="Creature_Protects" ObjectPath="\Events\Creature\Creature_Protects"/>
@@ -52,6 +53,10 @@
 				<File Id="3926204" Language="SFX">
 					<ShortName>JackDrop_v10.wav</ShortName>
 					<Path>SFX\JackDrop_v10_9E69E797.wem</Path>
+				</File>
+				<File Id="8998782" Language="SFX">
+					<ShortName>Creature_Hit-Pain_v3.wav</ShortName>
+					<Path>SFX\Creature_Hit-Pain_v3_EB9582CA.wem</Path>
 				</File>
 				<File Id="17265727" Language="SFX">
 					<ShortName>MissileHit_Explosion_3D_v3.wav</ShortName>
@@ -389,6 +394,10 @@
 					<ShortName>JackDrop_v11.wav</ShortName>
 					<Path>SFX\JackDrop_v11_9E69E797.wem</Path>
 				</File>
+				<File Id="795359064" Language="SFX">
+					<ShortName>Creature_Hurt_v5.wav</ShortName>
+					<Path>SFX\Creature_Hurt_v5_E42FD8CB.wem</Path>
+				</File>
 				<File Id="806346644" Language="SFX">
 					<ShortName>JackDrop_v01.wav</ShortName>
 					<Path>SFX\JackDrop_v01_9E69E797.wem</Path>
@@ -472,6 +481,10 @@
 				<File Id="987884564" Language="SFX">
 					<ShortName>MissileHit_Explosion_3D_v2.wav</ShortName>
 					<Path>SFX\MissileHit_Explosion_3D_v2_9E69E797.wem</Path>
+				</File>
+				<File Id="1003687855" Language="SFX">
+					<ShortName>Yaw_MetalShift_Start.wav</ShortName>
+					<Path>SFX\Yaw_MetalShift_Start_3D832FDB.wem</Path>
 				</File>
 				<File Id="1005262507" Language="SFX">
 					<ShortName>Creature_Protect_v6_A.wav</ShortName>
