@@ -14,8 +14,10 @@ public class Input : Unit {
         if(module.type == Module.Type.Button) {
             switch (this.type) {
                 case Input.Type.Shoot:
+                    Bootstrap.instance.cg.mech.FireGun();
                     break;
                 case Input.Type.Reload:
+                    Bootstrap.instance.cg.mech.Reload();
                     break;
                 case Input.Type.Shield:
                     break;
@@ -47,8 +49,10 @@ public class Input : Unit {
                 Bootstrap.instance.cg.mech.SetVerticalVelocity(0f);
                 break;
             case Input.Type.Shoot:
+                Bootstrap.instance.cg.mech.DisableWeapon();
                 break;
             case Input.Type.Reload:
+                Bootstrap.instance.cg.mech.DisableWeapon();
                 break;
             case Input.Type.Shield:
                 break;
