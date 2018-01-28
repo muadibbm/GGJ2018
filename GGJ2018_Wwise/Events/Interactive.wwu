@@ -58,6 +58,69 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Lever_Start" ID="{D8130794-9C11-4275-A1A1-35A313AD04C7}">
+					<ChildrenList>
+						<Action Name="Play" ID="{FDB0E7E8-BD54-41EA-AE03-2DC9BFAC6F12}" ShortID="621036701" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{36934DC3-DA9D-41B4-8191-D32B91D955EB}" Global="false">
+									<ObjectRef Name="Lever_Start" ID="{ECDEC154-A345-4868-AC98-002CC76AF56A}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{CD471B23-C756-46F1-84B6-36E0735A8AC4}" ShortID="109482642" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{4802AE53-3D48-4F4E-999E-1A949B537D90}" Global="false">
+									<ObjectRef Name="Lever_Motion" ID="{BF2BA553-B2DF-491B-965A-23E0DCD0C42E}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Lever_Stop" ID="{16F31414-5A9D-434F-BDD0-BBAE36A180BE}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{F1041FE3-A81D-491A-878E-C28B4008E814}" ShortID="273904709" Type="Stop" Scope="One" Global="true">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{721A3459-C105-493A-B11F-3233BCBC512F}" Global="true">
+									<ObjectRef Name="Lever_Motion" ID="{BF2BA553-B2DF-491B-965A-23E0DCD0C42E}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{B44FEA88-AEF6-4641-BB65-29C16BE69A70}" ShortID="1056179302" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C9ACCE8A-9B3A-440D-AAC6-749696F825BE}" Global="false">
+									<ObjectRef Name="Lever_Stop" ID="{3D49F244-A301-4077-B1FB-DC0DB56F4C36}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Lever_Lock" ID="{AF39A188-F238-4108-9FBA-51957F01DF5A}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{1B9A70E3-5EED-47C6-9F45-0CB97DE4F377}" ShortID="424530423" Type="Stop" Scope="One" Global="true">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{4FD8DF40-78C5-4041-9155-198586992757}" Global="true">
+									<ObjectRef Name="Lever_Motion" ID="{BF2BA553-B2DF-491B-965A-23E0DCD0C42E}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{67F1EB4A-70F7-47AE-8B73-C3A6641D9FDC}" ShortID="701532926" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{85747BDE-DE26-4818-92D0-475D5BC25363}" Global="false">
+									<ObjectRef Name="Lever_Lock" ID="{28537304-F05D-4DD2-AEBB-95BD4C2CE878}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
