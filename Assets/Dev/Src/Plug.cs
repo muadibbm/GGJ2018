@@ -33,6 +33,10 @@ public class Plug : Unit {
         this.port = null;
     }
 
+    public override Plug GetPlug() {
+        return this;
+    }
+
     public void ConnectTo(Port port) {
         this.port = port;
         this.transform.position = port.transform.position;

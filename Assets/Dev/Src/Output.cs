@@ -17,4 +17,8 @@ public class Output : Unit {
     public override void Release(Unit unit, Plug plug) {
         // do nothing;
     }
+
+    public override Plug GetPlug() {
+        return null;
+    }
 }

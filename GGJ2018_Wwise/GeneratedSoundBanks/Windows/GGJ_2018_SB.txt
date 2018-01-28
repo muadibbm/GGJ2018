@@ -2,41 +2,58 @@ Event	ID	Name			Wwise Object Path	Notes
 	319362870	Lever_Stop			\Interactive\Lever_Stop	
 	567069407	Jacks_In			\Interactive\Jacks_In	
 	728309430	Lever_Start			\Interactive\Lever_Start	
+	1108430268	Pitch_Stop			\Machine\Pitch_Stop	
+	1455256093	Yaw_Stop			\Machine\Yaw_Stop	
 	1972958575	Button_Up			\Interactive\Button_Up	
+	2433265472	MainGun_Reload			\Weapons\MainGun_Reload	
+	2467819191	Yaw_Start			\Machine\Yaw_Start	
 	3064564823	Lever_Lock			\Interactive\Lever_Lock	
+	3209456848	Pitch_Start			\Machine\Pitch_Start	
 	3358031724	Jack_Drop			\Interactive\Jack_Drop	
+	3818321487	Main_Engine			\Ambience\Main_Engine	
 	4085851028	Button_Down			\Interactive\Button_Down	
 	4251432562	Jacks_Out			\Interactive\Jacks_Out	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	3926204	JackDrop_v10	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v10_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v10		66000
+	18354512	Yaw_MetalShift_Lp	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Yaw_MetalShift_Lp_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Yaw\Yaw_Metal\YawMetal_Lp\Yaw_MetalShift_Lp		331840
 	24098843	Jack_Out_v_04	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_Out_v_04_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_Out\Jacks_Out\Jack_Out_v_04		67510
 	39929424	Jack_Out_v_06	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_Out_v_06_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_Out\Jacks_Out\Jack_Out_v_06		71676
 	69219853	Jack_In_v_07	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_07_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_07		77428
 	88175084	Lever_Stop	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Lever_Stop_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Lever\Lever_Stop\Lever_Stop		68160
 	96348338	Lever_Motion	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Lever_Motion_3394906C.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Lever\Lever_Motion\Lever_Motion		192320
+	111557153	Yaw_Servo_End	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Yaw_Servo_End_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Yaw\Yaw_Mechanical\YawMech_Stop\Yaw_Servo_End		231488
 	123541602	Jack_In_v_10	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_10_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_10		89404
+	133935254	Pitch_Mechanical_Lp	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Pitch_Mechanical_Lp_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Pitch\Pitch_Mechanical\Mechanical_Lp\Mechancial_lp\Pitch_Mechanical_Lp		88128
 	149133509	Button_Down_v_02	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Button_Down_v_02_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Button\Button_Down\ButtonDown\Button_Down_v_02		41158
 	156131340	JackDrop_v14	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v14_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v14		75520
 	197747696	JackDrop_v08	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v08_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v08		58848
+	204765833	Pitch_Start	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Pitch_Start_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Pitch\Pitch_Start\Pitch_Start		165952
+	212682622	Pitch_Whine_lp	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Pitch_Whine_lp_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Pitch\Pitch_Whine\Pitch_Whine_lp		88128
 	232509102	Jack_Out_v_08	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_Out_v_08_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_Out\Jacks_Out\Jack_Out_v_08		69214
 	249015812	Lever_Start_v2	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Lever_Start_v2_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Lever\Lever_Start\LeverStart\Lever_Start_v2		31008
 	319451329	Lever_Lock_v2	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Lever_Lock_v2_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Lever\Lever_Lock\LeverLock\Lever_Lock_v2		56640
 	333069930	JackDrop_v09	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v09_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v09		84728
 	342757762	Lever_Lock_v1	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Lever_Lock_v1_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Lever\Lever_Lock\LeverLock\Lever_Lock_v1		52800
+	374445619	Reload_pt2_Load	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Reload_pt2_Load_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Main_Gun\Reload\Reload_pt2_Load		363584
 	376686856	JackDrop_v05	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v05_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v05		69776
 	401426476	Button_Down_v_01	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Button_Down_v_01_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Button\Button_Down\ButtonDown\Button_Down_v_01		25838
 	436577555	Jack_In_v_11	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_11_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_11		74896
 	464956006	Jack_In_v_04	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_04_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_04		71688
 	480690068	Button_Up_v_02	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Button_Up_v_02_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Button\Button_Up\ButtonUp\Button_Up_v_02		20380
+	488511684	Yaw_Servo_Lp	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Yaw_Servo_Lp_706389C7.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Yaw\Yaw_Mechanical\YawMech_Lp\Yaw_Servo_Lp		353100
+	490642547	Mecha_AmbMain_Lp	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Mecha_AmbMain_Lp_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Ambience\MainAmb_Engine\Mecha_AmbMain_Lp		1547776
 	501071161	Jack_Out_v_07	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_Out_v_07_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_Out\Jacks_Out\Jack_Out_v_07		58038
+	501770727	Yaw_MetalShift_Start	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Yaw_MetalShift_Start_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Yaw\Yaw_Metal\YawMetal_Start\Yaw_MetalShift_Start		274496
 	507246278	Jack_In_v_03	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_03_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_03		75752
 	521862541	Button_Up_v_01	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Button_Up_v_01_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Button\Button_Up\ButtonUp\Button_Up_v_01		47198
 	524869743	JackDrop_v06	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v06_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v06		52652
 	535884236	Jack_In_v_01	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_01_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_01		79346
 	538679054	Jack_In_v_02	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_02_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_02		75208
+	551125509	Reload_pt1_DropShell	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Reload_pt1_DropShell_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Main_Gun\Reload\Reload_pt1_DropShell		177728
 	556174251	JackDrop_v13	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v13_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v13		63576
 	567123186	Button_Up_v_03	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Button_Up_v_03_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Button\Button_Up\ButtonUp\Button_Up_v_03		72738
+	569260487	Pitch_Mechanical_Start	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Pitch_Mechanical_Start_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Pitch\Pitch_Mechanical\Mechanical_Start\Pitch_Mechanical_Start		51264
 	570211737	Jack_In_v_12	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_12_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_12		79636
 	585587110	Jack_Out_v_05	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_Out_v_05_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_Out\Jacks_Out\Jack_Out_v_05		66846
 	598944132	Jack_In_v_05	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_05_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_05		75142
@@ -44,9 +61,15 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	624892348	JackDrop_v07	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v07_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v07		72416
 	624902897	JackDrop_v04	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v04_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v04		63536
 	628424225	Jack_In_v_15	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_15_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_15		81592
+	647660427	Pitch_Powerup_Lp	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Pitch_Powerup_Lp_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Pitch\Pitch_Power\Power_Lp\Pitch_Powerup_Lp		88128
 	663522822	JackDrop_v03	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v03_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v03		56576
+	685647199	Pitch_Powerup_Stop	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Pitch_Powerup_Stop_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Pitch\Pitch_Power\Power_Stop\Pitch_Powerup_Stop		99392
+	690625023	Pitch_Powerup_Start	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Pitch_Powerup_Start_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Pitch\Pitch_Power\Power_Start\Pitch_Powerup_Start		86240
 	699405169	Lever_Lock_v3	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Lever_Lock_v3_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Lever\Lever_Lock\LeverLock\Lever_Lock_v3		58432
 	708398422	Lever_Start_v1	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Lever_Start_v1_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Lever\Lever_Start\LeverStart\Lever_Start_v1		37952
+	723832284	Yaw_Stop	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Yaw_Stop_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Yaw\Yaw_Stop\Yaw_Stop		856864
+	734925016	Pitch_Mechanical_Stop	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Pitch_Mechanical_Stop_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Pitch\Pitch_Mechanical\Mechanical_Stop\Pitch_Mechanical_Stop		114624
+	753461407	Yaw_Start	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Yaw_Start_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Yaw\Yaw_Start\Yaw_Start		385984
 	782849002	Lever_Start_v4	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Lever_Start_v4_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Lever\Lever_Start\LeverStart\Lever_Start_v4		36672
 	790942207	JackDrop_v11	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v11_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v11		78968
 	806346644	JackDrop_v01	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v01_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v01		47092
@@ -55,6 +78,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	865634880	Button_Down_v_03	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Button_Down_v_03_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Button\Button_Down\ButtonDown\Button_Down_v_03		28044
 	909537007	JackDrop_v02	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v02_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v02		48544
 	913682298	Jack_In_v_06	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_06_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_06		68514
+	934836876	Pitch_Stop	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Pitch_Stop_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Pitch\Pitch_Stop\Pitch_Stop		138304
 	934985853	Button_Down_v_04	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Button_Down_v_04_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Button\Button_Down\ButtonDown\Button_Down_v_04		30132
 	947756875	Jack_In_v_14	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_14_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_14		74282
 	971535935	Jack_In_v_13	C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_13_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_13		82160

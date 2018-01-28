@@ -18,16 +18,20 @@ public class Port : Unit {
         }
     }
 
-    public override void Release(Unit unit, Plug pPlug) {
+    public override void Release(Unit unit, Plug plug) {
         if (unit) unit.Release();
-        if(pPlug) pPlug.Release();
-        if ((unit == null && pPlug != null) || unit == this || pPlug == null) return;
-        this.ConnectTo(pPlug);
+        if (plug) plug.Release();
+        if ((unit == null && plug != null) || plug == null || this.plug != null) return;
+        this.ConnectTo(plug);
+    }
+
+    public override Plug GetPlug() {
+        return this.plug;
     }
 
     private void ConnectTo(Plug plug) {
         this.plug = plug;
-        this.plug.Release();
+        this.plug.Release(null, null);
         this.plug.ConnectTo(this);
     }
 
