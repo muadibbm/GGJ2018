@@ -93,6 +93,7 @@ public class CableComponent : MonoBehaviour {
 
     void Update() {
         RenderCable();
+        this.cableLength = Vector3.Distance(this.transform.position, this.endPoint.position) * 0.75f;
     }
 
     /**

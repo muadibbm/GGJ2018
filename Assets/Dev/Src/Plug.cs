@@ -51,19 +51,16 @@ public class Plug : Unit {
     private void Update() {
         this._collider.isTrigger = (this.port != null) || this.selected;
         this._rigidbody.useGravity = (this.port == null) && !this.selected;
-        if (this.selected && Bootstrap.instance.im.mouseDelta.sqrMagnitude >= 1f) {
-            this.transform.position = GetPlugPositionOnPlane();
+        if (this.selected) {
+            this.transform.position = GetPlugPositionOnPlane(1.7f);
         }
     }
 
-    private Vector3 GetPlugPositionOnPlane() {
-        Vector3 pos = this.transform.position;
-        RaycastHit hit;
-        Ray ray = Camera.main.ScreenPointToRay(UnityEngine.Input.mousePosition);
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(UnityEngine.Input.mousePosition), out hit, this.cableWall)) {
-            pos = hit.point;
-        }
-        return pos;
+    private Vector3 GetPlugPositionOnPlane(float frontOfCamera) {
+        var mousePos = UnityEngine.Input.mousePosition;
+        mousePos.z = Camera.main.transform.position.z + frontOfCamera;
+        Vector3 newPos = Camera.main.ScreenToWorldPoint(mousePos);
+        return newPos;
     }
 
     private void OnCollisionEnter(Collision collision) {
