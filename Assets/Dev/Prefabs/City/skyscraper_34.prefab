@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 4929669348817338}
   - component: {fileID: 33765203039486520}
   - component: {fileID: 23225645108502878}
-  m_Layer: 0
+  - component: {fileID: 65932077796939012}
+  m_Layer: 10
   m_Name: skyscraper_34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1894652601955672}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -609.1781, y: 0.00009941716, z: -3111.0642}
+  m_LocalPosition: {x: -1943.1323, y: -73.154785, z: 33.185303}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1894652601955672}
   m_Mesh: {fileID: 4300064, guid: bdb5b2d2fa554e94a89eae1fce5e1787, type: 3}
+--- !u!65 &65932077796939012
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1894652601955672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 65.190506, y: 177.53998, z: 72.50437}
+  m_Center: {x: -32.595047, y: 88.76999, z: 28.977268}

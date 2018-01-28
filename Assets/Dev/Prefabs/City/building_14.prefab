@@ -172,7 +172,8 @@ GameObject:
   - component: {fileID: 4491262296437054}
   - component: {fileID: 33795002316249448}
   - component: {fileID: 23523045452047416}
-  m_Layer: 0
+  - component: {fileID: 65932296845364592}
+  m_Layer: 10
   m_Name: building_14 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,7 +494,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1386426508750556}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.985478, y: 2.910383e-13, z: 531.4171}
+  m_LocalPosition: {x: -402.23187, y: -73.154785, z: 39.728027}
   m_LocalScale: {x: 1.2126274, y: 1.2126274, z: 1.2126274}
   m_Children:
   - {fileID: 4491262296437054}
@@ -1048,3 +1049,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1812440462299968}
   m_Mesh: {fileID: 4303610, guid: bdb5b2d2fa554e94a89eae1fce5e1787, type: 3}
+--- !u!65 &65932296845364592
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1734119751114762}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 29.990917, y: 177.34026, z: 29.991621}
+  m_Center: {x: -14.995003, y: 88.67013, z: -14.994662}
