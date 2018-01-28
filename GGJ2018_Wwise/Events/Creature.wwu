@@ -96,6 +96,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Creature_Hit" ID="{1912D4D0-8703-475F-BF13-9D4D5AE115E3}">
+					<ChildrenList>
+						<Action Name="Play" ID="{A6F6C258-9AE9-4738-9187-379F6F9F8BF7}" ShortID="837365625" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{68014F5F-3133-48AF-B1F4-629F9ACF58BB}" Global="false">
+									<ObjectRef Name="Hit" ID="{BEDBE3EF-9A46-46C0-95CC-8CC758801628}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
