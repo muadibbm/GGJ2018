@@ -11,6 +11,8 @@ public class Weapon : MonoBehaviour {
     public AkAmbient gunShoot3D;
     public AkAmbient gunReloadResume;
     public AkAmbient gunReloadInterrupted;
+    public AkAmbient gunHitExplosion2D;
+    public AkAmbient gunHitExplosion3D;
 
     public ParticleSystem explosion;
     
@@ -21,26 +23,20 @@ public class Weapon : MonoBehaviour {
 
     private void Awake() {
         this.animator = this.GetComponent<Animator>();
+        this.explosion.Stop();
     }
 
     public void Fire() {
         if (!this.readyToFire) return;
         this.animator.speed = 1f;
         this.readyToFire = false;
+        this.animator.Play("FireGun");
         AkSoundEngine.PostEvent((uint)(int)this.gunShoot2D.eventID, this.gunShoot2D.gameObject);
         AkSoundEngine.PostEvent((uint)(int)this.gunShoot3D.eventID, this.gunShoot3D.gameObject);
 
         RaycastHit hit;
-        if(Physics.Raycast(Camera.main.transform.position, Bootstrap.instance.cg.mech.transform.forward, out hit, this.targatables)) {
-            if(hit.collider) {
-                Debug.Log(hit.collider.name);
-                explosion.transform.position = hit.collider.transform.position;
-                explosion.Play();
-                //Creature creature = hit.collider.GetComponentInParent<Creature>();
-                //
-            }
-        } else {
-
+        if(Physics.Raycast(Camera.main.transform.position, Bootstrap.instance.cg.mech.transform.forward, out hit, Mathf.Infinity, this.targatables)) {
+            if (hit.collider) this.StartCoroutine(this.Hit(hit.collider));
         }
     }
 
@@ -73,4 +69,18 @@ public class Weapon : MonoBehaviour {
         this.reloadInProgress = false;
         this.interrupted = false;
     }
+
+    private IEnumerator Hit(Collider collider) {
+        yield return new WaitForSeconds(1f);
+        Creature creature = collider.GetComponentInParent<Creature>();
+        if (creature) {
+
+        }
+        this.explosion.transform.position = collider.transform.position;
+        this.explosion.Play();
+        AkSoundEngine.PostEvent((uint)(int)this.gunHitExplosion3D.eventID, this.gunHitExplosion3D.gameObject);
+        AkSoundEngine.PostEvent((uint)(int)this.gunHitExplosion2D.eventID, this.gunHitExplosion2D.gameObject);
+        yield return new WaitForSeconds(1f);
+        this.explosion.Stop();
+    } 
 }
