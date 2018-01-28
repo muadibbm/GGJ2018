@@ -1519,7 +1519,7 @@
 													<ChildrenList>
 														<AudioFileSource Name="Yaw_Servo_Lp" ID="{03214D48-B62C-48BB-B492-D46A4ED171FE}" ShortID="488511684">
 															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="7.72574762946743E-03"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00772574762946743"/>
 																<Property Name="TrimEnd" Type="Real64" Value="1.83872793581328"/>
 															</PropertyList>
 															<Language>SFX</Language>
@@ -2371,7 +2371,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Creature_Protect_v1_new" ID="{E6B41D1A-BC5A-473E-BC37-A0164C824738}" ShortID="372515843" Type="SoundFX">
+										<Sound Name="Creature_Protect_v1_A" ID="{0382349C-BD47-42CD-B651-882F7AF6165C}" ShortID="195346965" Type="SoundFX">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
@@ -2381,16 +2381,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Creature_Protect_v1_new" ID="{1848F56E-28A8-4F28-919C-AE4ED79C9EC7}" ShortID="555846441">
+												<AudioFileSource Name="Creature_Protect_v1_A" ID="{CAD94E67-C563-48A1-8E35-72B715AD83C9}" ShortID="872847822">
 													<Language>SFX</Language>
-													<AudioFile>Creature_Protect_v1_new.wav</AudioFile>
+													<AudioFile>Creature_Protect_v1_A.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Creature_Protect_v1_new" ID="{1848F56E-28A8-4F28-919C-AE4ED79C9EC7}" Platform="Linked"/>
+												<ActiveSource Name="Creature_Protect_v1_A" ID="{CAD94E67-C563-48A1-8E35-72B715AD83C9}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Creature_Protect_v2" ID="{A2E68638-A672-41EE-964F-D2230B23436A}" ShortID="918970749" Type="SoundFX">
+										<Sound Name="Creature_Protect_v2_A" ID="{264D78A6-0AE9-4438-B14B-055E23CAC627}" ShortID="887257884" Type="SoundFX">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
@@ -2400,16 +2400,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Creature_Protect_v2" ID="{AA52B577-CCCA-4488-93B1-3725DDEE1834}" ShortID="639531682">
+												<AudioFileSource Name="Creature_Protect_v2_A" ID="{B90322C4-AEEA-40C2-B3DA-11C01F81FE90}" ShortID="609699662">
 													<Language>SFX</Language>
-													<AudioFile>Creature_Protect_v2.wav</AudioFile>
+													<AudioFile>Creature_Protect_v2_A.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Creature_Protect_v2" ID="{AA52B577-CCCA-4488-93B1-3725DDEE1834}" Platform="Linked"/>
+												<ActiveSource Name="Creature_Protect_v2_A" ID="{B90322C4-AEEA-40C2-B3DA-11C01F81FE90}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Creature_Protect_v3" ID="{C9C03AAA-E5E6-4A85-9F2D-E3A50B545845}" ShortID="39822518" Type="SoundFX">
+										<Sound Name="Creature_Protect_v3_A" ID="{5C60BDBD-F770-43EB-9B3A-DA03CC3E9DF1}" ShortID="360270820" Type="SoundFX">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
@@ -2419,16 +2419,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Creature_Protect_v3" ID="{07BCFEF0-4C63-46CD-9AD2-761A13F80E82}" ShortID="313160226">
+												<AudioFileSource Name="Creature_Protect_v3_A" ID="{DC27E64D-D9FA-4E4F-8B2F-DB2D9369694E}" ShortID="86678249">
 													<Language>SFX</Language>
-													<AudioFile>Creature_Protect_v3.wav</AudioFile>
+													<AudioFile>Creature_Protect_v3_A.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Creature_Protect_v3" ID="{07BCFEF0-4C63-46CD-9AD2-761A13F80E82}" Platform="Linked"/>
+												<ActiveSource Name="Creature_Protect_v3_A" ID="{DC27E64D-D9FA-4E4F-8B2F-DB2D9369694E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Creature_Protect_v4" ID="{77A58D37-E0B5-41A4-AC42-620C132336F9}" ShortID="526861708" Type="SoundFX">
+										<Sound Name="Creature_Protect_v4_A" ID="{CC90034E-E0A2-40AF-BB10-D15A6C08A404}" ShortID="949824877" Type="SoundFX">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
@@ -2438,16 +2438,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Creature_Protect_v4" ID="{C8B19263-257C-4C99-B959-B1E21C99B7C7}" ShortID="799312493">
+												<AudioFileSource Name="Creature_Protect_v4_A" ID="{839B4338-24AC-4898-91CD-CCA7F4731E59}" ShortID="692941531">
 													<Language>SFX</Language>
-													<AudioFile>Creature_Protect_v4.wav</AudioFile>
+													<AudioFile>Creature_Protect_v4_A.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Creature_Protect_v4" ID="{C8B19263-257C-4C99-B959-B1E21C99B7C7}" Platform="Linked"/>
+												<ActiveSource Name="Creature_Protect_v4_A" ID="{839B4338-24AC-4898-91CD-CCA7F4731E59}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Creature_Protect_v5" ID="{11517BF7-E011-4ECE-9F9C-CF96013D631E}" ShortID="833125374" Type="SoundFX">
+										<Sound Name="Creature_Protect_v5_A" ID="{D5181162-6737-47E4-A29B-7672D7B3FEEA}" ShortID="205203723" Type="SoundFX">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
@@ -2457,16 +2457,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Creature_Protect_v5" ID="{7612BE69-4BBB-4BCB-A9B6-85CFAD3CF638}" ShortID="998151142">
+												<AudioFileSource Name="Creature_Protect_v5_A" ID="{4DD56B5A-ECFE-4588-86D2-516F697B42E4}" ShortID="534281859">
 													<Language>SFX</Language>
-													<AudioFile>Creature_Protect_v5.wav</AudioFile>
+													<AudioFile>Creature_Protect_v5_A.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Creature_Protect_v5" ID="{7612BE69-4BBB-4BCB-A9B6-85CFAD3CF638}" Platform="Linked"/>
+												<ActiveSource Name="Creature_Protect_v5_A" ID="{4DD56B5A-ECFE-4588-86D2-516F697B42E4}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Creature_Protect_v6" ID="{2360D1CC-0353-4AA9-AD65-E66B795BDAAF}" ShortID="515963485" Type="SoundFX">
+										<Sound Name="Creature_Protect_v6_A" ID="{BA832DAB-34AA-4BB4-9F3C-88B562BCC62E}" ShortID="593554360" Type="SoundFX">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
@@ -2476,13 +2476,13 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Creature_Protect_v6" ID="{B18EEBAD-232C-4C35-84F9-BB42FC5F4A29}" ShortID="27724762">
+												<AudioFileSource Name="Creature_Protect_v6_A" ID="{05260E31-88F4-48F1-A789-B168498A1F69}" ShortID="1005262507">
 													<Language>SFX</Language>
-													<AudioFile>Creature_Protect_v6.wav</AudioFile>
+													<AudioFile>Creature_Protect_v6_A.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Creature_Protect_v6" ID="{B18EEBAD-232C-4C35-84F9-BB42FC5F4A29}" Platform="Linked"/>
+												<ActiveSource Name="Creature_Protect_v6_A" ID="{05260E31-88F4-48F1-A789-B168498A1F69}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
