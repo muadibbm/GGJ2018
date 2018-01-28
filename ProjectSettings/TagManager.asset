@@ -9,6 +9,7 @@ TagManager:
   - Port
   - Plug
   - Module
+  - Mech
   layers:
   - Default
   - TransparentFX

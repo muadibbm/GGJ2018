@@ -2,15 +2,19 @@
 
 public class Output : Unit {
 
-    public enum Type { Power }
+    public enum Type { Power, NULL }
     public Type type;
     public Port port;
 
-    public override void Select() {
-
+    private void Awake() {
+        this.port.connectedTo = this;
     }
 
-    public override void Release(Unit unit) {
+    public override void Select() {
+        // do nothing;
+    }
 
+    public override void Release(Unit unit, Plug plug) {
+        // do nothing;
     }
 }
