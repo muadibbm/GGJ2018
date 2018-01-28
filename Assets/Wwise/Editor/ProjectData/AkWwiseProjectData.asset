@@ -226,9 +226,29 @@ MonoBehaviour:
   - PhysicalPath: Events\Weapons.wwu
     ParentPhysicalPath: 
     Guid: '{B319DDDB-05B5-4C11-9088-83EC67553FEE}'
-    m_lastTimePsrt1: 1488157656
-    m_lastTimePart2: -1999280535
+    m_lastTimePsrt1: -401802462
+    m_lastTimePart2: -1999280518
     List:
+    - Name: MainGun_ExplosionHit_2D
+      Path: Weapons\MainGun_ExplosionHit_2D
+      PathAndIcons:
+      - ElementName: Weapons
+        ObjectType: 12
+      - ElementName: MainGun_ExplosionHit_2D
+        ObjectType: 3
+      ID: -107339852
+      Guid: be02febe8ea4b446bde15e60d3a1bc1d
+      maxAttenuation: 0
+    - Name: MainGun_ExplosionHit_3D
+      Path: Weapons\MainGun_ExplosionHit_3D
+      PathAndIcons:
+      - ElementName: Weapons
+        ObjectType: 12
+      - ElementName: MainGun_ExplosionHit_3D
+        ObjectType: 3
+      ID: -90562297
+      Guid: 5b146bf516fca145bf97971ceba57eca
+      maxAttenuation: 0
     - Name: MainGun_Reload
       Path: Weapons\MainGun_Reload
       PathAndIcons:
