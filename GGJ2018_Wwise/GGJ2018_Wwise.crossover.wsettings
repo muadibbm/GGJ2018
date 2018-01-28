@@ -25,7 +25,7 @@
 				<Property Name="MonitoringManager\WatchMgr\GameSyncWatches" Type="string" Value=""/>
 				<Property Name="MonitoringManager\WatchMgr\Watches" Type="string" Value=""/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="5"/>
-				<Property Name="ProjectExplorer\Expanded_10_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\Expanded_10_1" Type="string" Value="7UuAigkejUaekOSCWJb+EQ=="/>
 				<Property Name="ProjectExplorer\Expanded_11_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_12_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_13_1" Type="string" Value=""/>
@@ -37,8 +37,8 @@
 				<Property Name="ProjectExplorer\Expanded_19_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_1_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_20_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\Expanded_2_1" Type="string" Value="03RVeF3cVkCBkP/gwVcMfYR8Z6sI8GdAlyGfRLvT3zp7U7EvJWBuSJZw+UhXq4eSzz+p3CIM30mG0o5u2eH+rDHsYOGa6CZKoZIOJ2/DqoQNPSRv+47gTpOO84SbetjJ"/>
-				<Property Name="ProjectExplorer\Expanded_3_1" Type="string" Value="uG+RwijdQE609LowVrF8jg=="/>
+				<Property Name="ProjectExplorer\Expanded_2_1" Type="string" Value="hHxnqwjwZ0CXIZ9Eu9PfOtZ7b8M3o3hAhF6McNjTlDPkXG8L+l3QQJEC/DMnkdCbfztBv7s4nEK9oWBXJauDnqis7M+j+EZDlAZIFRLDnSo6PJIYFI1FRLuQffcLeaI0Q7QJ+Jp1skSnhzupqkSLcIEf0ln+AeJEuVVVxj4pceAGVCMyOxyJRZg/ffO/6LrW2ELNb4jAm0WKhOpB1XLB/W33s0AbvPJFrGibZk4XeYLuVHcJAA4OR5dlyFSBe3J9mp4xIJzhskevdWloaOAVAFTB3uxFo2hIrJgALMdq9WrnXwl308CkSJPeQgsNQtxONOFdneQI4EiykkIugz9qX1OlK7/fshtJlloj4NzQxC43djoa0/tKSZsfboQR52V3SyBXM+2ji0mgaa47CtbgLx5ZbjTFP7NJp4iraGjP+zsOcMhAGQheSopVq2i+ga17FMng1Q2enEqoXV6XymWz3Psjl1QfxQdMt0vZvOm9QzHrSTXXq2tnTJAUS8AH0kcUzGJz3WwAXk2z+Zzb+C1LivS+BT7JCoVNmyvw2sOzL6HDMRBkrQq+TZNwdzpSQGgmBHNTKF3w0k2uu5W9TCzoeO6ybZBLKfhNtgpAiea+GbpIUASr75b4TYVX2U+WYVMdGZYQPbDnmU6Po92bEbKOxg09JG/7juBOk47zhJt62MmDl0n1tp7zTpOGkNHiv/yvV2CSJlz5OU+cBEqfgXvZOXksqoV+fq5PtCf7DKcZj1s="/>
+				<Property Name="ProjectExplorer\Expanded_3_1" Type="string" Value="8rq/oUO+zUamOkwC3EEzcz3G1Jw0UN1Hsyz5jh/5PxHQoK1vdB54SIDOKkRwW8dM290Zs7UFEUyQiIPsZ1U/7rhvkcIo3UBOtPS6MFaxfI4="/>
 				<Property Name="ProjectExplorer\Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_6_1" Type="string" Value="JVyU53UK8kig1VfioHVPHg=="/>
@@ -78,6 +78,7 @@
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{3A51AE85-94E5-4FEA-B3E5-7DAAB136699E}"/>
 			</PropertyList>
 		</UserProjectSettings>
 	</UserProjectSettingsInfo>

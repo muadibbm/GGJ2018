@@ -1253,9 +1253,49 @@
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="Lever_Motion" ID="{BF2BA553-B2DF-491B-965A-23E0DCD0C42E}" ShortID="145030072">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Time Stretch (Custom)" ID="{CF9CBA64-40BB-4DB9-8D30-B850E9513E4A}" ShortID="113377614" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+													<PropertyList>
+														<Property Name="TimeStretch" Type="Real32">
+															<RTPCList>
+																<RTPC Name="" ID="{91AE8ACC-E591-44AA-8024-A94C0030FC6B}" ShortID="789225967">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Lever_Speed" ID="{FADC54BB-D91D-462A-BC4E-6F5C7F9F2B55}" WorkUnitID="{11CE9E80-D723-4D79-9C80-BC3447F9EAD1}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{ACABDA9C-FD69-42CE-990D-E4ACE448FA6E}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>100</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="WindowSize" Type="int32" Value="256"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
