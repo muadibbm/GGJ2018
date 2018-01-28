@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID BUTTON_DOWN = 4085851028U;
         static const AkUniqueID BUTTON_UP = 1972958575U;
         static const AkUniqueID CREATURE_ANGRY = 4160132020U;
+        static const AkUniqueID CREATURE_DEATH = 3326610637U;
         static const AkUniqueID CREATURE_HIT = 2843321372U;
         static const AkUniqueID CREATURE_HURT = 3964388558U;
         static const AkUniqueID CREATURE_PROTECTS = 2410886409U;

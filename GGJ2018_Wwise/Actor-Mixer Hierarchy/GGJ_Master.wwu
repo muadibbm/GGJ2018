@@ -2519,7 +2519,6 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3017,6 +3016,183 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Death" ID="{FAE9FBC3-C716-429B-B75B-8A6DC0461A5F}" ShortID="135716832">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Creature_Hurt_v5" ID="{E193A499-4624-4694-AF64-347D901DFB73}" ShortID="766712838" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Creature_Hurt_v5" ID="{1C2AF9CA-87B7-48F3-B824-FB0CB108590D}" ShortID="795359064">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.91141666666667"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.90425"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Creature_Hurt_v5.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Creature_Hurt_v5" ID="{1C2AF9CA-87B7-48F3-B824-FB0CB108590D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Creature_Hit-Pain_v3" ID="{7CD1E375-07C5-43C1-8767-2B48067C1440}" ShortID="835895485" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Creature_Hit-Pain_v3" ID="{F71AFA56-7F82-4B22-AE09-6F13FBEA1CF4}" ShortID="8998782">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.9374375"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.653125"/>
+												<Property Name="FadeOutShape" Type="int16" Value="2"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.813625"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.78741666666667"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Creature_Hit-Pain_v3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Creature_Hit-Pain_v3" ID="{F71AFA56-7F82-4B22-AE09-6F13FBEA1CF4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Death_Fall" ID="{1950BBC4-195D-443A-AE00-D3E61FE3650D}" ShortID="363750272">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="YawMetal_Start" ID="{443D6D65-C04C-4CE2-B495-713D1BB7F647}" ShortID="372839166">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1820</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Yaw_MetalShift_Start" ID="{D01D25D5-4E49-4755-9169-EC3CE215F735}" ShortID="929791732" Type="SoundFX">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Aluminium_Tank" ID="{0D20C91A-F750-47E0-AE32-00E5F2AA1272}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Yaw_MetalShift_Start" ID="{C687C649-B238-44E3-8462-AEF20EDF5663}" ShortID="1003687855">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.282357142857143"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.105285714285714"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.966714285714286"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Yaw_MetalShift_Start.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Yaw_MetalShift_Start" ID="{C687C649-B238-44E3-8462-AEF20EDF5663}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MissileHit_Explosion_3D_v2" ID="{483244B7-FC33-4917-A853-A5B57C2D0363}" ShortID="192991774" Type="SoundFX">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>39</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-910</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MissileHit_Explosion_3D_v2" ID="{E463FBC2-1F05-440A-B7E4-2F3FCDEA8E72}" ShortID="607898203">
+													<Language>SFX</Language>
+													<AudioFile>MissileHit_Explosion_3D_v2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="987884564"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MissileHit_Explosion_3D_v2" ID="{E463FBC2-1F05-440A-B7E4-2F3FCDEA8E72}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
