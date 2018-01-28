@@ -32,14 +32,14 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A1BFBAF2-BE43-46CD-A63A-4C02DC413373}'
-    m_lastTimePsrt1: 227691764
+    m_lastTimePsrt1: 399955589
     m_lastTimePart2: -1999280906
     List: []
   - PhysicalPath: Events\Interactive.wwu
     ParentPhysicalPath: 
     Guid: '{C2916FB8-DD28-4E40-B4F4-BA3056B17C8E}'
-    m_lastTimePsrt1: -255514644
-    m_lastTimePart2: -1999280634
+    m_lastTimePsrt1: -734689765
+    m_lastTimePart2: -1999280580
     List:
     - Name: Button_Down
       Path: Interactive\Button_Down
@@ -101,6 +101,16 @@ MonoBehaviour:
       ID: -1230402473
       Guid: 88a139af38f208419fba51957f01df5a
       maxAttenuation: 0
+    - Name: Lever_Motion
+      Path: Interactive\Lever_Motion
+      PathAndIcons:
+      - ElementName: Interactive
+        ObjectType: 12
+      - ElementName: Lever_Motion
+        ObjectType: 3
+      ID: 1765225840
+      Guid: d317092446e51a44953e56a8cbf0725f
+      maxAttenuation: 0
     - Name: Lever_Start
       Path: Interactive\Lever_Start
       PathAndIcons:
@@ -124,8 +134,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Machine.wwu
     ParentPhysicalPath: 
     Guid: '{6FADA0D0-1E74-4878-80CE-2A44705BC74C}'
-    m_lastTimePsrt1: 1137568282
-    m_lastTimePart2: -1999280674
+    m_lastTimePsrt1: -1166923838
+    m_lastTimePart2: -1999280647
     List:
     - Name: Pitch_Start
       Path: Machine\Pitch_Start
@@ -170,8 +180,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Weapons.wwu
     ParentPhysicalPath: 
     Guid: '{B319DDDB-05B5-4C11-9088-83EC67553FEE}'
-    m_lastTimePsrt1: -255514644
-    m_lastTimePart2: -1999280634
+    m_lastTimePsrt1: -722933
+    m_lastTimePart2: -1999280591
     List:
     - Name: MainGun_Reload
       Path: Weapons\MainGun_Reload
@@ -183,39 +193,59 @@ MonoBehaviour:
       ID: -1861701824
       Guid: e39c11fb78654144bfd6cded794a1e42
       maxAttenuation: 0
+    - Name: MainGun_Shot_2D
+      Path: Weapons\MainGun_Shot_2D
+      PathAndIcons:
+      - ElementName: Weapons
+        ObjectType: 12
+      - ElementName: MainGun_Shot_2D
+        ObjectType: 3
+      ID: -610164924
+      Guid: 09fd0fc018a8f3498f5861e111c63f34
+      maxAttenuation: 0
+    - Name: MainGun_Shot_3D
+      Path: Weapons\MainGun_Shot_3D
+      PathAndIcons:
+      - ElementName: Weapons
+        ObjectType: 12
+      - ElementName: MainGun_Shot_3D
+        ObjectType: 3
+      ID: -593387305
+      Guid: 3826c5f11854b44abacdbce959aa11cb
+      maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{733B9F2A-ED1C-4A62-9676-7172B9A60C73}'
-    m_lastTimePsrt1: 227927241
+    m_lastTimePsrt1: 400180807
     m_lastTimePart2: -1999280906
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F71CBC52-BE0D-4C8D-917D-0392866B8FC2}'
-    m_lastTimePsrt1: 228172671
+    m_lastTimePsrt1: 400421037
     m_lastTimePart2: -1999280906
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3EDC0B98-1BD7-4E08-B223-DC88E6C72B5A}'
-    m_lastTimePsrt1: 228207652
+    m_lastTimePsrt1: 400451065
     m_lastTimePart2: -1999280906
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{ED3A4F22-DAD8-4406-BCB8-7B88989FE596}'
-    m_lastTimePsrt1: 228117423
+    m_lastTimePsrt1: 400375993
     m_lastTimePart2: -1999280906
     List: []
   - PhysicalPath: SoundBanks\Master.wwu
     ParentPhysicalPath: 
     Guid: '{E7945C25-0A75-48F2-A0D5-57E2A0754F1E}'
-    m_lastTimePsrt1: -535293707
-    m_lastTimePart2: -1999280617
+    m_lastTimePsrt1: 97885
+    m_lastTimePart2: -1999280590
     List:
     - Name: GGJ_2018_SB
       Path: Master\GGJ_2018_SB
