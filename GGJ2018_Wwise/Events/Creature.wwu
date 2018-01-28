@@ -100,6 +100,9 @@
 				<Event Name="Creature_Death" ID="{4691B3B5-1B1A-4B48-91CB-B26FCA748786}">
 					<ChildrenList>
 						<Action Name="Play" ID="{95541896-35D7-4810-9F42-A63E8F3596D4}" ShortID="292825541" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
 							<ElementList>
 								<Element ID="{7311B88E-7043-4724-A1AD-7B59342F86DA}" Global="false">
 									<ObjectRef Name="Death" ID="{FAE9FBC3-C716-429B-B75B-8A6DC0461A5F}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
@@ -108,7 +111,7 @@
 						</Action>
 						<Action Name="Play" ID="{AFC6387D-8235-42C1-8DD9-523F07B9E415}" ShortID="648448446" Type="Play" Scope="One" Global="false">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="6"/>
+								<Property Name="Delay" Type="Real64" Value="10"/>
 							</PropertyList>
 							<ElementList>
 								<Element ID="{8560B3BD-4B1E-4F53-A4D9-BFC210E36F54}" Global="false">
