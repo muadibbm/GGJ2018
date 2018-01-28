@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>E:\GGJ2018\GGJ2018_Wwise\</ProjectRoot>
-		<SourceFilesRoot>E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>E:\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
