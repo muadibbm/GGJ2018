@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>E:\GGJ2018\GGJ2018_Wwise\</ProjectRoot>
+		<SourceFilesRoot>E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>E:\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>E:\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -31,6 +31,8 @@
 				<Event Id="319362870" Name="Lever_Stop" ObjectPath="\Events\Interactive\Lever_Stop"/>
 				<Event Id="3818321487" Name="Main_Engine" ObjectPath="\Events\Ambience\Main_Engine"/>
 				<Event Id="2433265472" Name="MainGun_Reload" ObjectPath="\Events\Weapons\MainGun_Reload"/>
+				<Event Id="3684802372" Name="MainGun_Shot_2D" ObjectPath="\Events\Weapons\MainGun_Shot_2D"/>
+				<Event Id="3701579991" Name="MainGun_Shot_3D" ObjectPath="\Events\Weapons\MainGun_Shot_3D"/>
 				<Event Id="3209456848" Name="Pitch_Start" ObjectPath="\Events\Machine\Pitch_Start"/>
 				<Event Id="1108430268" Name="Pitch_Stop" ObjectPath="\Events\Machine\Pitch_Stop"/>
 				<Event Id="2467819191" Name="Yaw_Start" ObjectPath="\Events\Machine\Yaw_Start"/>
@@ -125,6 +127,10 @@
 					<ShortName>JackDrop_v05.wav</ShortName>
 					<Path>SFX\JackDrop_v05_9E69E797.wem</Path>
 				</File>
+				<File Id="397133352" Language="SFX">
+					<ShortName>MainGun_Shot_3D_v2.wav</ShortName>
+					<Path>SFX\MainGun_Shot_3D_v2_9E69E797.wem</Path>
+				</File>
 				<File Id="401426476" Language="SFX">
 					<ShortName>Button_Down_v_01.wav</ShortName>
 					<Path>SFX\Button_Down_v_01_9E69E797.wem</Path>
@@ -132,6 +138,10 @@
 				<File Id="436577555" Language="SFX">
 					<ShortName>Jack_In_v_11.wav</ShortName>
 					<Path>SFX\Jack_In_v_11_9E69E797.wem</Path>
+				</File>
+				<File Id="451364720" Language="SFX">
+					<ShortName>MainGun_Shot_2D_v1.wav</ShortName>
+					<Path>SFX\MainGun_Shot_2D_v1_9E69E797.wem</Path>
 				</File>
 				<File Id="464956006" Language="SFX">
 					<ShortName>Jack_In_v_04.wav</ShortName>
@@ -164,6 +174,10 @@
 				<File Id="521862541" Language="SFX">
 					<ShortName>Button_Up_v_01.wav</ShortName>
 					<Path>SFX\Button_Up_v_01_9E69E797.wem</Path>
+				</File>
+				<File Id="524423124" Language="SFX">
+					<ShortName>MainGun_Shot_2D_v2.wav</ShortName>
+					<Path>SFX\MainGun_Shot_2D_v2_9E69E797.wem</Path>
 				</File>
 				<File Id="524869743" Language="SFX">
 					<ShortName>JackDrop_v06.wav</ShortName>
@@ -268,6 +282,10 @@
 				<File Id="806346644" Language="SFX">
 					<ShortName>JackDrop_v01.wav</ShortName>
 					<Path>SFX\JackDrop_v01_9E69E797.wem</Path>
+				</File>
+				<File Id="852067064" Language="SFX">
+					<ShortName>MainGun_Shot_3D_v1.wav</ShortName>
+					<Path>SFX\MainGun_Shot_3D_v1_9E69E797.wem</Path>
 				</File>
 				<File Id="853810432" Language="SFX">
 					<ShortName>Jack_In_v_09.wav</ShortName>

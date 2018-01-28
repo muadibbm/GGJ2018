@@ -67,16 +67,6 @@
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Play" ID="{CD471B23-C756-46F1-84B6-36E0735A8AC4}" ShortID="109482642" Type="Play" Scope="One" Global="false">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="0.1"/>
-							</PropertyList>
-							<ElementList>
-								<Element ID="{4802AE53-3D48-4F4E-999E-1A949B537D90}" Global="false">
-									<ObjectRef Name="Lever_Motion" ID="{BF2BA553-B2DF-491B-965A-23E0DCD0C42E}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
-								</Element>
-							</ElementList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Lever_Stop" ID="{16F31414-5A9D-434F-BDD0-BBAE36A180BE}">
@@ -116,6 +106,20 @@
 							<ElementList>
 								<Element ID="{85747BDE-DE26-4818-92D0-475D5BC25363}" Global="false">
 									<ObjectRef Name="Lever_Lock" ID="{28537304-F05D-4DD2-AEBB-95BD4C2CE878}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Lever_Motion" ID="{240917D3-E546-441A-953E-56A8CBF0725F}">
+					<ChildrenList>
+						<Action Name="Play" ID="{AFCAA26E-F9C7-4778-B672-C4610D984BA0}" ShortID="506856740" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{C0A8D225-84D9-4596-A2D9-8EE4C2C3B8E1}" Global="false">
+									<ObjectRef Name="Lever_Motion" ID="{BF2BA553-B2DF-491B-965A-23E0DCD0C42E}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
 								</Element>
 							</ElementList>
 						</Action>
