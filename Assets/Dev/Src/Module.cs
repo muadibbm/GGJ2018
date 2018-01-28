@@ -66,7 +66,7 @@ public class Module : Unit {
                     this.EngageSlider(Bootstrap.instance.im.mouseDelta.y);
                     break;
                 case Type.HorizontalSlider:
-                    this.EngageSlider(Bootstrap.instance.im.mouseDelta.x);
+                    this.EngageSlider(-Bootstrap.instance.im.mouseDelta.x);
                     break;
             }
         } else {

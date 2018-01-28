@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>E:\GGJ2018\GGJ2018_Wwise\</ProjectRoot>
-		<SourceFilesRoot>E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>E:\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -27,6 +27,7 @@
 				<Event Id="567069407" Name="Jacks_In" ObjectPath="\Events\Interactive\Jacks_In"/>
 				<Event Id="4251432562" Name="Jacks_Out" ObjectPath="\Events\Interactive\Jacks_Out"/>
 				<Event Id="3064564823" Name="Lever_Lock" ObjectPath="\Events\Interactive\Lever_Lock"/>
+				<Event Id="1765225840" Name="Lever_Motion" ObjectPath="\Events\Interactive\Lever_Motion"/>
 				<Event Id="728309430" Name="Lever_Start" ObjectPath="\Events\Interactive\Lever_Start"/>
 				<Event Id="319362870" Name="Lever_Stop" ObjectPath="\Events\Interactive\Lever_Stop"/>
 				<Event Id="3818321487" Name="Main_Engine" ObjectPath="\Events\Ambience\Main_Engine"/>

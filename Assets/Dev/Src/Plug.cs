@@ -51,7 +51,7 @@ public class Plug : Unit {
     private void Update() {
         this._collider.isTrigger = (this.port != null) || this.selected;
         this._rigidbody.useGravity = (this.port == null) && !this.selected;
-        if (this.selected) {
+        if (this.selected && Bootstrap.instance.im.mouseDelta.sqrMagnitude >= 1f) {
             this.transform.position = GetPlugPositionOnPlane();
         }
     }
@@ -60,7 +60,6 @@ public class Plug : Unit {
         Vector3 pos = this.transform.position;
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(UnityEngine.Input.mousePosition);
-        ray.origin = new Vector3(0.05f, -0.05f, 0f);
         if (Physics.Raycast(Camera.main.ScreenPointToRay(UnityEngine.Input.mousePosition), out hit, this.cableWall)) {
             pos = hit.point;
         }
