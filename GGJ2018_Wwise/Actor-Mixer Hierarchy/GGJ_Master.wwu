@@ -1519,7 +1519,7 @@
 													<ChildrenList>
 														<AudioFileSource Name="Yaw_Servo_Lp" ID="{03214D48-B62C-48BB-B492-D46A4ED171FE}" ShortID="488511684">
 															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.00772574762946743"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="7.72574762946743E-03"/>
 																<Property Name="TrimEnd" Type="Real64" Value="1.83872793581328"/>
 															</PropertyList>
 															<Language>SFX</Language>
@@ -2124,11 +2124,6 @@
 					<ChildrenList>
 						<BlendContainer Name="Reload" ID="{5408D2CF-D68D-4E56-A548-6741CC825CEC}" ShortID="920719855">
 							<PropertyList>
-								<Property Name="Lowpass" Type="int16">
-									<ValueList>
-										<Value>45</Value>
-									</ValueList>
-								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-7</Value>
@@ -2145,6 +2140,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Reload_pt1_DropShell" ID="{92924309-95BB-43FA-BCCB-E3B01C4E2A78}" ShortID="742163625" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>

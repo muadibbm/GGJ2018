@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour {
+    
+    public float damage = 25f;
 
     public LayerMask targatables;
 
@@ -36,7 +38,7 @@ public class Weapon : MonoBehaviour {
 
         RaycastHit hit;
         if(Physics.Raycast(Camera.main.transform.position, Bootstrap.instance.cg.mech.transform.forward, out hit, Mathf.Infinity, this.targatables)) {
-            if (hit.collider) this.StartCoroutine(this.Hit(hit.collider));
+            if (hit.collider) this.StartCoroutine(this.Hit(hit.collider, hit.point));
         }
     }
 
@@ -70,13 +72,11 @@ public class Weapon : MonoBehaviour {
         this.interrupted = false;
     }
 
-    private IEnumerator Hit(Collider collider) {
+    private IEnumerator Hit(Collider collider, Vector3 hitPoint) {
         yield return new WaitForSeconds(1f);
         Creature creature = collider.GetComponentInParent<Creature>();
-        if (creature) {
-
-        }
-        this.explosion.transform.position = collider.transform.position;
+        if (creature) { creature.TakeDamage(this.damage); }
+        this.explosion.transform.position = hitPoint;
         this.explosion.Play();
         AkSoundEngine.PostEvent((uint)(int)this.gunHitExplosion3D.eventID, this.gunHitExplosion3D.gameObject);
         AkSoundEngine.PostEvent((uint)(int)this.gunHitExplosion2D.eventID, this.gunHitExplosion2D.gameObject);
