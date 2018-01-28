@@ -586,6 +586,326 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</BlendContainer>
+								<BlendContainer Name="Jack_Drops" ID="{D3BC9C29-2B0D-4C65-B0C1-7DB6D8461B9F}" ShortID="794867669">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="JackDrops" ID="{636492CB-20E2-4E77-94B8-469F45951329}" ShortID="731743151">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{596A78DB-42B5-4AF0-8CCC-1917ECA00209}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="25"/>
+																	<Property Name="Min" Type="Real64" Value="-20"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{16076EF9-485E-483A-B0C4-B32A55042A17}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-150"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="JackDrop_v01" ID="{F6B25196-DE5C-42B5-B71A-FA67F3B86740}" ShortID="766733894" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JackDrop_v01" ID="{0AA7F8B2-88C5-44AC-A02A-4C00F1F66C9D}" ShortID="806346644">
+															<Language>SFX</Language>
+															<AudioFile>JackDrop_v01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JackDrop_v01" ID="{0AA7F8B2-88C5-44AC-A02A-4C00F1F66C9D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="JackDrop_v02" ID="{8FC8AD19-5D7D-44F0-8EDB-DDDEF1DBF3B1}" ShortID="1025438684" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JackDrop_v02" ID="{BDA9BF66-5F90-43CE-9371-2E910E1370E0}" ShortID="909537007">
+															<Language>SFX</Language>
+															<AudioFile>JackDrop_v02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JackDrop_v02" ID="{BDA9BF66-5F90-43CE-9371-2E910E1370E0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="JackDrop_v03" ID="{7C092E1F-C6EC-482B-B2D3-3303418DEDB9}" ShortID="804340877" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JackDrop_v03" ID="{AC6E0DB1-2BE6-47A7-9350-06432AA6348B}" ShortID="663522822">
+															<Language>SFX</Language>
+															<AudioFile>JackDrop_v03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JackDrop_v03" ID="{AC6E0DB1-2BE6-47A7-9350-06432AA6348B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="JackDrop_v04" ID="{C6279758-5CC1-4B6C-9A95-E686471E3A39}" ShortID="426307086" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JackDrop_v04" ID="{C5D29EA2-75BD-4550-9343-ECD2252C5E77}" ShortID="624902897">
+															<Language>SFX</Language>
+															<AudioFile>JackDrop_v04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JackDrop_v04" ID="{C5D29EA2-75BD-4550-9343-ECD2252C5E77}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="JackDrop_v05" ID="{67599DF6-BFBC-4262-8D64-D594B414B750}" ShortID="44024544" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JackDrop_v05" ID="{2C97BEC4-D0CF-4ED4-BCFC-B86D0C0CD5F0}" ShortID="376686856">
+															<Language>SFX</Language>
+															<AudioFile>JackDrop_v05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JackDrop_v05" ID="{2C97BEC4-D0CF-4ED4-BCFC-B86D0C0CD5F0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="JackDrop_v06" ID="{D98BE847-2DD2-4BD0-A6A2-C87787CDE753}" ShortID="645684904" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JackDrop_v06" ID="{CD6DD522-49FD-4240-A5C3-304A83BC89A2}" ShortID="524869743">
+															<Language>SFX</Language>
+															<AudioFile>JackDrop_v06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JackDrop_v06" ID="{CD6DD522-49FD-4240-A5C3-304A83BC89A2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="JackDrop_v07" ID="{D5423308-AA5A-4EE6-A14D-3AE4B0122DC9}" ShortID="576990804" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JackDrop_v07" ID="{E6AED8B5-1608-4445-8658-EE07020C458F}" ShortID="624892348">
+															<Language>SFX</Language>
+															<AudioFile>JackDrop_v07.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JackDrop_v07" ID="{E6AED8B5-1608-4445-8658-EE07020C458F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="JackDrop_v08" ID="{55219C11-0EA5-4A0A-90C9-5D7EE547DBF0}" ShortID="635968465" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JackDrop_v08" ID="{2E4FE773-3DF3-4AC6-B773-4CCB57F8041B}" ShortID="197747696">
+															<Language>SFX</Language>
+															<AudioFile>JackDrop_v08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JackDrop_v08" ID="{2E4FE773-3DF3-4AC6-B773-4CCB57F8041B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="JackDrop_v09" ID="{CA281901-B706-41CD-9305-1B658C512297}" ShortID="261219543" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JackDrop_v09" ID="{0C818CB7-6CB3-4FD6-AA5E-A0DADA3EBEFB}" ShortID="333069930">
+															<Language>SFX</Language>
+															<AudioFile>JackDrop_v09.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JackDrop_v09" ID="{0C818CB7-6CB3-4FD6-AA5E-A0DADA3EBEFB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="JackDrop_v10" ID="{61CE3CEB-67BD-4B6B-93B8-E3B4B5CA58CC}" ShortID="615942422" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JackDrop_v10" ID="{328EE57E-2523-447B-9C8F-FC5BD208503C}" ShortID="3926204">
+															<Language>SFX</Language>
+															<AudioFile>JackDrop_v10.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JackDrop_v10" ID="{328EE57E-2523-447B-9C8F-FC5BD208503C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="JackDrop_v11" ID="{239A2C0A-3599-4135-AC8F-6A8D34420816}" ShortID="504582097" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JackDrop_v11" ID="{3C128A24-5D55-4849-A307-94B7602A2D34}" ShortID="790942207">
+															<Language>SFX</Language>
+															<AudioFile>JackDrop_v11.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JackDrop_v11" ID="{3C128A24-5D55-4849-A307-94B7602A2D34}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="JackDrop_v12" ID="{68AC487B-130C-4C40-BD1E-17928EA92BDC}" ShortID="2764404" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JackDrop_v12" ID="{52E916B5-E572-42E3-BA04-231FBFA88719}" ShortID="862879094">
+															<Language>SFX</Language>
+															<AudioFile>JackDrop_v12.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JackDrop_v12" ID="{52E916B5-E572-42E3-BA04-231FBFA88719}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="JackDrop_v13" ID="{718D4417-3C8A-48D8-BEC7-E7ACD247BC62}" ShortID="878763992" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JackDrop_v13" ID="{3B818B74-7210-4D7C-87A7-A60291482673}" ShortID="556174251">
+															<Language>SFX</Language>
+															<AudioFile>JackDrop_v13.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JackDrop_v13" ID="{3B818B74-7210-4D7C-87A7-A60291482673}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="JackDrop_v14" ID="{550F8D5D-57E8-45DB-AB8E-3A0555B70E2E}" ShortID="519654459" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="JackDrop_v14" ID="{F2730CEE-D90C-45FF-8D91-8AF044562743}" ShortID="156131340">
+															<Language>SFX</Language>
+															<AudioFile>JackDrop_v14.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="JackDrop_v14" ID="{F2730CEE-D90C-45FF-8D91-8AF044562743}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Button" ID="{906DB2EE-294B-4DF8-B60A-4089E6BE19BA}" ShortID="518868276">
@@ -1432,6 +1752,45 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="MainAmb_Engine" ID="{778460A7-3A73-4161-9B4B-BA2EA58279E0}" ShortID="10076776">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.05"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Mecha_AmbMain_Lp" ID="{327E8375-0481-4207-840B-6880EDB108BE}" ShortID="34386002" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mecha_AmbMain_Lp" ID="{9AEB5299-C7B6-42A9-B85A-02515319E1BE}" ShortID="490642547">
+											<Language>SFX</Language>
+											<AudioFile>Mecha_AmbMain_Lp.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Mecha_AmbMain_Lp" ID="{9AEB5299-C7B6-42A9-B85A-02515319E1BE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

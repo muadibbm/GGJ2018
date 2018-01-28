@@ -25,6 +25,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Button_Down" ID="{3050026B-BAEA-4161-B79C-F26750DBD9A4}">
+					<ChildrenList>
+						<Action Name="Play" ID="{0A90C6AE-9BFE-4EC7-93BE-ED0F812EEE2F}" ShortID="181895166" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{ABAD1819-9832-42E7-BF12-9E3A64D1E4F6}" Global="false">
+									<ObjectRef Name="Button_Down" ID="{85AA2C79-7E7E-4FAE-B427-FB0CA7198F5B}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Button_Up" ID="{8696A9F6-AEFE-4B4C-B552-BF1DCD4CFC3E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{0438117F-FE25-4F40-827E-D42DF0F28C4A}" ShortID="735239380" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B0625869-226E-4043-9356-48D470B2EDFD}" Global="false">
+									<ObjectRef Name="Button_Up" ID="{26926057-F95C-4F39-9C04-4A9F817BD939}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Jack_Drop" ID="{4BA52563-11C3-493D-A344-28B911A909CD}">
+					<ChildrenList>
+						<Action Name="Play" ID="{81DACA16-1B7F-4AA5-BB79-8B2189389746}" ShortID="631373725" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3E8ECE95-B51B-40AE-9998-67B39A0E0292}" Global="false">
+									<ObjectRef Name="Jack_Drops" ID="{D3BC9C29-2B0D-4C65-B0C1-7DB6D8461B9F}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
