@@ -23,6 +23,10 @@
 			<IncludedEvents>
 				<Event Id="4085851028" Name="Button_Down" ObjectPath="\Events\Interactive\Button_Down"/>
 				<Event Id="1972958575" Name="Button_Up" ObjectPath="\Events\Interactive\Button_Up"/>
+				<Event Id="4160132020" Name="Creature_Angry" ObjectPath="\Events\Creature\Creature_Angry"/>
+				<Event Id="2843321372" Name="Creature_Hit" ObjectPath="\Events\Creature\Creature_Hit"/>
+				<Event Id="3964388558" Name="Creature_Hurt" ObjectPath="\Events\Creature\Creature_Hurt"/>
+				<Event Id="2410886409" Name="Creature_Protects" ObjectPath="\Events\Creature\Creature_Protects"/>
 				<Event Id="3358031724" Name="Jack_Drop" ObjectPath="\Events\Interactive\Jack_Drop"/>
 				<Event Id="567069407" Name="Jacks_In" ObjectPath="\Events\Interactive\Jacks_In"/>
 				<Event Id="4251432562" Name="Jacks_Out" ObjectPath="\Events\Interactive\Jacks_Out"/>
@@ -38,6 +42,7 @@
 				<Event Id="2118001185" Name="MainGun_ReloadResume" ObjectPath="\Events\Weapons\MainGun_ReloadResume" MaxAttenuation="0.000000"/>
 				<Event Id="3684802372" Name="MainGun_Shot_2D" ObjectPath="\Events\Weapons\MainGun_Shot_2D"/>
 				<Event Id="3701579991" Name="MainGun_Shot_3D" ObjectPath="\Events\Weapons\MainGun_Shot_3D"/>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Ambience\Music"/>
 				<Event Id="3209456848" Name="Pitch_Start" ObjectPath="\Events\Machine\Pitch_Start"/>
 				<Event Id="1108430268" Name="Pitch_Stop" ObjectPath="\Events\Machine\Pitch_Stop"/>
 				<Event Id="2467819191" Name="Yaw_Start" ObjectPath="\Events\Machine\Yaw_Start"/>
@@ -60,6 +65,10 @@
 					<ShortName>Jack_Out_v_04.wav</ShortName>
 					<Path>SFX\Jack_Out_v_04_9E69E797.wem</Path>
 				</File>
+				<File Id="27724762" Language="SFX">
+					<ShortName>Creature_Protect_v6.wav</ShortName>
+					<Path>SFX\Creature_Protect_v6_9E69E797.wem</Path>
+				</File>
 				<File Id="35074841" Language="SFX">
 					<ShortName>MissileHit_Explosion_3D_v1.wav</ShortName>
 					<Path>SFX\MissileHit_Explosion_3D_v1_9E69E797.wem</Path>
@@ -68,9 +77,17 @@
 					<ShortName>Jack_Out_v_06.wav</ShortName>
 					<Path>SFX\Jack_Out_v_06_9E69E797.wem</Path>
 				</File>
+				<File Id="48768795" Language="SFX">
+					<ShortName>Creature_Hurt_v1.wav</ShortName>
+					<Path>SFX\Creature_Hurt_v1_9E69E797.wem</Path>
+				</File>
 				<File Id="69219853" Language="SFX">
 					<ShortName>Jack_In_v_07.wav</ShortName>
 					<Path>SFX\Jack_In_v_07_9E69E797.wem</Path>
+				</File>
+				<File Id="81436744" Language="SFX">
+					<ShortName>Creature_Hurt_v3.wav</ShortName>
+					<Path>SFX\Creature_Hurt_v3_9E69E797.wem</Path>
 				</File>
 				<File Id="88175084" Language="SFX">
 					<ShortName>Lever_Stop.wav</ShortName>
@@ -96,6 +113,10 @@
 					<ShortName>Button_Down_v_02.wav</ShortName>
 					<Path>SFX\Button_Down_v_02_9E69E797.wem</Path>
 				</File>
+				<File Id="151611672" Language="SFX">
+					<ShortName>Creature_Angry_v1.wav</ShortName>
+					<Path>SFX\Creature_Angry_v1_9E69E797.wem</Path>
+				</File>
 				<File Id="156131340" Language="SFX">
 					<ShortName>JackDrop_v14.wav</ShortName>
 					<Path>SFX\JackDrop_v14_9E69E797.wem</Path>
@@ -103,6 +124,10 @@
 				<File Id="195215865" Language="SFX">
 					<ShortName>MissileHit_Explosion_2D_v4.wav</ShortName>
 					<Path>SFX\MissileHit_Explosion_2D_v4_9E69E797.wem</Path>
+				</File>
+				<File Id="196350609" Language="SFX">
+					<ShortName>Creature_Hurt_v8.wav</ShortName>
+					<Path>SFX\Creature_Hurt_v8_9E69E797.wem</Path>
 				</File>
 				<File Id="197747696" Language="SFX">
 					<ShortName>JackDrop_v08.wav</ShortName>
@@ -124,13 +149,29 @@
 					<ShortName>Lever_Start_v2.wav</ShortName>
 					<Path>SFX\Lever_Start_v2_9E69E797.wem</Path>
 				</File>
+				<File Id="276234837" Language="SFX">
+					<ShortName>Creature_Angry_v8.wav</ShortName>
+					<Path>SFX\Creature_Angry_v8_9E69E797.wem</Path>
+				</File>
 				<File Id="298433160" Language="SFX">
 					<ShortName>MissileHit_Explosion_2D_v1.wav</ShortName>
 					<Path>SFX\MissileHit_Explosion_2D_v1_9E69E797.wem</Path>
 				</File>
+				<File Id="300217888" Language="SFX">
+					<ShortName>Protector_MelodyBass_Lp_88m_1.wav</ShortName>
+					<Path>SFX\Protector_MelodyBass_Lp_88m_1_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="313160226" Language="SFX">
+					<ShortName>Creature_Protect_v3.wav</ShortName>
+					<Path>SFX\Creature_Protect_v3_9E69E797.wem</Path>
+				</File>
 				<File Id="319451329" Language="SFX">
 					<ShortName>Lever_Lock_v2.wav</ShortName>
 					<Path>SFX\Lever_Lock_v2_9E69E797.wem</Path>
+				</File>
+				<File Id="327726365" Language="SFX">
+					<ShortName>Creature_Hit-Pain_v2.wav</ShortName>
+					<Path>SFX\Creature_Hit-Pain_v2_9E69E797.wem</Path>
 				</File>
 				<File Id="333069930" Language="SFX">
 					<ShortName>JackDrop_v09.wav</ShortName>
@@ -156,6 +197,10 @@
 					<ShortName>Button_Down_v_01.wav</ShortName>
 					<Path>SFX\Button_Down_v_01_9E69E797.wem</Path>
 				</File>
+				<File Id="411979331" Language="SFX">
+					<ShortName>Creature_Angry_v4.wav</ShortName>
+					<Path>SFX\Creature_Angry_v4_9E69E797.wem</Path>
+				</File>
 				<File Id="436577555" Language="SFX">
 					<ShortName>Jack_In_v_11.wav</ShortName>
 					<Path>SFX\Jack_In_v_11_9E69E797.wem</Path>
@@ -171,6 +216,10 @@
 				<File Id="480690068" Language="SFX">
 					<ShortName>Button_Up_v_02.wav</ShortName>
 					<Path>SFX\Button_Up_v_02_9E69E797.wem</Path>
+				</File>
+				<File Id="483607468" Language="SFX">
+					<ShortName>Creature_Hurt_v9.wav</ShortName>
+					<Path>SFX\Creature_Hurt_v9_9E69E797.wem</Path>
 				</File>
 				<File Id="488511684" Language="SFX">
 					<ShortName>Yaw_Servo_Lp.wav</ShortName>
@@ -191,6 +240,10 @@
 				<File Id="507246278" Language="SFX">
 					<ShortName>Jack_In_v_03.wav</ShortName>
 					<Path>SFX\Jack_In_v_03_9E69E797.wem</Path>
+				</File>
+				<File Id="515669348" Language="SFX">
+					<ShortName>Creature_Hurt_v2.wav</ShortName>
+					<Path>SFX\Creature_Hurt_v2_9E69E797.wem</Path>
 				</File>
 				<File Id="521862541" Language="SFX">
 					<ShortName>Button_Up_v_01.wav</ShortName>
@@ -215,6 +268,10 @@
 				<File Id="551125509" Language="SFX">
 					<ShortName>Reload_pt1_DropShell.wav</ShortName>
 					<Path>SFX\Reload_pt1_DropShell_9E69E797.wem</Path>
+				</File>
+				<File Id="555846441" Language="SFX">
+					<ShortName>Creature_Protect_v1_new.wav</ShortName>
+					<Path>SFX\Creature_Protect_v1_new_9E69E797.wem</Path>
 				</File>
 				<File Id="556174251" Language="SFX">
 					<ShortName>JackDrop_v13.wav</ShortName>
@@ -256,6 +313,10 @@
 					<ShortName>Jack_In_v_15.wav</ShortName>
 					<Path>SFX\Jack_In_v_15_9E69E797.wem</Path>
 				</File>
+				<File Id="639531682" Language="SFX">
+					<ShortName>Creature_Protect_v2.wav</ShortName>
+					<Path>SFX\Creature_Protect_v2_9E69E797.wem</Path>
+				</File>
 				<File Id="647660427" Language="SFX">
 					<ShortName>Pitch_Powerup_Lp.wav</ShortName>
 					<Path>SFX\Pitch_Powerup_Lp_9E69E797.wem</Path>
@@ -263,6 +324,14 @@
 				<File Id="663522822" Language="SFX">
 					<ShortName>JackDrop_v03.wav</ShortName>
 					<Path>SFX\JackDrop_v03_9E69E797.wem</Path>
+				</File>
+				<File Id="675281142" Language="SFX">
+					<ShortName>Creature_Hit-Pain_v5.wav</ShortName>
+					<Path>SFX\Creature_Hit-Pain_v5_9E69E797.wem</Path>
+				</File>
+				<File Id="681841918" Language="SFX">
+					<ShortName>Creature_Hurt_v7.wav</ShortName>
+					<Path>SFX\Creature_Hurt_v7_9E69E797.wem</Path>
 				</File>
 				<File Id="685647199" Language="SFX">
 					<ShortName>Pitch_Powerup_Stop.wav</ShortName>
@@ -280,9 +349,21 @@
 					<ShortName>MissileHit_Explosion_2D_v2.wav</ShortName>
 					<Path>SFX\MissileHit_Explosion_2D_v2_9E69E797.wem</Path>
 				</File>
+				<File Id="706689384" Language="SFX">
+					<ShortName>Creature_Hurt_v4.wav</ShortName>
+					<Path>SFX\Creature_Hurt_v4_9E69E797.wem</Path>
+				</File>
 				<File Id="708398422" Language="SFX">
 					<ShortName>Lever_Start_v1.wav</ShortName>
 					<Path>SFX\Lever_Start_v1_9E69E797.wem</Path>
+				</File>
+				<File Id="709523588" Language="SFX">
+					<ShortName>Creature_Angry_v7.wav</ShortName>
+					<Path>SFX\Creature_Angry_v7_9E69E797.wem</Path>
+				</File>
+				<File Id="711713560" Language="SFX">
+					<ShortName>Creature_Angry_v5.wav</ShortName>
+					<Path>SFX\Creature_Angry_v5_9E69E797.wem</Path>
 				</File>
 				<File Id="723832284" Language="SFX">
 					<ShortName>Yaw_Stop.wav</ShortName>
@@ -296,6 +377,10 @@
 					<ShortName>Yaw_Start.wav</ShortName>
 					<Path>SFX\Yaw_Start_9E69E797.wem</Path>
 				</File>
+				<File Id="761933347" Language="SFX">
+					<ShortName>Creature_Hurt_v5.wav</ShortName>
+					<Path>SFX\Creature_Hurt_v5_9E69E797.wem</Path>
+				</File>
 				<File Id="782849002" Language="SFX">
 					<ShortName>Lever_Start_v4.wav</ShortName>
 					<Path>SFX\Lever_Start_v4_9E69E797.wem</Path>
@@ -304,6 +389,10 @@
 					<ShortName>JackDrop_v11.wav</ShortName>
 					<Path>SFX\JackDrop_v11_9E69E797.wem</Path>
 				</File>
+				<File Id="799312493" Language="SFX">
+					<ShortName>Creature_Protect_v4.wav</ShortName>
+					<Path>SFX\Creature_Protect_v4_9E69E797.wem</Path>
+				</File>
 				<File Id="806346644" Language="SFX">
 					<ShortName>JackDrop_v01.wav</ShortName>
 					<Path>SFX\JackDrop_v01_9E69E797.wem</Path>
@@ -311,6 +400,14 @@
 				<File Id="820386228" Language="SFX">
 					<ShortName>MissileHit_Explosion_3D_v4.wav</ShortName>
 					<Path>SFX\MissileHit_Explosion_3D_v4_9E69E797.wem</Path>
+				</File>
+				<File Id="847798041" Language="SFX">
+					<ShortName>Creature_Hit-Pain_v4.wav</ShortName>
+					<Path>SFX\Creature_Hit-Pain_v4_9E69E797.wem</Path>
+				</File>
+				<File Id="847915392" Language="SFX">
+					<ShortName>Creature_Angry_v2.wav</ShortName>
+					<Path>SFX\Creature_Angry_v2_9E69E797.wem</Path>
 				</File>
 				<File Id="852067064" Language="SFX">
 					<ShortName>MainGun_Shot_3D_v1.wav</ShortName>
@@ -328,6 +425,14 @@
 					<ShortName>Button_Down_v_03.wav</ShortName>
 					<Path>SFX\Button_Down_v_03_9E69E797.wem</Path>
 				</File>
+				<File Id="885611644" Language="SFX">
+					<ShortName>Creature_Angry_v3.wav</ShortName>
+					<Path>SFX\Creature_Angry_v3_9E69E797.wem</Path>
+				</File>
+				<File Id="899226292" Language="SFX">
+					<ShortName>Creature_Angry_v6.wav</ShortName>
+					<Path>SFX\Creature_Angry_v6_9E69E797.wem</Path>
+				</File>
 				<File Id="909537007" Language="SFX">
 					<ShortName>JackDrop_v02.wav</ShortName>
 					<Path>SFX\JackDrop_v02_9E69E797.wem</Path>
@@ -335,6 +440,10 @@
 				<File Id="913682298" Language="SFX">
 					<ShortName>Jack_In_v_06.wav</ShortName>
 					<Path>SFX\Jack_In_v_06_9E69E797.wem</Path>
+				</File>
+				<File Id="921796305" Language="SFX">
+					<ShortName>Protector_RhythmPad_Lp_8m.wav</ShortName>
+					<Path>SFX\Protector_RhythmPad_Lp_8m_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="926361975" Language="SFX">
 					<ShortName>MissileHit_Explosion_2D_v3.wav</ShortName>
@@ -348,6 +457,10 @@
 					<ShortName>Button_Down_v_04.wav</ShortName>
 					<Path>SFX\Button_Down_v_04_9E69E797.wem</Path>
 				</File>
+				<File Id="946592292" Language="SFX">
+					<ShortName>Creature_Hit-Pain_v1.wav</ShortName>
+					<Path>SFX\Creature_Hit-Pain_v1_9E69E797.wem</Path>
+				</File>
 				<File Id="947756875" Language="SFX">
 					<ShortName>Jack_In_v_14.wav</ShortName>
 					<Path>SFX\Jack_In_v_14_9E69E797.wem</Path>
@@ -360,9 +473,21 @@
 					<ShortName>MissileHit_Explosion_3D_v2.wav</ShortName>
 					<Path>SFX\MissileHit_Explosion_3D_v2_9E69E797.wem</Path>
 				</File>
+				<File Id="998151142" Language="SFX">
+					<ShortName>Creature_Protect_v5.wav</ShortName>
+					<Path>SFX\Creature_Protect_v5_9E69E797.wem</Path>
+				</File>
 				<File Id="1018990833" Language="SFX">
 					<ShortName>Lever_Start_v3.wav</ShortName>
 					<Path>SFX\Lever_Start_v3_9E69E797.wem</Path>
+				</File>
+				<File Id="1023909297" Language="SFX">
+					<ShortName>Creature_Hurt_v6.wav</ShortName>
+					<Path>SFX\Creature_Hurt_v6_9E69E797.wem</Path>
+				</File>
+				<File Id="1024424347" Language="SFX">
+					<ShortName>Creature_Hit-Pain_v3.wav</ShortName>
+					<Path>SFX\Creature_Hit-Pain_v3_9E69E797.wem</Path>
 				</File>
 				<File Id="1037410136" Language="SFX">
 					<ShortName>Jack_Out_v_02.wav</ShortName>

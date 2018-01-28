@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Ambience" ID="{9CD4C63D-5034-47DD-B32C-F98E1FF93F11}" WorkUnitID="{9CD4C63D-5034-47DD-B32C-F98E1FF93F11}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Machine" ID="{6FADA0D0-1E74-4878-80CE-2A44705BC74C}" WorkUnitID="{6FADA0D0-1E74-4878-80CE-2A44705BC74C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Creature" ID="{BCC50F7E-87AF-4AD1-BCB2-D873EFD73AA5}" WorkUnitID="{BCC50F7E-87AF-4AD1-BCB2-D873EFD73AA5}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Weapons" ID="{B319DDDB-05B5-4C11-9088-83EC67553FEE}" WorkUnitID="{B319DDDB-05B5-4C11-9088-83EC67553FEE}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Interactive" ID="{C2916FB8-DD28-4E40-B4F4-BA3056B17C8E}" WorkUnitID="{C2916FB8-DD28-4E40-B4F4-BA3056B17C8E}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
