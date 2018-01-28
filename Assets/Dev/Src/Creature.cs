@@ -76,11 +76,9 @@ public class Creature : MonoBehaviour {
     private void UpdateAnimations() {
         switch(this.currentState) {
             case State.Idle:
-                Debug.Log("play idle");
                 this.animator.Play("Idle");
                 break;
             case State.IdleAngry:
-                Debug.Log("play angry");
                 this.animator.Play("Angry");
                 break;
             case State.Walking:
@@ -163,8 +161,8 @@ public class Creature : MonoBehaviour {
     private void DoHit() {
         this.currentVelocity = 0f;
         if (this.HasAnimationEnded()) {
-            if (Random.Range(0, 2) == 0) {
-                this.DoIdle();
+            if (Random.Range(0, 4) == 0) {
+                this.DoIdle(); // 25% chance of going idle
             } else {
                 this.nextForward = new Vector3(Random.Range(-1f, 1f), this.transform.forward.y, Random.Range(-1f, 1f));
                 this.DoWalk();

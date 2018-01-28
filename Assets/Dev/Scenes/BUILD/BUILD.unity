@@ -14524,10 +14524,10 @@ MonoBehaviour:
   hurt: {fileID: 511181360}
   painHit: {fileID: 1103031265}
   death: {fileID: 1633314061}
-  hitpoint: 100
-  maxRotationVelocity: 5
-  maxForwardVelocity: 100
-  acceleration: 1
+  hitpoint: 150
+  maxRotationVelocity: 0.1
+  maxForwardVelocity: 40
+  acceleration: 4
 --- !u!1001 &361405579
 Prefab:
   m_ObjectHideFlags: 0

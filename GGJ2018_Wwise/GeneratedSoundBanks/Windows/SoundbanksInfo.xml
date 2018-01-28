@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>E:\GGJ2018\GGJ2018_Wwise\</ProjectRoot>
-		<SourceFilesRoot>E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>E:\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -56,7 +56,7 @@
 				</File>
 				<File Id="8998782" Language="SFX">
 					<ShortName>Creature_Hit-Pain_v3.wav</ShortName>
-					<Path>SFX\Creature_Hit-Pain_v3_EB9582CA.wem</Path>
+					<Path>SFX\Creature_Hit-Pain_v3_1C5A3073.wem</Path>
 				</File>
 				<File Id="17265727" Language="SFX">
 					<ShortName>MissileHit_Explosion_3D_v3.wav</ShortName>
@@ -396,7 +396,7 @@
 				</File>
 				<File Id="795359064" Language="SFX">
 					<ShortName>Creature_Hurt_v5.wav</ShortName>
-					<Path>SFX\Creature_Hurt_v5_E42FD8CB.wem</Path>
+					<Path>SFX\Creature_Hurt_v5_4F232735.wem</Path>
 				</File>
 				<File Id="806346644" Language="SFX">
 					<ShortName>JackDrop_v01.wav</ShortName>
@@ -484,7 +484,7 @@
 				</File>
 				<File Id="1003687855" Language="SFX">
 					<ShortName>Yaw_MetalShift_Start.wav</ShortName>
-					<Path>SFX\Yaw_MetalShift_Start_3D832FDB.wem</Path>
+					<Path>SFX\Yaw_MetalShift_Start_71C8E777.wem</Path>
 				</File>
 				<File Id="1005262507" Language="SFX">
 					<ShortName>Creature_Protect_v6_A.wav</ShortName>

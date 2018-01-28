@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Ambience.wwu
     ParentPhysicalPath: 
     Guid: '{9CD4C63D-5034-47DD-B32C-F98E1FF93F11}'
-    m_lastTimePsrt1: -1157903162
-    m_lastTimePart2: -1999280507
+    m_lastTimePsrt1: 1558601267
+    m_lastTimePart2: -1999280505
     List:
     - Name: Main_Engine
       Path: Ambience\Main_Engine
@@ -42,8 +42,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Creature.wwu
     ParentPhysicalPath: 
     Guid: '{BCC50F7E-87AF-4AD1-BCB2-D873EFD73AA5}'
-    m_lastTimePsrt1: -1621672284
-    m_lastTimePart2: -1999280535
+    m_lastTimePsrt1: 1810135557
+    m_lastTimePart2: -1999280479
     List:
     - Name: Creature_Angry
       Path: Creature\Creature_Angry
@@ -54,6 +54,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: -134835276
       Guid: 9c55ccb2a10c5141928acf1e4e097f4f
+      maxAttenuation: 0
+    - Name: Creature_Death
+      Path: Creature\Creature_Death
+      PathAndIcons:
+      - ElementName: Creature
+        ObjectType: 12
+      - ElementName: Creature_Death
+        ObjectType: 3
+      ID: -968356659
+      Guid: b5b391461a1b484b91cbb26fca748786
       maxAttenuation: 0
     - Name: Creature_Hit
       Path: Creature\Creature_Hit
@@ -340,8 +350,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Master.wwu
     ParentPhysicalPath: 
     Guid: '{E7945C25-0A75-48F2-A0D5-57E2A0754F1E}'
-    m_lastTimePsrt1: -1853906790
-    m_lastTimePart2: -1999280505
+    m_lastTimePsrt1: 1328152560
+    m_lastTimePart2: -1999280500
     List:
     - Name: GGJ_2018_SB
       Path: Master\GGJ_2018_SB
