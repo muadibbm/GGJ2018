@@ -19,12 +19,18 @@
 				<Property Name="GenerateSoundBanks\SelectedPlatforms" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\SelectedSoundBanks" Type="string" Value="RCXJ01dHtUSShSJDOp0qPg=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
+				<Property Name="Interactive Music\{29B4A3F1-D89E-4A2E-8A75-8F42E0906ED1} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAAC0AAAAAAAADwP5gEK3cA0kVAAAAAAAAA8D8AAAAAAPCOQAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\{3362FDC8-75DD-41C6-96CD-B4EE06634AEB} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP8Yxpb0A+g1AAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\{4B33AEB6-B9D5-40B5-9C0B-160B846EB620} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAA8GhAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\{9B2FFC7F-93E5-414C-BC8B-70F3A6AAB8A7} - SegmentEditorZoomInfo" Type="string" Value="UVVVVVVV5T8AAAAAAADwP+Lh4eHhYTtAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\WatchMgr\GameSyncWatches" Type="string" Value=""/>
 				<Property Name="MonitoringManager\WatchMgr\Watches" Type="string" Value=""/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="5"/>
+				<Property Name="Music Transition List\{458E66A0-E2ED-4771-9E9F-5906588E223B}\Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{7947E01E-3E61-4B8A-A5A3-74B9D4D1755E}\Expand States" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_10_1" Type="string" Value="7UuAigkejUaekOSCWJb+EQ=="/>
 				<Property Name="ProjectExplorer\Expanded_11_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_12_1" Type="string" Value=""/>

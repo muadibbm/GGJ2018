@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Ambience.wwu
     ParentPhysicalPath: 
     Guid: '{9CD4C63D-5034-47DD-B32C-F98E1FF93F11}'
-    m_lastTimePsrt1: -255514644
-    m_lastTimePart2: -1999280634
+    m_lastTimePsrt1: -1157903162
+    m_lastTimePart2: -1999280507
     List:
     - Name: Main_Engine
       Path: Ambience\Main_Engine
@@ -28,6 +28,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: -476645809
       Guid: a63758e892a47547bb14da528b78a437
+      maxAttenuation: 0
+    - Name: Music
+      Path: Ambience\Music
+      PathAndIcons:
+      - ElementName: Ambience
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 3
+      ID: -303024426
+      Guid: 2483a899360b504a975d35be976be347
       maxAttenuation: 0
   - PhysicalPath: Events\Creature.wwu
     ParentPhysicalPath: 
@@ -345,7 +355,7 @@ MonoBehaviour:
   ExpandedItems:
   - /GGJ2018_Wwise
   - /GGJ2018_Wwise/Events
-  - /GGJ2018_Wwise/Events/Machine
+  - /GGJ2018_Wwise/Events/Weapons
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

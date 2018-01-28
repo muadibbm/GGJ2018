@@ -33,6 +33,10 @@ public class Mech : MonoBehaviour {
     private float cvv = 0f; // current vertical velocity
     private float cfv = 0f; // current forward velocity
 
+    private float lerpHv;
+    private float lerpVv;
+    private float lerpFv;
+
     private IEnumerator Start() {
         this.DisableWeapon();
         yield return new WaitForSeconds(1f);
@@ -64,9 +68,21 @@ public class Mech : MonoBehaviour {
     }
 
     private void Update() {
-        this.chv = Mathf.Lerp(this.chv, this.thv, Time.deltaTime * this.accelration / Mathf.Abs(this.thv - this.chv));
-        this.cvv = Mathf.Lerp(this.cvv, this.tvv, Time.deltaTime * this.accelration / Mathf.Abs(this.tvv - this.cvv));
-        this.cfv = Mathf.Lerp(this.cfv, this.tfv, Time.deltaTime * this.accelration / Mathf.Abs(this.tfv - this.cfv));
+        if (this.chv != this.thv)
+            this.lerpHv += Time.deltaTime * this.accelration;
+        else
+            this.lerpHv = 0f;
+        this.chv = Mathf.Lerp(this.chv, this.thv, this.lerpHv);
+        if (this.cvv != this.tvv)
+            this.lerpVv += Time.deltaTime * this.accelration;
+        else
+            this.lerpVv = 0f;
+        this.cvv = Mathf.Lerp(this.cvv, this.tvv, this.lerpVv);
+        if (this.cfv != this.tfv)
+            this.lerpFv += Time.deltaTime * this.accelration;
+        else
+            this.lerpFv = 0f;
+        this.cfv = Mathf.Lerp(this.cfv, this.tfv, this.lerpFv);
         this.HorizontalTurn();
         this.VerticalTurn();
         this.Move();

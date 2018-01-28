@@ -27,12 +27,17 @@ public class Input : Unit {
                     break;
             }
         } else {
+            float val;
             switch (this.type) {
                 case Input.Type.Yaw:
-                    Bootstrap.instance.cg.mech.SetHorizontalVelocity(module.GetSliderValue() / 0.1f);
+                    val = module.GetSliderValue();
+                    if (Mathf.Abs(val) < 0.03f) val = 0f;
+                    Bootstrap.instance.cg.mech.SetHorizontalVelocity(val / 0.1f);
                     break;
                 case Input.Type.Pitch:
-                    Bootstrap.instance.cg.mech.SetVerticalVelocity(module.GetSliderValue() / 0.1f);
+                    val = module.GetSliderValue();
+                    if (Mathf.Abs(val) < 0.03f) val = 0f;
+                    Bootstrap.instance.cg.mech.SetVerticalVelocity(val / 0.1f);
                     break;
                 default:
                     this.Diactivate(module);
