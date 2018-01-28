@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B319DDDB-05B5-4C11-9088-83EC67553FEE}" SchemaVersion="75">
+	<Events>
+		<WorkUnit Name="Weapons" ID="{B319DDDB-05B5-4C11-9088-83EC67553FEE}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="MainGun_Reload" ID="{FB119CE3-6578-4441-BFD6-CDED794A1E42}">
+					<ChildrenList>
+						<Action Name="Play" ID="{11CCCBDC-1C32-4D79-8A79-94E3BD62AE6A}" ShortID="498908723" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C855D9A7-6424-42BF-9D49-6D8F85B3B4DB}" Global="false">
+									<ObjectRef Name="Reload" ID="{5408D2CF-D68D-4E56-A548-6741CC825CEC}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

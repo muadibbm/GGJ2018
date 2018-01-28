@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9CD4C63D-5034-47DD-B32C-F98E1FF93F11}" SchemaVersion="75">
+	<Events>
+		<WorkUnit Name="Ambience" ID="{9CD4C63D-5034-47DD-B32C-F98E1FF93F11}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Main_Engine" ID="{E85837A6-A492-4775-BB14-DA528B78A437}">
+					<ChildrenList>
+						<Action Name="Play" ID="{90FBA99F-1380-4076-AE64-B3390CF5968B}" ShortID="518467424" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{A3195C22-CE01-44CF-9B7B-853C97C9AD36}" Global="false">
+									<ObjectRef Name="MainAmb_Engine" ID="{778460A7-3A73-4161-9B4B-BA2EA58279E0}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
