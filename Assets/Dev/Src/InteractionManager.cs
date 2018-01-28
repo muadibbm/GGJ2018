@@ -5,12 +5,14 @@ using UnityEngine;
 public class InteractionManager : MonoBehaviour {
 
     public Vector3 mouseDelta;
-
     public LayerMask interactionLayer;
 
     private Vector3 prevMousePos;
-    private Unit unit; // currently interacting unit
-    private Plug plug; // currently interacting plug, not always equal above
+    private Unit unit;
+    private Plug plug;
+
+    public delegate void InteractionDetected();
+    public InteractionDetected interactionDetected;
 
     void Update () {
         this.mouseDelta = UnityEngine.Input.mousePosition - this.prevMousePos;
@@ -24,6 +26,7 @@ public class InteractionManager : MonoBehaviour {
     }
 
     private void Interact(bool begin) {
+        if (this.interactionDetected != null) this.interactionDetected();
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.ScreenPointToRay(UnityEngine.Input.mousePosition), out hit,
                             Mathf.Infinity, this.interactionLayer, QueryTriggerInteraction.Ignore)) {
@@ -33,19 +36,12 @@ public class InteractionManager : MonoBehaviour {
             }
             if (begin) {
                 this.unit = hit.collider.GetComponent<Unit>();
-                System.Type type = this.unit.GetType();
-                if (type == typeof(Port))
-                    this.plug = ((Port)this.unit).plug;
-                else if (type == typeof(Plug))
-                    this.plug = ((Plug)this.unit);
-                else
-                    this.plug = null;
+                this.plug = this.unit.GetPlug();
                 this.unit.Select();
                 Cursor.visible = false;
             } else {
                 hit.collider.GetComponent<Unit>().Release(this.unit, this.plug);
-                this.unit = null;
-                this.plug = null;
+                this.unit = this.plug = null;
                 Cursor.visible = true;
             }
         } else {
@@ -56,8 +52,8 @@ public class InteractionManager : MonoBehaviour {
     private void Deinteract() {
         if (this.unit) {
             this.unit.Release(null, this.plug);
-            this.unit = this.plug = null;
         }
+        this.unit = this.plug = null;
         Cursor.visible = true;
     }
 }
