@@ -29,6 +29,42 @@ MonoBehaviour:
       ID: -476645809
       Guid: a63758e892a47547bb14da528b78a437
       maxAttenuation: 0
+  - PhysicalPath: Events\Creature.wwu
+    ParentPhysicalPath: 
+    Guid: '{BCC50F7E-87AF-4AD1-BCB2-D873EFD73AA5}'
+    m_lastTimePsrt1: -1019081923
+    m_lastTimePart2: -1999280576
+    List:
+    - Name: Creature_Angry
+      Path: Creature\Creature_Angry
+      PathAndIcons:
+      - ElementName: Creature
+        ObjectType: 12
+      - ElementName: Creature_Angry
+        ObjectType: 3
+      ID: -134835276
+      Guid: 9c55ccb2a10c5141928acf1e4e097f4f
+      maxAttenuation: 0
+    - Name: Creature_Hurt
+      Path: Creature\Creature_Hurt
+      PathAndIcons:
+      - ElementName: Creature
+        ObjectType: 12
+      - ElementName: Creature_Hurt
+        ObjectType: 3
+      ID: -330578738
+      Guid: 4c8302a705011f4b8f9f8b5deac868e7
+      maxAttenuation: 0
+    - Name: Creature_Protects
+      Path: Creature\Creature_Protects
+      PathAndIcons:
+      - ElementName: Creature
+        ObjectType: 12
+      - ElementName: Creature_Protects
+        ObjectType: 3
+      ID: -1884080887
+      Guid: 82523ab5b744f14fa6ff8483593f4b31
+      maxAttenuation: 0
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A1BFBAF2-BE43-46CD-A63A-4C02DC413373}'
