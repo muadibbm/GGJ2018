@@ -234,6 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a697bee4d7359464ab1fc85eabf36b94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  connectedTo: {fileID: 0}
   plug: {fileID: 0}
 --- !u!114 &114915539803702372
 MonoBehaviour:
