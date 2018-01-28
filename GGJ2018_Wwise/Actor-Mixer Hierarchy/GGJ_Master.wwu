@@ -2314,6 +2314,9 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Creature" ID="{FA12FA0E-FF95-45FE-8695-BC018A802098}" ShortID="334715475">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
