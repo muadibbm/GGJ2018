@@ -2070,6 +2070,9 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Main_Gun" ID="{77095FE7-C0D3-48A4-93DE-420B0D42DC4E}" ShortID="677340414">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
@@ -2127,6 +2130,145 @@
 										<ActiveSource Name="Reload_pt2_Load" ID="{DCBB31D7-BA0D-498A-8D25-07D961D22818}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="MainGun_Shot_2D" ID="{346E591E-3FC5-49B3-A788-AB6868CFFB3B}" ShortID="600795803">
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Shot_2D" ID="{3357204B-A3ED-498B-A069-AE3B0AD6E02F}" ShortID="880233804">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="MainGun_Shot_2D_v1" ID="{5DA277C6-8DFA-4DD9-93DE-1C7131AB308D}" ShortID="1062190380" Type="SoundFX">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MainGun_Shot_2D_v1" ID="{71EE16A4-CDFA-43BE-8EDE-F35207E8BACC}" ShortID="451364720">
+													<Language>SFX</Language>
+													<AudioFile>MainGun_Shot_2D_v1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MainGun_Shot_2D_v1" ID="{71EE16A4-CDFA-43BE-8EDE-F35207E8BACC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MainGun_Shot_2D_v2" ID="{6BA7BB91-34B7-4CA2-B4C0-15866C53308F}" ShortID="665093669" Type="SoundFX">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MainGun_Shot_2D_v2" ID="{4BDBF67C-C144-48E6-8D44-8FF6BB9CA7A4}" ShortID="524423124">
+													<Language>SFX</Language>
+													<AudioFile>MainGun_Shot_2D_v2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MainGun_Shot_2D_v2" ID="{4BDBF67C-C144-48E6-8D44-8FF6BB9CA7A4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="MainGun_Shot_3D" ID="{CFECACA8-F8A3-4346-9406-481512C39D2A}" ShortID="413925586">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Shot_3D" ID="{549723FB-C51F-4C07-B74B-D9BCE9BD4331}" ShortID="501789305">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="MainGun_Shot_3D_v1" ID="{3A47A714-2668-4FEF-8016-E6594BAB981D}" ShortID="831712554" Type="SoundFX">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MainGun_Shot_3D_v1" ID="{23A8C64E-BBD3-4172-A904-D5727FC2E3B7}" ShortID="852067064">
+													<Language>SFX</Language>
+													<AudioFile>MainGun_Shot_3D_v1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MainGun_Shot_3D_v1" ID="{23A8C64E-BBD3-4172-A904-D5727FC2E3B7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MainGun_Shot_3D_v2" ID="{ECCF124D-BBBD-48D3-9E93-48EA11512302}" ShortID="936472087" Type="SoundFX">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MainGun_Shot_3D_v2" ID="{24BCBCFF-5506-423E-B05B-9EDA69DCA210}" ShortID="397133352">
+													<Language>SFX</Language>
+													<AudioFile>MainGun_Shot_3D_v2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MainGun_Shot_3D_v2" ID="{24BCBCFF-5506-423E-B05B-9EDA69DCA210}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
