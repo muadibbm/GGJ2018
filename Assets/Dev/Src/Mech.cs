@@ -6,10 +6,9 @@ public class Mech : MonoBehaviour {
 
     public Transform cockpit;
 
-    public Animator weapon;
-    public Animator shield;
-
     public float accelration = 1f;
+
+    public Weapon weapon;
 
     public float maxHorizontalVelocity = 10f;
     public float maxVerticalVelocity = 10f;
@@ -20,6 +19,8 @@ public class Mech : MonoBehaviour {
     public AkAmbient yawStop;
     public AkAmbient pitchStart;
     public AkAmbient pitchStop;
+    public AkAmbient akFireGun;
+    public AkAmbient akReload;
 
     private bool yawStartPlayed = false;
     private bool yawStopPlayed = true;
@@ -35,6 +36,7 @@ public class Mech : MonoBehaviour {
     private float cfv = 0f; // current forward velocity
 
     private IEnumerator Start() {
+        this.DisableWeapon();
         yield return new WaitForSeconds(1f);
         AkSoundEngine.PostEvent((uint)(int)this.mainEngines.eventID, this.mainEngines.gameObject);
     }
@@ -76,6 +78,18 @@ public class Mech : MonoBehaviour {
 
     public void SetForwardVelocity(float val) {
         this.tfv = val * this.maxForwardVelocity;
+    }
+
+    public void DisableWeapon() {
+        this.weapon.Stop();
+    }
+
+    public void Reload() {
+        this.weapon.Reload();
+    }
+
+    public void FireGun() {
+        this.weapon.Fire();
     }
 
     private void Update() {

@@ -2876,6 +2876,125 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
+						<BlendContainer Name="Hit" ID="{BEDBE3EF-9A46-46C0-95CC-8CC758801628}" ShortID="658753090">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Hit" ID="{C9882E05-78E8-4FB8-89CC-A3D83D17195E}" ShortID="988910432">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Creature_Hit-Pain_v1" ID="{5CFDD6F0-F488-4151-B0F9-929D10893A8B}" ShortID="51217787" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Hit-Pain_v1" ID="{C5EF4864-BEF2-4C24-930E-3C9FCB79B7C9}" ShortID="946592292">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Hit-Pain_v1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Hit-Pain_v1" ID="{C5EF4864-BEF2-4C24-930E-3C9FCB79B7C9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Hit-Pain_v2" ID="{30C33897-AD46-46B3-B2A9-17173AD30DEF}" ShortID="1009912540" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Hit-Pain_v2" ID="{B5C0D532-DA68-4F60-BFF6-102FF72A2535}" ShortID="327726365">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Hit-Pain_v2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Hit-Pain_v2" ID="{B5C0D532-DA68-4F60-BFF6-102FF72A2535}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Hit-Pain_v3" ID="{B69D4790-45C8-42FC-9B11-C1BAF6D0645C}" ShortID="633344075" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Hit-Pain_v3" ID="{8EFAB436-FFF4-4228-8C7D-01C58CD738CF}" ShortID="1024424347">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Hit-Pain_v3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Hit-Pain_v3" ID="{8EFAB436-FFF4-4228-8C7D-01C58CD738CF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Hit-Pain_v4" ID="{9AA10CE5-6D21-42D4-9050-59F167DDA81D}" ShortID="1048143643" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Hit-Pain_v4" ID="{0B166B2A-A690-4459-A26C-B555937832A0}" ShortID="847798041">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Hit-Pain_v4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Hit-Pain_v4" ID="{0B166B2A-A690-4459-A26C-B555937832A0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Hit-Pain_v5" ID="{BD7BD702-0C6D-40E4-A687-0F1FF5E3DBC4}" ShortID="281221061" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Hit-Pain_v5" ID="{FC8ACA93-F4BA-4347-89A5-81EF3A87233A}" ShortID="675281142">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Hit-Pain_v5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Hit-Pain_v5" ID="{FC8ACA93-F4BA-4347-89A5-81EF3A87233A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
