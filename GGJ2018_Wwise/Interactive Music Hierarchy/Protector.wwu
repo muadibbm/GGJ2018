@@ -5,7 +5,27 @@
 			<ChildrenList>
 				<MusicPlaylistContainer Name="Protector_Theme" ID="{458E66A0-E2ED-4771-9E9F-5906588E223B}" ShortID="765817943">
 					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>17</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>60</Value>
+							</ValueList>
+						</Property>
+						<Property Name="PlaybackSpeed" Type="Real64">
+							<ValueList>
+								<Value>0.66</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Tempo" Type="Real64" Value="105"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
