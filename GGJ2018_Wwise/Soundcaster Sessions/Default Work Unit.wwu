@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8A804BED-1E09-468D-9E90-E4825896FE11}" SchemaVersion="75">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{8A804BED-1E09-468D-9E90-E4825896FE11}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8A804BED-1E09-468D-9E90-E4825896FE11}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Mechanical" ID="{3A51AE85-94E5-4FEA-B3E5-7DAAB136699E}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Main_Engine" ID="{E85837A6-A492-4775-BB14-DA528B78A437}" WorkUnitID="{9CD4C63D-5034-47DD-B32C-F98E1FF93F11}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Yaw_Start" ID="{63A52507-CB76-480E-8C70-21B67D2CCDD5}" WorkUnitID="{6FADA0D0-1E74-4878-80CE-2A44705BC74C}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Yaw_Stop" ID="{2758B041-EAB4-448A-95ED-D979E7B635B2}" WorkUnitID="{6FADA0D0-1E74-4878-80CE-2A44705BC74C}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Pitch_Start" ID="{255D9717-FD85-4415-8532-FC02DBF77A94}" WorkUnitID="{6FADA0D0-1E74-4878-80CE-2A44705BC74C}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Pitch_Stop" ID="{A7333D16-31BF-41FB-9CD0-310199329663}" WorkUnitID="{6FADA0D0-1E74-4878-80CE-2A44705BC74C}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Jacks_In" ID="{646BF753-C759-4167-BCC6-768A36EAF022}" WorkUnitID="{C2916FB8-DD28-4E40-B4F4-BA3056B17C8E}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Jacks_Out" ID="{9E665030-0602-4A8A-AC22-BB466BD0B394}" WorkUnitID="{C2916FB8-DD28-4E40-B4F4-BA3056B17C8E}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Button_Down" ID="{85AA2C79-7E7E-4FAE-B427-FB0CA7198F5B}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Button_Up" ID="{26926057-F95C-4F39-9C04-4A9F817BD939}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

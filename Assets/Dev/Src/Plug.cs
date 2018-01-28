@@ -2,32 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Interactable))]
-public class Plug : MonoBehaviour {
+[RequireComponent(typeof(Collider))]
+public class Plug : Unit {
 
     public Plug connectedTo;
-    public LayerMask PlugPlatform;
+    public Port port;
+    public LayerMask cableWall;
 
-    private bool selected;
+    private bool selected = false;
+    private Collider _collider;
+    private Rigidbody _rigidbody;
 
-    void Awake() {
-        Interactable interactable = this.GetComponent<Interactable>();
-        interactable.OnBegin = SelectPlug;
-        interactable.OnEnd = ReleasePlug;
+    private void Awake() {
+        this._collider = this.GetComponent<Collider>();
+        this._rigidbody = this.GetComponent<Rigidbody>();
     }
 
-    private void SelectPlug() {
-        Debug.Log("selecting plug " + name);
+    public override void Select() {
         this.selected = true;
     }
 
-    private void ReleasePlug() {
-        Debug.Log("releaseing plug " + name);
+    public override void Release(Unit unit) {
         this.selected = false;
     }
 
     private void Update() {
-        if(this.selected) {
+        this._collider.isTrigger = (this.port != null) && this.selected;
+        this._rigidbody.useGravity = (this.port == null) && !this.selected;
+        if (this.selected) {
             this.transform.position = GetPlugPositionOnPlane();
         }
     }
@@ -35,7 +37,9 @@ public class Plug : MonoBehaviour {
     private Vector3 GetPlugPositionOnPlane() {
         Vector3 pos = this.transform.position;
         RaycastHit hit;
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(UnityEngine.Input.mousePosition), out hit, this.PlugPlatform)) {
+        Ray ray = Camera.main.ScreenPointToRay(UnityEngine.Input.mousePosition);
+        ray.origin = new Vector3(0.05f, -0.05f, 0f);
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(UnityEngine.Input.mousePosition), out hit, this.cableWall)) {
             pos = hit.point;
         }
         return pos;

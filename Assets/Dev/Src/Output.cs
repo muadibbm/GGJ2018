@@ -2,21 +2,15 @@
 
 public class Output : Unit {
 
-    public Unit connectedUnit;
+    public enum Type { Power }
+    public Type type;
+    public Port port;
 
-    private Interactable port;
-
-    void Awake() {
-        this.port = GetComponentInChildren<Interactable>();
-        this.port.OnBegin += Connect;
-        this.port.OnEnd += Disconnect;
-    }
-
-    private void Connect() {
+    public override void Select() {
 
     }
 
-    private void Disconnect() {
+    public override void Release(Unit unit) {
 
     }
 }
