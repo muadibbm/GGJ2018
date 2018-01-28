@@ -95,7 +95,6 @@ GameObject:
   - component: {fileID: 4686373393209614}
   - component: {fileID: 33670768932324230}
   - component: {fileID: 23493334143437304}
-  - component: {fileID: 114054041528079790}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -404,23 +403,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.106202684, y: 0.01, z: 0.10620268}
   m_Center: {x: 0, y: 0.005, z: 0.0000000018626451}
---- !u!114 &114054041528079790
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1636860898448946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ef364f10d45b9947b4bf3be33363eca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  portA: {fileID: 114083837315177666}
-  portB: {fileID: 114840181743772296}
-  moduleSelected: {fileID: 0}
-  moduleReleased: {fileID: 0}
-  moduleLocked: {fileID: 0}
 --- !u!114 &114083837315177666
 MonoBehaviour:
   m_ObjectHideFlags: 1

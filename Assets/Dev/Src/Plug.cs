@@ -40,11 +40,13 @@ public class Plug : Unit {
     public void ConnectTo(Port port) {
         this.port = port;
         this.transform.position = port.transform.position;
+        this.transform.forward = -port.transform.up;
         AkSoundEngine.PostEvent((uint)(int)this.jackIn.eventID, this.jackIn.gameObject);
     }
 
     public void Disconnect() {
         this.port = null;
+        this.transform.forward = -new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f));
         AkSoundEngine.PostEvent((uint)(int)this.jackOut.eventID, this.jackOut.gameObject);
     }
 

@@ -11,8 +11,16 @@ public class InteractionManager : MonoBehaviour {
     private Unit unit;
     private Plug plug;
 
-    public delegate void InteractionDetected();
-    public InteractionDetected interactionDetected;
+    public delegate void OnInteraction();
+    public OnInteraction onInteraction;
+
+    public Module CurrentlyInteractingModule() {
+        try {
+            return ((Module)(this.unit));
+        } catch (System.Exception) {
+            return null;
+        }
+    }
 
     void Update () {
         this.mouseDelta = UnityEngine.Input.mousePosition - this.prevMousePos;
@@ -26,7 +34,6 @@ public class InteractionManager : MonoBehaviour {
     }
 
     private void Interact(bool begin) {
-        if (this.interactionDetected != null) this.interactionDetected();
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.ScreenPointToRay(UnityEngine.Input.mousePosition), out hit,
                             Mathf.Infinity, this.interactionLayer, QueryTriggerInteraction.Ignore)) {
@@ -47,6 +54,7 @@ public class InteractionManager : MonoBehaviour {
         } else {
             this.Deinteract();
         }
+        this.onInteraction();
     }
 
     private void Deinteract() {

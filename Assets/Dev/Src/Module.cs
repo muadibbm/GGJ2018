@@ -26,7 +26,7 @@ public class Module : Unit {
     }
 
     private void Start() {
-        Bootstrap.instance.im.interactionDetected += this.UpdateMech;
+        Bootstrap.instance.im.onInteraction += this.UpdateMech;
     }
 
     public override void Select() {
@@ -91,7 +91,7 @@ public class Module : Unit {
 
     private void DisengageSlider() {
         Vector3 pos = this.slider.transform.localPosition;
-        if (Mathf.Abs(pos.z) <= 0.025f) {
+        if (Mathf.Abs(pos.z) <= 0.03f) {
             if (pos.z != 0f) {
                 AkSoundEngine.PostEvent((uint)(int)this.moduleLocked.eventID, this.moduleLocked.gameObject);
             }

@@ -19,8 +19,6 @@ public class Mech : MonoBehaviour {
     public AkAmbient yawStop;
     public AkAmbient pitchStart;
     public AkAmbient pitchStop;
-    public AkAmbient akFireGun;
-    public AkAmbient akReload;
 
     private bool yawStartPlayed = false;
     private bool yawStopPlayed = true;
@@ -42,37 +40,10 @@ public class Mech : MonoBehaviour {
     }
 
     public void SetHorizontalVelocity(float val) {
-        Debug.Log(val);
-        if (val != 0f) {
-            if (!this.yawStartPlayed) {
-                AkSoundEngine.PostEvent((uint)(int)this.pitchStart.eventID, this.pitchStart.gameObject);
-                this.yawStartPlayed = true;
-                this.yawStopPlayed = false;
-            }
-        } else {
-            if (!this.yawStopPlayed) {
-                AkSoundEngine.PostEvent((uint)(int)this.pitchStop.eventID, this.pitchStop.gameObject);
-                this.yawStopPlayed = true;
-                this.yawStartPlayed = false;
-            }
-        }
         this.thv = val * this.maxHorizontalVelocity;
     }
 
     public void SetVerticalVelocity(float val) {
-        if (val != 0f) {
-            if (!this.pitchStartPlayed) {
-                AkSoundEngine.PostEvent((uint)(int)this.yawStart.eventID, this.yawStart.gameObject);
-                this.pitchStartPlayed = true;
-                this.pitchStopPlayed = false;
-            }
-        } else {
-            if (!this.pitchStopPlayed) {
-                AkSoundEngine.PostEvent((uint)(int)this.yawStop.eventID, this.yawStart.gameObject);
-                this.pitchStopPlayed = true;
-                this.pitchStartPlayed = false;
-            }
-        }
         this.tvv = val * this.maxVerticalVelocity;
     }
 
@@ -102,10 +73,36 @@ public class Mech : MonoBehaviour {
     }
 
     private void HorizontalTurn() {
+        if (this.chv != 0f) {
+            if (!this.yawStartPlayed) {
+                AkSoundEngine.PostEvent((uint)(int)this.yawStart.eventID, this.yawStart.gameObject);
+                this.yawStartPlayed = true;
+                this.yawStopPlayed = false;
+            }
+        } else {
+            if (!this.yawStopPlayed) {
+                AkSoundEngine.PostEvent((uint)(int)this.yawStop.eventID, this.yawStop.gameObject);
+                this.yawStopPlayed = true;
+                this.yawStartPlayed = false;
+            }
+        }
         this.transform.eulerAngles += new Vector3(0f, this.chv * Time.deltaTime, 0f);
     }
 
     private void VerticalTurn() {
+        if (this.cvv != 0f) {
+            if (!this.pitchStartPlayed) {
+                AkSoundEngine.PostEvent((uint)(int)this.pitchStart.eventID, this.pitchStart.gameObject);
+                this.pitchStartPlayed = true;
+                this.pitchStopPlayed = false;
+            }
+        } else {
+            if (!this.pitchStopPlayed) {
+                AkSoundEngine.PostEvent((uint)(int)this.pitchStop.eventID, this.pitchStop.gameObject);
+                this.pitchStopPlayed = true;
+                this.pitchStartPlayed = false;
+            }
+        }
         this.cockpit.localEulerAngles += new Vector3(this.cvv * Time.deltaTime, 0f, 0f);
     }
 
