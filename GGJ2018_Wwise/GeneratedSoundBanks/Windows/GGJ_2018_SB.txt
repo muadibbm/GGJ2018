@@ -37,12 +37,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	17265727	MissileHit_Explosion_3D_v3	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\MissileHit_Explosion_3D_v3_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Explosions\Creature_Hit_3D\Hit_3D\MissileHit_Explosion_3D_v3		617132
 	18354512	Yaw_MetalShift_Lp	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Yaw_MetalShift_Lp_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Yaw\Yaw_Metal\YawMetal_Lp\Yaw_MetalShift_Lp		331840
 	24098843	Jack_Out_v_04	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_Out_v_04_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_Out\Jacks_Out\Jack_Out_v_04		67510
-	27724762	Creature_Protect_v6	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Protect_v6_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Protective\Protect\Creature_Protect_v6		547904
 	35074841	MissileHit_Explosion_3D_v1	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\MissileHit_Explosion_3D_v1_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Explosions\Creature_Hit_3D\Hit_3D\MissileHit_Explosion_3D_v1		602844
 	39929424	Jack_Out_v_06	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_Out_v_06_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_Out\Jacks_Out\Jack_Out_v_06		71676
 	48768795	Creature_Hurt_v1	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Hurt_v1_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Hurt\Hurt\Creature_Hurt_v1		1394752
 	69219853	Jack_In_v_07	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_07_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_07		77428
 	81436744	Creature_Hurt_v3	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Hurt_v3_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Hurt\Hurt\Creature_Hurt_v3		1623616
+	86678249	Creature_Protect_v3_A	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Protect_v3_A_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Protective\Protect\Creature_Protect_v3_A		1859648
 	88175084	Lever_Stop	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Lever_Stop_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Lever\Lever_Stop\Lever_Stop		68160
 	96348338	Lever_Motion	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Lever_Motion_3394906C.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Lever\Lever_Motion\Lever_Motion		192320
 	111557153	Yaw_Servo_End	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Yaw_Servo_End_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Yaw\Yaw_Mechanical\YawMech_Stop\Yaw_Servo_End		231488
@@ -61,7 +61,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	276234837	Creature_Angry_v8	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Angry_v8_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Angry\Angry\Creature_Angry_v8		788544
 	298433160	MissileHit_Explosion_2D_v1	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\MissileHit_Explosion_2D_v1_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Explosions\Creature_Hit_2D\Hit_2D\MissileHit_Explosion_2D_v1		608672
 	300217888	Protector_MelodyBass_Lp_88m_1	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Protector_MelodyBass_Lp_88m_1_4B8CC0C5.wem		\Interactive Music Hierarchy\Protector\Protector_Theme\Loop_Intro\Protector_MelodyBass_Lp_88m_1		38674348
-	313160226	Creature_Protect_v3	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Protect_v3_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Protective\Protect\Creature_Protect_v3		1859648
 	319451329	Lever_Lock_v2	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Lever_Lock_v2_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Lever\Lever_Lock\LeverLock\Lever_Lock_v2		56640
 	327726365	Creature_Hit-Pain_v2	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Hit-Pain_v2_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Hit\Hit\Creature_Hit-Pain_v2		725824
 	333069930	JackDrop_v09	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v09_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v09		84728
@@ -85,10 +84,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	521862541	Button_Up_v_01	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Button_Up_v_01_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Button\Button_Up\ButtonUp\Button_Up_v_01		47198
 	524423124	MainGun_Shot_2D_v2	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\MainGun_Shot_2D_v2_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Main_Gun\MainGun_Shot_2D\Shot_2D\MainGun_Shot_2D_v2		566592
 	524869743	JackDrop_v06	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v06_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v06		52652
+	534281859	Creature_Protect_v5_A	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Protect_v5_A_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Protective\Protect\Creature_Protect_v5_A		864320
 	535884236	Jack_In_v_01	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_01_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_01		79346
 	538679054	Jack_In_v_02	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_02_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_02		75208
 	551125509	Reload_pt1_DropShell	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Reload_pt1_DropShell_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Main_Gun\Reload\Reload_pt1_DropShell		177728
-	555846441	Creature_Protect_v1_new	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Protect_v1_new_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Protective\Protect\Creature_Protect_v1_new		989248
 	556174251	JackDrop_v13	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v13_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v13		63576
 	567123186	Button_Up_v_03	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Button_Up_v_03_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Button\Button_Up\ButtonUp\Button_Up_v_03		72738
 	569260487	Pitch_Mechanical_Start	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Pitch_Mechanical_Start_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Pitch\Pitch_Mechanical\Mechanical_Start\Pitch_Mechanical_Start		51264
@@ -96,16 +95,17 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	585587110	Jack_Out_v_05	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_Out_v_05_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_Out\Jacks_Out\Jack_Out_v_05		66846
 	598944132	Jack_In_v_05	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_05_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_05		75142
 	606129075	Jack_In_v_16	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_16_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_16		76270
+	609699662	Creature_Protect_v2_A	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Protect_v2_A_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Protective\Protect\Creature_Protect_v2_A		1200192
 	624892348	JackDrop_v07	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v07_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v07		72416
 	624902897	JackDrop_v04	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v04_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v04		63536
 	628424225	Jack_In_v_15	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_15_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_15		81592
-	639531682	Creature_Protect_v2	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Protect_v2_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Protective\Protect\Creature_Protect_v2		1200192
 	647660427	Pitch_Powerup_Lp	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Pitch_Powerup_Lp_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Pitch\Pitch_Power\Power_Lp\Pitch_Powerup_Lp		88128
 	663522822	JackDrop_v03	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v03_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v03		56576
 	675281142	Creature_Hit-Pain_v5	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Hit-Pain_v5_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Hit\Hit\Creature_Hit-Pain_v5		598592
 	681841918	Creature_Hurt_v7	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Hurt_v7_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Hurt\Hurt\Creature_Hurt_v7		1219648
 	685647199	Pitch_Powerup_Stop	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Pitch_Powerup_Stop_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Pitch\Pitch_Power\Power_Stop\Pitch_Powerup_Stop		99392
 	690625023	Pitch_Powerup_Start	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Pitch_Powerup_Start_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Machine\Pitch\Pitch_Power\Power_Start\Pitch_Powerup_Start		86240
+	692941531	Creature_Protect_v4_A	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Protect_v4_A_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Protective\Protect\Creature_Protect_v4_A		1257536
 	699405169	Lever_Lock_v3	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Lever_Lock_v3_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Lever\Lever_Lock\LeverLock\Lever_Lock_v3		58432
 	704087206	MissileHit_Explosion_2D_v2	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\MissileHit_Explosion_2D_v2_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Explosions\Creature_Hit_2D\Hit_2D\MissileHit_Explosion_2D_v2		683636
 	706689384	Creature_Hurt_v4	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Hurt_v4_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Hurt\Hurt\Creature_Hurt_v4		1048640
@@ -118,7 +118,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	761933347	Creature_Hurt_v5	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Hurt_v5_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Hurt\Hurt\Creature_Hurt_v5		1154112
 	782849002	Lever_Start_v4	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Lever_Start_v4_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Lever\Lever_Start\LeverStart\Lever_Start_v4		36672
 	790942207	JackDrop_v11	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v11_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v11		78968
-	799312493	Creature_Protect_v4	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Protect_v4_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Protective\Protect\Creature_Protect_v4		1257536
 	806346644	JackDrop_v01	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v01_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v01		47092
 	820386228	MissileHit_Explosion_3D_v4	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\MissileHit_Explosion_3D_v4_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Explosions\Creature_Hit_3D\Hit_3D\MissileHit_Explosion_3D_v4		380970
 	847798041	Creature_Hit-Pain_v4	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Hit-Pain_v4_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Hit\Hit\Creature_Hit-Pain_v4		448064
@@ -127,6 +126,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	853810432	Jack_In_v_09	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_09_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_09		63816
 	862879094	JackDrop_v12	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v12_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v12		52048
 	865634880	Button_Down_v_03	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Button_Down_v_03_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Button\Button_Down\ButtonDown\Button_Down_v_03		28044
+	872847822	Creature_Protect_v1_A	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Protect_v1_A_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Protective\Protect\Creature_Protect_v1_A		720960
 	885611644	Creature_Angry_v3	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Angry_v3_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Angry\Angry\Creature_Angry_v3		585792
 	899226292	Creature_Angry_v6	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Angry_v6_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Angry\Angry\Creature_Angry_v6		529472
 	909537007	JackDrop_v02	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\JackDrop_v02_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jack_Drops\JackDrops\JackDrop_v02		48544
@@ -139,7 +139,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	947756875	Jack_In_v_14	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_14_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_14		74282
 	971535935	Jack_In_v_13	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Jack_In_v_13_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Jacks\Jacks_In\jacks_In\Jack_In_v_13		82160
 	987884564	MissileHit_Explosion_3D_v2	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\MissileHit_Explosion_3D_v2_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Explosions\Creature_Hit_3D\Hit_3D\MissileHit_Explosion_3D_v2		813914
-	998151142	Creature_Protect_v5	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Protect_v5_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Protective\Protect\Creature_Protect_v5		864320
+	1005262507	Creature_Protect_v6_A	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Protect_v6_A_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Protective\Protect\Creature_Protect_v6_A		620608
 	1018990833	Lever_Start_v3	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Lever_Start_v3_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Interactive\Lever\Lever_Start\LeverStart\Lever_Start_v3		36672
 	1023909297	Creature_Hurt_v6	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Hurt_v6_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Hurt\Hurt\Creature_Hurt_v6		1818688
 	1024424347	Creature_Hit-Pain_v3	E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\SFX\Creature_Hit-Pain_v3_9E69E797.wem		\Actor-Mixer Hierarchy\GGJ_Master\Creature\Hit\Hit\Creature_Hit-Pain_v3		507200
