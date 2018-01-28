@@ -210,8 +210,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1611017864124080}
-  m_LocalRotation: {x: -0.3880306, y: -0, z: -0, w: -0.92164654}
-  m_LocalPosition: {x: 5.0408006, y: -5.4701576, z: 6.22895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4599893057513672}
@@ -250,8 +250,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1086970283169302}
-  m_LocalRotation: {x: -0.3880306, y: -0, z: -0, w: -0.92164654}
-  m_LocalPosition: {x: 5.0408006, y: -5.4701576, z: 6.22895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4599893057513672}
@@ -263,8 +263,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1306338495792460}
-  m_LocalRotation: {x: -0.3880306, y: -0, z: -0, w: -0.92164654}
-  m_LocalPosition: {x: 5.0408006, y: -5.4701576, z: 6.22895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4599893057513672}
@@ -614,7 +614,7 @@ MonoBehaviour:
   triggerList: 
   useOtherObject: 0
   valueGuid: 940713d8119c7542a1a135a313ad04c7
-  eventID: -1230402473
+  eventID: 728309430
   soundEmitterObject: {fileID: 0}
   enableActionOnEvent: 0
   actionOnEventType: 0
@@ -656,7 +656,7 @@ MonoBehaviour:
   triggerList: 
   useOtherObject: 0
   valueGuid: 1414f3169d5a4f43bdd0bbae36a180be
-  eventID: -1230402473
+  eventID: 319362870
   soundEmitterObject: {fileID: 0}
   enableActionOnEvent: 0
   actionOnEventType: 0
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef364f10d45b9947b4bf3be33363eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 1
+  type: 2
   portA: {fileID: 114074836652403676}
   portB: {fileID: 114147823983827266}
   moduleSelected: {fileID: 114258665922371572}
@@ -753,7 +753,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.02
+  m_Radius: 0.04
   m_Center: {x: -0.000000009313226, y: 0.0023030709, z: 0}
 --- !u!135 &135094082115577682
 SphereCollider:
@@ -765,5 +765,5 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.02
+  m_Radius: 0.04
   m_Center: {x: -0.000000009313226, y: 0.0023030709, z: 0}

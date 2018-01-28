@@ -155,8 +155,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1073810036682768}
-  m_LocalRotation: {x: -0.388032, y: -0, z: -0, w: -0.9216459}
-  m_LocalPosition: {x: 5.2084007, y: -5.470144, z: 6.223973}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4001186315006594}
@@ -168,8 +168,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1279313512022980}
-  m_LocalRotation: {x: -0.388032, y: -0, z: -0, w: -0.9216459}
-  m_LocalPosition: {x: 5.2084007, y: -5.470144, z: 6.223973}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4001186315006594}
@@ -520,7 +520,7 @@ MonoBehaviour:
   triggerList: 
   useOtherObject: 0
   valueGuid: f6a99686feae4c4bb552bf1dcd4cfc3e
-  eventID: -209116268
+  eventID: 1972958575
   soundEmitterObject: {fileID: 0}
   enableActionOnEvent: 0
   actionOnEventType: 0
@@ -540,7 +540,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.02
+  m_Radius: 0.04
   m_Center: {x: -0.000000009313226, y: 0.0023030709, z: 0}
 --- !u!135 &135325252500841666
 SphereCollider:
@@ -552,5 +552,5 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.02
+  m_Radius: 0.04
   m_Center: {x: -0.000000009313226, y: 0.0023030709, z: 0}
