@@ -1,0 +1,99 @@
+fileFormatVersion: 2
+guid: 7c8424d7c8ebc7d44b74c59d767aba52
+timeCreated: 1517118324
+licenseType: Pro
+PluginImporter:
+  serializedVersion: 2
+  iconMap: {}
+  executionOrder: {}
+  isPreloaded: 0
+  isOverridable: 0
+  platformData:
+    data:
+      first:
+        Any: 
+      second:
+        enabled: 0
+        settings: {}
+    data:
+      first:
+        Editor: Editor
+      second:
+        enabled: 1
+        settings:
+          CPU: X86
+          DefaultValueInitialized: true
+          OS: Windows
+    data:
+      first:
+        Facebook: Win
+      second:
+        enabled: 0
+        settings:
+          CPU: AnyCPU
+    data:
+      first:
+        Facebook: Win64
+      second:
+        enabled: 0
+        settings:
+          CPU: None
+    data:
+      first:
+        Standalone: Linux
+      second:
+        enabled: 0
+        settings:
+          CPU: None
+    data:
+      first:
+        Standalone: Linux64
+      second:
+        enabled: 0
+        settings:
+          CPU: None
+    data:
+      first:
+        Standalone: LinuxUniversal
+      second:
+        enabled: 0
+        settings:
+          CPU: None
+    data:
+      first:
+        Standalone: OSXIntel
+      second:
+        enabled: 0
+        settings:
+          CPU: None
+    data:
+      first:
+        Standalone: OSXIntel64
+      second:
+        enabled: 0
+        settings:
+          CPU: None
+    data:
+      first:
+        Standalone: OSXUniversal
+      second:
+        enabled: 0
+        settings:
+          CPU: None
+    data:
+      first:
+        Standalone: Win
+      second:
+        enabled: 1
+        settings:
+          CPU: AnyCPU
+    data:
+      first:
+        Standalone: Win64
+      second:
+        enabled: 0
+        settings:
+          CPU: None
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
