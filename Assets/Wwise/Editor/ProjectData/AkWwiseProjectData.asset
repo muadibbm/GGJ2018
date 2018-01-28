@@ -32,8 +32,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Creature.wwu
     ParentPhysicalPath: 
     Guid: '{BCC50F7E-87AF-4AD1-BCB2-D873EFD73AA5}'
-    m_lastTimePsrt1: -1019081923
-    m_lastTimePart2: -1999280576
+    m_lastTimePsrt1: 1488102456
+    m_lastTimePart2: -1999280535
     List:
     - Name: Creature_Angry
       Path: Creature\Creature_Angry
@@ -44,6 +44,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: -134835276
       Guid: 9c55ccb2a10c5141928acf1e4e097f4f
+      maxAttenuation: 0
+    - Name: Creature_Hit
+      Path: Creature\Creature_Hit
+      PathAndIcons:
+      - ElementName: Creature
+        ObjectType: 12
+      - ElementName: Creature_Hit
+        ObjectType: 3
+      ID: -1451645924
+      Guid: d0d4121903875f47bf139d4d5ae115e3
       maxAttenuation: 0
     - Name: Creature_Hurt
       Path: Creature\Creature_Hurt
@@ -68,8 +78,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A1BFBAF2-BE43-46CD-A63A-4C02DC413373}'
-    m_lastTimePsrt1: 399955589
-    m_lastTimePart2: -1999280906
+    m_lastTimePsrt1: 228391157
+    m_lastTimePart2: -1999280843
     List: []
   - PhysicalPath: Events\Interactive.wwu
     ParentPhysicalPath: 
@@ -170,8 +180,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Machine.wwu
     ParentPhysicalPath: 
     Guid: '{6FADA0D0-1E74-4878-80CE-2A44705BC74C}'
-    m_lastTimePsrt1: -1166923838
-    m_lastTimePart2: -1999280647
+    m_lastTimePsrt1: -1839569334
+    m_lastTimePart2: -1999280642
     List:
     - Name: Pitch_Start
       Path: Machine\Pitch_Start
@@ -216,9 +226,29 @@ MonoBehaviour:
   - PhysicalPath: Events\Weapons.wwu
     ParentPhysicalPath: 
     Guid: '{B319DDDB-05B5-4C11-9088-83EC67553FEE}'
-    m_lastTimePsrt1: -722933
-    m_lastTimePart2: -1999280591
+    m_lastTimePsrt1: -401802462
+    m_lastTimePart2: -1999280518
     List:
+    - Name: MainGun_ExplosionHit_2D
+      Path: Weapons\MainGun_ExplosionHit_2D
+      PathAndIcons:
+      - ElementName: Weapons
+        ObjectType: 12
+      - ElementName: MainGun_ExplosionHit_2D
+        ObjectType: 3
+      ID: -107339852
+      Guid: be02febe8ea4b446bde15e60d3a1bc1d
+      maxAttenuation: 0
+    - Name: MainGun_ExplosionHit_3D
+      Path: Weapons\MainGun_ExplosionHit_3D
+      PathAndIcons:
+      - ElementName: Weapons
+        ObjectType: 12
+      - ElementName: MainGun_ExplosionHit_3D
+        ObjectType: 3
+      ID: -90562297
+      Guid: 5b146bf516fca145bf97971ceba57eca
+      maxAttenuation: 0
     - Name: MainGun_Reload
       Path: Weapons\MainGun_Reload
       PathAndIcons:
@@ -228,6 +258,26 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1861701824
       Guid: e39c11fb78654144bfd6cded794a1e42
+      maxAttenuation: 0
+    - Name: MainGun_ReloadInterupt
+      Path: Weapons\MainGun_ReloadInterupt
+      PathAndIcons:
+      - ElementName: Weapons
+        ObjectType: 12
+      - ElementName: MainGun_ReloadInterupt
+        ObjectType: 3
+      ID: -67677197
+      Guid: 00faa73982553640adda339f88049c86
+      maxAttenuation: 0
+    - Name: MainGun_ReloadResume
+      Path: Weapons\MainGun_ReloadResume
+      PathAndIcons:
+      - ElementName: Weapons
+        ObjectType: 12
+      - ElementName: MainGun_ReloadResume
+        ObjectType: 3
+      ID: 2118001185
+      Guid: 7b58c32d7008e946a6e68b1e6b5f3f8f
       maxAttenuation: 0
     - Name: MainGun_Shot_2D
       Path: Weapons\MainGun_Shot_2D
@@ -253,34 +303,34 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{733B9F2A-ED1C-4A62-9676-7172B9A60C73}'
-    m_lastTimePsrt1: 400180807
-    m_lastTimePart2: -1999280906
+    m_lastTimePsrt1: 228431882
+    m_lastTimePart2: -1999280843
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F71CBC52-BE0D-4C8D-917D-0392866B8FC2}'
-    m_lastTimePsrt1: 400421037
-    m_lastTimePart2: -1999280906
+    m_lastTimePsrt1: 228480798
+    m_lastTimePart2: -1999280843
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3EDC0B98-1BD7-4E08-B223-DC88E6C72B5A}'
-    m_lastTimePsrt1: 400451065
-    m_lastTimePart2: -1999280906
+    m_lastTimePsrt1: 228490822
+    m_lastTimePart2: -1999280843
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{ED3A4F22-DAD8-4406-BCB8-7B88989FE596}'
-    m_lastTimePsrt1: 400375993
-    m_lastTimePart2: -1999280906
+    m_lastTimePsrt1: 228472419
+    m_lastTimePart2: -1999280843
     List: []
   - PhysicalPath: SoundBanks\Master.wwu
     ParentPhysicalPath: 
     Guid: '{E7945C25-0A75-48F2-A0D5-57E2A0754F1E}'
-    m_lastTimePsrt1: 97885
+    m_lastTimePsrt1: -38308038
     m_lastTimePart2: -1999280590
     List:
     - Name: GGJ_2018_SB

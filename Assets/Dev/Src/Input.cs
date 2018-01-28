@@ -12,6 +12,7 @@ public class Input : Unit {
 
     public void Activate(Module module) {
         if(module.type == Module.Type.Button) {
+            if (module != Bootstrap.instance.im.CurrentlyInteractingModule()) return;
             switch (this.type) {
                 case Input.Type.Shoot:
                     Bootstrap.instance.cg.mech.FireGun();
