@@ -42,7 +42,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Creature.wwu
     ParentPhysicalPath: 
     Guid: '{BCC50F7E-87AF-4AD1-BCB2-D873EFD73AA5}'
-    m_lastTimePsrt1: 1488102456
+    m_lastTimePsrt1: -1621672284
     m_lastTimePart2: -1999280535
     List:
     - Name: Creature_Angry
@@ -236,8 +236,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Weapons.wwu
     ParentPhysicalPath: 
     Guid: '{B319DDDB-05B5-4C11-9088-83EC67553FEE}'
-    m_lastTimePsrt1: -401802462
-    m_lastTimePart2: -1999280518
+    m_lastTimePsrt1: -750994718
+    m_lastTimePart2: -1999280508
     List:
     - Name: MainGun_ExplosionHit_2D
       Path: Weapons\MainGun_ExplosionHit_2D
