@@ -125,6 +125,7 @@ public class Creature : MonoBehaviour {
     }
 
     public void TakeDamage(float damage) {
+        if (this.currentState == State.Hit) return;
         this.hitpoint -= damage;
         this.currentState = State.Hit;
         if (this.hitpoint <= 0f) this.currentState = State.Death;
