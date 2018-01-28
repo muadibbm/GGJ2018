@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BCC50F7E-87AF-4AD1-BCB2-D873EFD73AA5}" SchemaVersion="75">
+	<Events>
+		<WorkUnit Name="Creature" ID="{BCC50F7E-87AF-4AD1-BCB2-D873EFD73AA5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Creature_Protects" ID="{B53A5282-44B7-4FF1-A6FF-8483593F4B31}">
+					<ChildrenList>
+						<Action Name="Play" ID="{7BDB44E6-9E2F-4A01-9D3B-6854728BF2C5}" ShortID="663838853" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CA75A306-A365-41F0-8D94-B8F814CD3F2F}" Global="false">
+									<ObjectRef Name="Protective" ID="{70FB6D90-1437-4C8F-A5B6-FC478DBBEBA1}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{549582D2-4134-49C8-A046-B755CE2B5B3A}" ShortID="285717040" Type="Stop" Scope="One" Global="true">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{34D056CC-32E3-4C89-96A6-F66F733E5B69}" Global="true">
+									<ObjectRef Name="Hurt" ID="{CA2F551C-C724-482C-976B-2947899FFE2E}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{9F85EA02-8ECE-4EAC-8B7F-9405C9D78C7F}" ShortID="88104060" Type="Stop" Scope="One" Global="true">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{5DE0B883-3368-4099-8978-22A064AB2E9D}" Global="true">
+									<ObjectRef Name="Angry" ID="{5EDA17BC-2430-48E2-BBCF-5F1C165EAFD9}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Creature_Angry" ID="{B2CC559C-0CA1-4151-928A-CF1E4E097F4F}">
+					<ChildrenList>
+						<Action Name="Play" ID="{3C288953-65E1-4E1F-9B84-681B1C511CE3}" ShortID="42106800" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{23071AB9-3EE2-460E-8DA4-3B1B2A346736}" Global="false">
+									<ObjectRef Name="Angry" ID="{5EDA17BC-2430-48E2-BBCF-5F1C165EAFD9}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{679D519A-2755-4D15-8399-87B38C6BFBDA}" ShortID="612802003" Type="Stop" Scope="One" Global="true">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{20C09456-927F-41A5-92C1-BA0F4F531E15}" Global="true">
+									<ObjectRef Name="Hurt" ID="{CA2F551C-C724-482C-976B-2947899FFE2E}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{2573C59C-9C4B-41BF-929B-E385EBD776D8}" ShortID="582042720" Type="Stop" Scope="One" Global="true">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{8E03C7A3-06E4-403E-BBA0-19D6A190D187}" Global="true">
+									<ObjectRef Name="Protective" ID="{70FB6D90-1437-4C8F-A5B6-FC478DBBEBA1}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Creature_Hurt" ID="{A702834C-0105-4B1F-8F9F-8B5DEAC868E7}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B6A00C56-70B9-427D-87F6-A6B72FB3D13B}" ShortID="360288456" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{67F3E1D3-4134-4482-86EF-6C9D3134604F}" Global="false">
+									<ObjectRef Name="Hurt" ID="{CA2F551C-C724-482C-976B-2947899FFE2E}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{88E292D2-4736-45E9-927A-74E79965222F}" ShortID="803797811" Type="Stop" Scope="One" Global="true">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{A88DD18F-DFB8-45EC-95C5-21B38A76F57B}" Global="true">
+									<ObjectRef Name="Angry" ID="{5EDA17BC-2430-48E2-BBCF-5F1C165EAFD9}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{51026802-F4C0-448E-B8DE-9341CBB3A87C}" ShortID="977000942" Type="Stop" Scope="One" Global="true">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{BF5F405B-BA35-4830-BE1F-6CB5A640EECF}" Global="true">
+									<ObjectRef Name="Protective" ID="{70FB6D90-1437-4C8F-A5B6-FC478DBBEBA1}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

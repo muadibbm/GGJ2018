@@ -2313,6 +2313,571 @@
 						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
+				<ActorMixer Name="Creature" ID="{FA12FA0E-FF95-45FE-8695-BC018A802098}" ShortID="334715475">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="Protective" ID="{70FB6D90-1437-4C8F-A5B6-FC478DBBEBA1}" ShortID="697575678">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Protect" ID="{6DF6FF46-E742-4876-8840-1914701249A9}" ShortID="398957037">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Creature_Protect_v1_new" ID="{E6B41D1A-BC5A-473E-BC37-A0164C824738}" ShortID="372515843" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Protect_v1_new" ID="{1848F56E-28A8-4F28-919C-AE4ED79C9EC7}" ShortID="555846441">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Protect_v1_new.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Protect_v1_new" ID="{1848F56E-28A8-4F28-919C-AE4ED79C9EC7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Protect_v2" ID="{A2E68638-A672-41EE-964F-D2230B23436A}" ShortID="918970749" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Protect_v2" ID="{AA52B577-CCCA-4488-93B1-3725DDEE1834}" ShortID="639531682">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Protect_v2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Protect_v2" ID="{AA52B577-CCCA-4488-93B1-3725DDEE1834}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Protect_v3" ID="{C9C03AAA-E5E6-4A85-9F2D-E3A50B545845}" ShortID="39822518" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Protect_v3" ID="{07BCFEF0-4C63-46CD-9AD2-761A13F80E82}" ShortID="313160226">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Protect_v3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Protect_v3" ID="{07BCFEF0-4C63-46CD-9AD2-761A13F80E82}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Protect_v4" ID="{77A58D37-E0B5-41A4-AC42-620C132336F9}" ShortID="526861708" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Protect_v4" ID="{C8B19263-257C-4C99-B959-B1E21C99B7C7}" ShortID="799312493">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Protect_v4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Protect_v4" ID="{C8B19263-257C-4C99-B959-B1E21C99B7C7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Protect_v5" ID="{11517BF7-E011-4ECE-9F9C-CF96013D631E}" ShortID="833125374" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Protect_v5" ID="{7612BE69-4BBB-4BCB-A9B6-85CFAD3CF638}" ShortID="998151142">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Protect_v5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Protect_v5" ID="{7612BE69-4BBB-4BCB-A9B6-85CFAD3CF638}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Protect_v6" ID="{2360D1CC-0353-4AA9-AD65-E66B795BDAAF}" ShortID="515963485" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Protect_v6" ID="{B18EEBAD-232C-4C35-84F9-BB42FC5F4A29}" ShortID="27724762">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Protect_v6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Protect_v6" ID="{B18EEBAD-232C-4C35-84F9-BB42FC5F4A29}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Angry" ID="{5EDA17BC-2430-48E2-BBCF-5F1C165EAFD9}" ShortID="450148292">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Angry" ID="{E1B808C5-14EE-43DB-985C-B23E29704FD9}" ShortID="254302432">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1C24DE4E-928F-4AC2-B259-848B3F7592B0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="2"/>
+															<Property Name="Min" Type="Real64" Value="-0.5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Creature_Angry_v1" ID="{2C52BFBF-3039-4022-B1B9-7F83391988DC}" ShortID="572942158" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Angry_v1" ID="{230FEDDA-3646-48CE-A48B-4B15288B20E5}" ShortID="151611672">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Angry_v1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Angry_v1" ID="{230FEDDA-3646-48CE-A48B-4B15288B20E5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Angry_v2" ID="{C7829687-5404-47DA-8E27-49D2FB7EF7D6}" ShortID="299254806" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Angry_v2" ID="{F217401C-4823-4B2C-9E90-1599532EB64D}" ShortID="847915392">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Angry_v2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Angry_v2" ID="{F217401C-4823-4B2C-9E90-1599532EB64D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Angry_v3" ID="{1B6A54FD-B68C-4DCB-8244-DFC90563051A}" ShortID="973468334" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Angry_v3" ID="{2D926797-02AB-4234-AC32-50CCEE03098B}" ShortID="885611644">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Angry_v3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Angry_v3" ID="{2D926797-02AB-4234-AC32-50CCEE03098B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Angry_v4" ID="{277505F1-C78C-43AD-B7F4-AEF0DFAC3857}" ShortID="30471548" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Angry_v4" ID="{211AFF64-62E0-4910-B43E-311EE67721E4}" ShortID="411979331">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Angry_v4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Angry_v4" ID="{211AFF64-62E0-4910-B43E-311EE67721E4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Angry_v5" ID="{452CD967-0970-4B4A-88AE-E66110D64359}" ShortID="956601844" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Angry_v5" ID="{F46A637E-63C5-4E81-84F2-8F07E915B65D}" ShortID="711713560">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Angry_v5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Angry_v5" ID="{F46A637E-63C5-4E81-84F2-8F07E915B65D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Angry_v6" ID="{BC081224-60CD-491D-A150-C65A878811BE}" ShortID="619782558" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Angry_v6" ID="{11E23DCB-92E4-4852-B12F-ECC9A46A1374}" ShortID="899226292">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Angry_v6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Angry_v6" ID="{11E23DCB-92E4-4852-B12F-ECC9A46A1374}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Angry_v7" ID="{62874DB7-9E27-4A42-B8AC-D7B25419AFB6}" ShortID="757759079" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Angry_v7" ID="{E3D52F47-714A-407F-8C0D-97F0943A6769}" ShortID="709523588">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Angry_v7.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Angry_v7" ID="{E3D52F47-714A-407F-8C0D-97F0943A6769}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Angry_v8" ID="{D1A9BA14-A0D1-4E4C-AB16-27CAF9639B48}" ShortID="985728954" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Angry_v8" ID="{583B94D7-847E-4074-9831-2046135403AF}" ShortID="276234837">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Angry_v8.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Angry_v8" ID="{583B94D7-847E-4074-9831-2046135403AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Hurt" ID="{CA2F551C-C724-482C-976B-2947899FFE2E}" ShortID="385166902">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Hurt" ID="{13F17C43-70F4-4750-BDC3-AABE4069141F}" ShortID="586702128">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{13785158-EC8C-427E-942B-81CBEBE30788}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-0.6"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Creature_Hurt_v1" ID="{65ED0F95-1612-44D4-914E-BB2E312FCDA7}" ShortID="277486792" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Hurt_v1" ID="{5D761234-AC1A-45BF-8B29-670BBCA4178D}" ShortID="48768795">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Hurt_v1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Hurt_v1" ID="{5D761234-AC1A-45BF-8B29-670BBCA4178D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Hurt_v2" ID="{B4A5FBFD-548B-425B-AA9F-30E49C04B0D2}" ShortID="796904784" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Hurt_v2" ID="{B7DD14A2-1DF7-476E-878F-BC2A4E2E9877}" ShortID="515669348">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Hurt_v2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Hurt_v2" ID="{B7DD14A2-1DF7-476E-878F-BC2A4E2E9877}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Hurt_v3" ID="{99252D52-E915-40D8-80FC-429D2E3C0CFE}" ShortID="83128081" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Hurt_v3" ID="{CF7906A7-2490-4BFE-B3E4-E67D300C8AA0}" ShortID="81436744">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Hurt_v3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Hurt_v3" ID="{CF7906A7-2490-4BFE-B3E4-E67D300C8AA0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Hurt_v4" ID="{5C11120C-4E27-4C9B-9CC5-55570A9EF746}" ShortID="572420373" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Hurt_v4" ID="{2E622626-AF19-4001-AFC4-C6F60846A769}" ShortID="706689384">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Hurt_v4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Hurt_v4" ID="{2E622626-AF19-4001-AFC4-C6F60846A769}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Hurt_v5" ID="{30097FD2-EB5D-4B3E-B281-F3E73711C674}" ShortID="952062048" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Hurt_v5" ID="{5F9A733F-EBA7-4468-BAB0-FBCA7922D06D}" ShortID="761933347">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Hurt_v5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Hurt_v5" ID="{5F9A733F-EBA7-4468-BAB0-FBCA7922D06D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Hurt_v6" ID="{FE33B2D4-682B-4F36-8DE3-5F5BA67FCBA8}" ShortID="424992851" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Hurt_v6" ID="{BA6DC184-D407-4124-A09D-56AC59227B4A}" ShortID="1023909297">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Hurt_v6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Hurt_v6" ID="{BA6DC184-D407-4124-A09D-56AC59227B4A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Hurt_v7" ID="{70D7CB83-ECDD-4DC7-9BAD-87FF0D7E4D2D}" ShortID="128023163" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Hurt_v7" ID="{F81142EF-E627-4540-817A-D1F8A000FC94}" ShortID="681841918">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Hurt_v7.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Hurt_v7" ID="{F81142EF-E627-4540-817A-D1F8A000FC94}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Hurt_v8" ID="{874ADA32-C408-4E35-B049-5D94FE5E5370}" ShortID="713022659" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Hurt_v8" ID="{7CB06BDB-B858-4988-BF24-F113871ED5D7}" ShortID="196350609">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Hurt_v8.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Hurt_v8" ID="{7CB06BDB-B858-4988-BF24-F113871ED5D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Creature_Hurt_v9" ID="{5662BD48-97B0-4235-A872-1C4A4F291137}" ShortID="322062558" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6CD02191-AFB3-43DE-95E0-F8A0F037EB50}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{733B9F2A-ED1C-4A62-9676-7172B9A60C73}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Hurt_v9" ID="{DC73A5CD-A7F6-4543-A4DE-F79DD774FF95}" ShortID="483607468">
+													<Language>SFX</Language>
+													<AudioFile>Creature_Hurt_v9.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Hurt_v9" ID="{DC73A5CD-A7F6-4543-A4DE-F79DD774FF95}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
