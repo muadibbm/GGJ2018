@@ -9,6 +9,10 @@ public class Plug : Unit {
     public Port port;
     public LayerMask cableWall;
 
+    public AkAmbient jackIn;
+    public AkAmbient jackOut;
+    public AkAmbient jackDrop;
+
     private bool selected = false;
     private Collider _collider;
     private Rigidbody _rigidbody;
@@ -32,10 +36,12 @@ public class Plug : Unit {
     public void ConnectTo(Port port) {
         this.port = port;
         this.transform.position = port.transform.position;
+        AkSoundEngine.PostEvent((uint)(int)this.jackIn.eventID, this.jackIn.gameObject);
     }
 
     public void Disconnect() {
         this.port = null;
+        AkSoundEngine.PostEvent((uint)(int)this.jackOut.eventID, this.jackOut.gameObject);
     }
 
     private void Update() {
@@ -55,5 +61,9 @@ public class Plug : Unit {
             pos = hit.point;
         }
         return pos;
+    }
+
+    private void OnCollisionEnter(Collision collision) {
+        AkSoundEngine.PostEvent((uint)(int)this.jackDrop.eventID, this.jackDrop.gameObject);
     }
 }
