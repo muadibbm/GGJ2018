@@ -54,7 +54,7 @@ public class Plug : Unit {
         this._collider.isTrigger = (this.port != null) || this.selected;
         this._rigidbody.useGravity = (this.port == null) && !this.selected;
         if (this.selected) {
-            this.transform.position = GetPlugPositionOnPlane(1.7f);
+            this.transform.position = GetPlugPositionOnPlane(1.75f);
         }
     }
 
