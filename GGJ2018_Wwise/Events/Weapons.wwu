@@ -58,6 +58,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="MainGun_ExplosionHit_2D" ID="{BEFE02BE-A48E-46B4-BDE1-5E60D3A1BC1D}">
+					<ChildrenList>
+						<Action Name="Play" ID="{FAB3B769-F66A-45A7-88E4-624C6C19D6CA}" ShortID="907081172" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{6E9287E4-F6B3-4F52-A486-FE5E5B914CF1}" Global="false">
+									<ObjectRef Name="Creature_Hit_2D" ID="{4FD9BF47-F7E9-4A3B-A52C-0090DC88F1DE}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MainGun_ExplosionHit_3D" ID="{F56B145B-FC16-45A1-BF97-971CEBA57ECA}">
+					<ChildrenList>
+						<Action Name="Play" ID="{CCB5A1E5-4B5F-4648-993B-04854ACF4C5A}" ShortID="983375998" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{50774A72-5087-49D7-B45A-DBD2669F61B7}" Global="false">
+									<ObjectRef Name="Creature_Hit_3D" ID="{383D14C6-2B22-4972-844D-F99459E5F3BB}" WorkUnitID="{6F243D0D-8EFB-4EE0-938E-F3849B7AD8C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>E:\GGJ2018\GGJ2018_Wwise\</ProjectRoot>
+		<SourceFilesRoot>E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>E:\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Ying\Desktop\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>E:\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -31,7 +31,11 @@
 				<Event Id="728309430" Name="Lever_Start" ObjectPath="\Events\Interactive\Lever_Start"/>
 				<Event Id="319362870" Name="Lever_Stop" ObjectPath="\Events\Interactive\Lever_Stop"/>
 				<Event Id="3818321487" Name="Main_Engine" ObjectPath="\Events\Ambience\Main_Engine"/>
+				<Event Id="4187627444" Name="MainGun_ExplosionHit_2D" ObjectPath="\Events\Weapons\MainGun_ExplosionHit_2D"/>
+				<Event Id="4204404999" Name="MainGun_ExplosionHit_3D" ObjectPath="\Events\Weapons\MainGun_ExplosionHit_3D"/>
 				<Event Id="2433265472" Name="MainGun_Reload" ObjectPath="\Events\Weapons\MainGun_Reload"/>
+				<Event Id="4227290099" Name="MainGun_ReloadInterupt" ObjectPath="\Events\Weapons\MainGun_ReloadInterupt" MaxAttenuation="0.000000"/>
+				<Event Id="2118001185" Name="MainGun_ReloadResume" ObjectPath="\Events\Weapons\MainGun_ReloadResume" MaxAttenuation="0.000000"/>
 				<Event Id="3684802372" Name="MainGun_Shot_2D" ObjectPath="\Events\Weapons\MainGun_Shot_2D"/>
 				<Event Id="3701579991" Name="MainGun_Shot_3D" ObjectPath="\Events\Weapons\MainGun_Shot_3D"/>
 				<Event Id="3209456848" Name="Pitch_Start" ObjectPath="\Events\Machine\Pitch_Start"/>
@@ -44,6 +48,10 @@
 					<ShortName>JackDrop_v10.wav</ShortName>
 					<Path>SFX\JackDrop_v10_9E69E797.wem</Path>
 				</File>
+				<File Id="17265727" Language="SFX">
+					<ShortName>MissileHit_Explosion_3D_v3.wav</ShortName>
+					<Path>SFX\MissileHit_Explosion_3D_v3_9E69E797.wem</Path>
+				</File>
 				<File Id="18354512" Language="SFX">
 					<ShortName>Yaw_MetalShift_Lp.wav</ShortName>
 					<Path>SFX\Yaw_MetalShift_Lp_9E69E797.wem</Path>
@@ -51,6 +59,10 @@
 				<File Id="24098843" Language="SFX">
 					<ShortName>Jack_Out_v_04.wav</ShortName>
 					<Path>SFX\Jack_Out_v_04_9E69E797.wem</Path>
+				</File>
+				<File Id="35074841" Language="SFX">
+					<ShortName>MissileHit_Explosion_3D_v1.wav</ShortName>
+					<Path>SFX\MissileHit_Explosion_3D_v1_9E69E797.wem</Path>
 				</File>
 				<File Id="39929424" Language="SFX">
 					<ShortName>Jack_Out_v_06.wav</ShortName>
@@ -88,6 +100,10 @@
 					<ShortName>JackDrop_v14.wav</ShortName>
 					<Path>SFX\JackDrop_v14_9E69E797.wem</Path>
 				</File>
+				<File Id="195215865" Language="SFX">
+					<ShortName>MissileHit_Explosion_2D_v4.wav</ShortName>
+					<Path>SFX\MissileHit_Explosion_2D_v4_9E69E797.wem</Path>
+				</File>
 				<File Id="197747696" Language="SFX">
 					<ShortName>JackDrop_v08.wav</ShortName>
 					<Path>SFX\JackDrop_v08_9E69E797.wem</Path>
@@ -107,6 +123,10 @@
 				<File Id="249015812" Language="SFX">
 					<ShortName>Lever_Start_v2.wav</ShortName>
 					<Path>SFX\Lever_Start_v2_9E69E797.wem</Path>
+				</File>
+				<File Id="298433160" Language="SFX">
+					<ShortName>MissileHit_Explosion_2D_v1.wav</ShortName>
+					<Path>SFX\MissileHit_Explosion_2D_v1_9E69E797.wem</Path>
 				</File>
 				<File Id="319451329" Language="SFX">
 					<ShortName>Lever_Lock_v2.wav</ShortName>
@@ -256,6 +276,10 @@
 					<ShortName>Lever_Lock_v3.wav</ShortName>
 					<Path>SFX\Lever_Lock_v3_9E69E797.wem</Path>
 				</File>
+				<File Id="704087206" Language="SFX">
+					<ShortName>MissileHit_Explosion_2D_v2.wav</ShortName>
+					<Path>SFX\MissileHit_Explosion_2D_v2_9E69E797.wem</Path>
+				</File>
 				<File Id="708398422" Language="SFX">
 					<ShortName>Lever_Start_v1.wav</ShortName>
 					<Path>SFX\Lever_Start_v1_9E69E797.wem</Path>
@@ -284,6 +308,10 @@
 					<ShortName>JackDrop_v01.wav</ShortName>
 					<Path>SFX\JackDrop_v01_9E69E797.wem</Path>
 				</File>
+				<File Id="820386228" Language="SFX">
+					<ShortName>MissileHit_Explosion_3D_v4.wav</ShortName>
+					<Path>SFX\MissileHit_Explosion_3D_v4_9E69E797.wem</Path>
+				</File>
 				<File Id="852067064" Language="SFX">
 					<ShortName>MainGun_Shot_3D_v1.wav</ShortName>
 					<Path>SFX\MainGun_Shot_3D_v1_9E69E797.wem</Path>
@@ -308,6 +336,10 @@
 					<ShortName>Jack_In_v_06.wav</ShortName>
 					<Path>SFX\Jack_In_v_06_9E69E797.wem</Path>
 				</File>
+				<File Id="926361975" Language="SFX">
+					<ShortName>MissileHit_Explosion_2D_v3.wav</ShortName>
+					<Path>SFX\MissileHit_Explosion_2D_v3_9E69E797.wem</Path>
+				</File>
 				<File Id="934836876" Language="SFX">
 					<ShortName>Pitch_Stop.wav</ShortName>
 					<Path>SFX\Pitch_Stop_9E69E797.wem</Path>
@@ -323,6 +355,10 @@
 				<File Id="971535935" Language="SFX">
 					<ShortName>Jack_In_v_13.wav</ShortName>
 					<Path>SFX\Jack_In_v_13_9E69E797.wem</Path>
+				</File>
+				<File Id="987884564" Language="SFX">
+					<ShortName>MissileHit_Explosion_3D_v2.wav</ShortName>
+					<Path>SFX\MissileHit_Explosion_3D_v2_9E69E797.wem</Path>
 				</File>
 				<File Id="1018990833" Language="SFX">
 					<ShortName>Lever_Start_v3.wav</ShortName>
