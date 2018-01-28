@@ -108,7 +108,7 @@
 						</Action>
 						<Action Name="Play" ID="{AFC6387D-8235-42C1-8DD9-523F07B9E415}" ShortID="648448446" Type="Play" Scope="One" Global="false">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="3"/>
+								<Property Name="Delay" Type="Real64" Value="6"/>
 							</PropertyList>
 							<ElementList>
 								<Element ID="{8560B3BD-4B1E-4F53-A4D9-BFC210E36F54}" Global="false">
