@@ -1,4 +1,4 @@
-#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
 //////////////////////////////////////////////////////////////////////
 //
 // Copyright (c) 2014 Audiokinetic Inc. / All Rights Reserved
@@ -31,12 +31,13 @@ public class AkMultiPosEvent
 
 [AddComponentMenu("Wwise/AkAmbient")]
 /// @brief Use this component to attach a Wwise Event to any object in a scene.
-/// The sound can be started at various moments, dependent on the selected Unity trigger. This component is more useful for ambient sounds (sounds related to scene-bound objects) but could also be used for other purposes.
+/// The sound can be started at various moments, dependent on the selected Unity trigger.  This component is more useful for ambient sounds (sounds related to scene-bound objects) but could also be used for other purposes.
 /// \sa
 /// - \ref unity_use_AkEvent_AkAmbient
 /// - \ref AkGameObj
 /// - \ref AkEvent
-/// - <a href="https://www.audiokinetic.com/library/edge/?source=SDK&id=soundengine__events.html" target="_blank">Integration Details - Events</a> (Note: This is described in the Wwise SDK documentation.)
+/// - \ref soundengine_events
+[RequireComponent (typeof(AkGameObj))]
 public class AkAmbient : AkEvent
 {
 	public MultiPositionTypeLabel multiPositionTypeLabel = MultiPositionTypeLabel.Simple_Mode;
@@ -86,7 +87,7 @@ public class AkAmbient : AkEvent
 			}
 			
 			
-			AkPositionArray positionArray = BuildMultiDirectionArray(eventPosList);
+			AkPositionArray positionArray = BuildMultiDirectionArray(ref eventPosList);
 			
 			//Set multiple positions
 			AkSoundEngine.SetMultiplePositions(eventPosList.list[0].gameObject, positionArray, (ushort)positionArray.Count, MultiPositionType.MultiPositionType_MultiSources);
@@ -109,7 +110,7 @@ public class AkAmbient : AkEvent
 			{
 				eventPosList.list.Remove(this);
 				
-				AkPositionArray positionArray = BuildMultiDirectionArray(eventPosList);
+				AkPositionArray positionArray = BuildMultiDirectionArray(ref eventPosList);
 				
 				//Set multiple positions
 				AkSoundEngine.SetMultiplePositions(eventPosList.list[0].gameObject, positionArray, (ushort)positionArray.Count, MultiPositionType.MultiPositionType_MultiSources);
@@ -155,7 +156,7 @@ public class AkAmbient : AkEvent
 		Gizmos.DrawIcon(transform.position, "WwiseAudioSpeaker.png", false);
 	}
 	
-	public AkPositionArray BuildMultiDirectionArray(AkMultiPosEvent eventPosList)
+	public AkPositionArray BuildMultiDirectionArray( ref AkMultiPosEvent eventPosList)
 	{
 		AkPositionArray positionArray = new AkPositionArray((uint)eventPosList.list.Count);
 
@@ -179,4 +180,4 @@ public class AkAmbient : AkEvent
 		return positionArray;
 	}
 }
-#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

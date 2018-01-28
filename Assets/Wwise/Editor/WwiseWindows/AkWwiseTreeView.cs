@@ -5,11 +5,12 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-using AK.Wwise.TreeView;
-using System;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
+using UnityEditor;
+using System;
+using System.Text;
+using System.Collections.Generic;
+using AK.Wwise.TreeView;
 
 public class AkWwiseTreeView : TreeViewControl
 {
@@ -20,30 +21,12 @@ public class AkWwiseTreeView : TreeViewControl
 	string		m_filterString		= string.Empty;  
 	static MonoScript DragDropHelperMonoScript = null;
 
-#if UNITY_2017_2_OR_NEWER
-	private void SaveExpansionStatusBeforePlay(PlayModeStateChange playMode)
-	{
-		if (playMode == PlayModeStateChange.ExitingEditMode)
-			SaveExpansionStatus();
-	}
-#else
-	private void SaveExpansionStatusBeforePlay()
-	{
-		if (EditorApplication.isPlayingOrWillChangePlaymode && !EditorApplication.isPlaying)
-			SaveExpansionStatus();
-	}
-#endif
-
 	public AkWwiseTreeView()
 	{
-#if UNITY_2017_2_OR_NEWER
-		EditorApplication.playModeStateChanged += SaveExpansionStatusBeforePlay;
-#else
 		EditorApplication.playmodeStateChanged += SaveExpansionStatusBeforePlay;
-#endif
 	}
 		
-	public class AkTreeInfo
+    public class AkTreeInfo : object
     {
         public int ID = 0;
 		public byte[] Guid = new byte[16];
@@ -84,11 +67,16 @@ public class AkWwiseTreeView : TreeViewControl
 				}
 				else
                 {
-					bool isDraggable = !(PathElem.ObjectType == AkWwiseProjectData.WwiseObjectType.STATEGROUP || PathElem.ObjectType == AkWwiseProjectData.WwiseObjectType.SWITCHGROUP);
-					childItem = parentItem.AddItem(PathElem.ElementName, isDraggable, GetExpansionStatus(path), new AkTreeInfo(AkInfo.ID, AkInfo.Guid, PathElem.ObjectType));
+                    if (PathElem.ObjectType == AkWwiseProjectData.WwiseObjectType.STATEGROUP || PathElem.ObjectType == AkWwiseProjectData.WwiseObjectType.SWITCHGROUP)
+                    {
+                        childItem = parentItem.AddItem(PathElem.ElementName, false, GetExpansionStatus(path), new AkTreeInfo(AkInfo.ID, AkInfo.Guid, PathElem.ObjectType));
+                    }
+                    else
+                    {
+						childItem = parentItem.AddItem(PathElem.ElementName, true, GetExpansionStatus(path), new AkTreeInfo(AkInfo.ID, AkInfo.Guid, PathElem.ObjectType));
+                    }
                 }
             }
-
             AddHandlerEvents(childItem);
             parentItem = childItem;
         }
@@ -185,6 +173,24 @@ public class AkWwiseTreeView : TreeViewControl
 				}
 			} 
 		}
+        /*if (Event.current.button == 1)
+        {
+            TreeViewItem item = (TreeViewItem)sender;
+            AkTreeInfo treeInfo = (AkTreeInfo)item.DataContext;
+            // Now create the menu, add items and show it
+            GenericMenu menu = new GenericMenu();
+
+            if (treeInfo.ObjectType == AkWwiseProjectData.WwiseObjectType.PROJECT)
+            {
+                menu.AddItem(new GUIContent("Open in Wwise"), false, null);//Callback, "item 1");
+            }
+            else if (item.IsDraggable)
+            {
+                menu.AddItem(new GUIContent("Add item to selected GameObject"), false, null);//Callback, "item 2");
+            }
+
+            menu.ShowAsContext();
+        }*/
     }
 	
     void PrepareDragDrop(object sender, System.EventArgs args)
@@ -199,31 +205,40 @@ public class AkWwiseTreeView : TreeViewControl
 
 			UnityEngine.Object[] objectReferences = new UnityEngine.Object[1];
 			AkTreeInfo treeInfo = (AkTreeInfo)item.DataContext;
-
-			AkDragDropData DDData = null;
-
-			string objType = GetObjectType(treeInfo.ObjectType);
-			if (objType == "State" || objType == "Switch")
+			// GenericData[0] contains the component's name (string)
+			// GenericData[1] contains the component's Guid (Guid)
+			// GenericData[2] contains the component's AkGameObjID (int)
+			// GenericData[3] contains the object's type (string)
+			// We need two more fields for states and switches:
+			// GenericData[4] contains the state or switch group Guid (Guid)
+			// GenericData[5] contains the state or switch group AkGameObjID (int)
+            object[] DDInfo = null;
+            if (item != null)
             {
-				AkDragDropGroupData DDGroupData = new AkDragDropGroupData();
-				AkTreeInfo ParentTreeInfo = (AkTreeInfo)item.Parent.DataContext;
-				DDGroupData.groupGuid = new Guid( ParentTreeInfo.Guid);
-				DDGroupData.groupID = ParentTreeInfo.ID;
-				DDData = DDGroupData;
-			}
-			else
-            {
-				DDData = new AkDragDropData();
+				string objType = GetObjectType(treeInfo.ObjectType);
+				if (objType == "State" || objType == "Switch")
+                {
+                    AkTreeInfo ParentTreeInfo = (AkTreeInfo)item.Parent.DataContext;
+					DDInfo = new object[6];
+					DDInfo[4] = new Guid( ParentTreeInfo.Guid);
+					DDInfo[5] = ParentTreeInfo.ID;
+                }
+                else
+                {
+					DDInfo = new object[4];
+                }
+				DDInfo[1] = new Guid(treeInfo.Guid);
+				DDInfo[2] = treeInfo.ID;
+				DDInfo[3] = objType;
             }
-
-			DDData.name = item.Header;
-			DDData.guid = new Guid(treeInfo.Guid);
-			DDData.ID = treeInfo.ID;
-			DDData.typeName = objType;
-
+            else
+            {
+                DDInfo = new object[1];
+            }
+			DDInfo[0] = item.Header;
 			objectReferences[0] = DragDropHelperMonoScript;
 			DragAndDrop.objectReferences = objectReferences;
-			DragAndDrop.SetGenericData(AkDragDropHelper.DragDropIdentifier, DDData);
+			DragAndDrop.SetGenericData("AKWwiseDDInfo", DDInfo);
 			DragAndDrop.StartDrag("Dragging an AkObject");
         }
         catch (Exception e)
@@ -252,25 +267,10 @@ public class AkWwiseTreeView : TreeViewControl
             case AkWwiseProjectData.WwiseObjectType.SWITCH:
                 type = "Switch";
                 break;
-            case AkWwiseProjectData.WwiseObjectType.GAMEPARAMETER:
-                type = "GameParameter";
-                break;
         }
 
         return type;
     }
-
-	private void ShowButtonTextureInternal(Texture2D texture)
-	{
-		if (null == texture || m_forceButtonText)
-		{
-			GUILayout.Button("", GUILayout.MaxWidth(16));
-		}
-		else
-		{
-			ShowButtonTexture(texture);
-		}
-	}
 
     public void CustomIconHandler(object sender, System.EventArgs args)
     {
@@ -279,41 +279,136 @@ public class AkWwiseTreeView : TreeViewControl
         switch (treeInfo.ObjectType)
         {
             case AkWwiseProjectData.WwiseObjectType.AUXBUS:
-				ShowButtonTextureInternal(m_textureWwiseAuxBusIcon);
+                if (null == m_textureWwiseAuxBusIcon ||
+                    m_forceButtonText)
+                {
+                    GUILayout.Button("", GUILayout.MaxWidth(16));
+                }
+                else
+                {
+                    ShowButtonTexture(m_textureWwiseAuxBusIcon);
+                }
                 break;
             case AkWwiseProjectData.WwiseObjectType.BUS:
-				ShowButtonTextureInternal(m_textureWwiseBusIcon);
+                if (null == m_textureWwiseBusIcon ||
+                    m_forceButtonText)
+                {
+                    GUILayout.Button("", GUILayout.MaxWidth(16));
+                }
+                else
+                {
+                    ShowButtonTexture(m_textureWwiseBusIcon);
+                }
                 break;
             case AkWwiseProjectData.WwiseObjectType.EVENT:
-            case AkWwiseProjectData.WwiseObjectType.GAMEPARAMETER:
-				ShowButtonTextureInternal(m_textureWwiseEventIcon);
+                if (null == m_textureWwiseEventIcon ||
+                    m_forceButtonText)
+                {
+                    GUILayout.Button("", GUILayout.MaxWidth(16));
+                }
+                else
+                {
+                    ShowButtonTexture(m_textureWwiseEventIcon);
+                }
                 break;
             case AkWwiseProjectData.WwiseObjectType.FOLDER:
-				ShowButtonTextureInternal(m_textureWwiseFolderIcon);
+                if (null == m_textureWwiseFolderIcon ||
+                    m_forceButtonText)
+                {
+                    GUILayout.Button("", GUILayout.MaxWidth(16));
+                }
+                else
+                {
+                    ShowButtonTexture(m_textureWwiseFolderIcon);
+                }
                 break;
             case AkWwiseProjectData.WwiseObjectType.PHYSICALFOLDER:
-				ShowButtonTextureInternal(m_textureWwisePhysicalFolderIcon);
+                if (null == m_textureWwisePhysicalFolderIcon ||
+                    m_forceButtonText)
+                {
+                    GUILayout.Button("", GUILayout.MaxWidth(16));
+                }
+                else
+                {
+                    ShowButtonTexture(m_textureWwisePhysicalFolderIcon);
+                }
                 break;
             case AkWwiseProjectData.WwiseObjectType.PROJECT:
-				ShowButtonTextureInternal(m_textureWwiseProjectIcon);
+                if (null == m_textureWwiseProjectIcon ||
+                    m_forceButtonText)
+                {
+                    GUILayout.Button("", GUILayout.MaxWidth(16));
+                }
+                else
+                {
+                    ShowButtonTexture(m_textureWwiseProjectIcon);
+                }
                 break;
             case AkWwiseProjectData.WwiseObjectType.SOUNDBANK:
-				ShowButtonTextureInternal(m_textureWwiseSoundbankIcon);
+                if (null == m_textureWwiseSoundbankIcon ||
+                    m_forceButtonText)
+                {
+                    GUILayout.Button("", GUILayout.MaxWidth(16));
+                }
+                else
+                {
+                    ShowButtonTexture(m_textureWwiseSoundbankIcon);
+                }
                 break;
             case AkWwiseProjectData.WwiseObjectType.STATE:
-				ShowButtonTextureInternal(m_textureWwiseStateIcon);
+                if (null == m_textureWwiseStateIcon ||
+                    m_forceButtonText)
+                {
+                    GUILayout.Button("", GUILayout.MaxWidth(16));
+                }
+                else
+                {
+                    ShowButtonTexture(m_textureWwiseStateIcon);
+                }
                 break;
             case AkWwiseProjectData.WwiseObjectType.STATEGROUP:
-				ShowButtonTextureInternal(m_textureWwiseStateGroupIcon);
+                if (null == m_textureWwiseStateGroupIcon ||
+                    m_forceButtonText)
+                {
+                    GUILayout.Button("", GUILayout.MaxWidth(16));
+                }
+                else
+                {
+                    ShowButtonTexture(m_textureWwiseStateGroupIcon);
+                }
                 break;
             case AkWwiseProjectData.WwiseObjectType.SWITCH:
-				ShowButtonTextureInternal(m_textureWwiseSwitchIcon);
+                if (null == m_textureWwiseSwitchIcon ||
+                    m_forceButtonText)
+                {
+                    GUILayout.Button("", GUILayout.MaxWidth(16));
+                }
+                else
+                {
+                    ShowButtonTexture(m_textureWwiseSwitchIcon);
+                }
                 break;
             case AkWwiseProjectData.WwiseObjectType.SWITCHGROUP:
-				ShowButtonTextureInternal(m_textureWwiseSwitchGroupIcon);
+                if (null == m_textureWwiseSwitchGroupIcon ||
+                    m_forceButtonText)
+                {
+                    GUILayout.Button("", GUILayout.MaxWidth(16));
+                }
+                else
+                {
+                    ShowButtonTexture(m_textureWwiseSwitchGroupIcon);
+                }
                 break;
             case AkWwiseProjectData.WwiseObjectType.WORKUNIT:
-				ShowButtonTextureInternal(m_textureWwiseWorkUnitIcon);
+                if (null == m_textureWwiseWorkUnitIcon ||
+                    m_forceButtonText)
+                {
+                    GUILayout.Button("", GUILayout.MaxWidth(16));
+                }
+                else
+                {
+                    ShowButtonTexture(m_textureWwiseWorkUnitIcon);
+                }
                 break;
             default:
                 break;
@@ -367,7 +462,7 @@ public class AkWwiseTreeView : TreeViewControl
 
 		if(DragDropHelperMonoScript == null)
 		{
-			MonoScript[] scripts = Resources.FindObjectsOfTypeAll<MonoScript>();
+			MonoScript[] scripts = (MonoScript[])Resources.FindObjectsOfTypeAll<MonoScript>();
 			for(int i = 0; i < scripts.Length; i++)
 			{
 				if(scripts[i].GetClass() == typeof(AkDragDropHelper))
@@ -453,6 +548,12 @@ public class AkWwiseTreeView : TreeViewControl
 		}
 		
 		in_path = in_path.Remove(in_path.LastIndexOf('/'));
+	}
+
+	public void SaveExpansionStatusBeforePlay()
+	{
+		if(EditorApplication.isPlayingOrWillChangePlaymode && !EditorApplication.isPlaying)
+			SaveExpansionStatus();
 	}
 
 	public void SaveExpansionStatus()

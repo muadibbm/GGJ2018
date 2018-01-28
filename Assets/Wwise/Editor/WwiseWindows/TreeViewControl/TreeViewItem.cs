@@ -33,38 +33,38 @@ namespace AK.Wwise.TreeView
 				m_clickCount = in_clickCount;
 			}
 		}
-		public System.EventHandler Click = null;
+		public EventHandler Click = null;
 
 
 		public class CheckedEventArgs : System.EventArgs
 		{
 		}
-		public System.EventHandler Checked = null;
+		public EventHandler Checked = null;
 
 		public class UncheckedEventArgs : System.EventArgs
 		{
 		}
-		public System.EventHandler Unchecked = null;
+		public EventHandler Unchecked = null;
 
 		public class SelectedEventArgs : System.EventArgs
 		{
 		}
-		public System.EventHandler Selected = null;
+		public EventHandler Selected = null;
 
 		public class UnselectedEventArgs : System.EventArgs
 		{
 		}
-		public System.EventHandler Unselected = null;
+		public EventHandler Unselected = null;
 
 		public class DragEventArgs : System.EventArgs
 		{
 		}
-		public System.EventHandler Dragged = null;
+		public EventHandler Dragged = null;
 
 		public class CustomIconEventArgs : System.EventArgs
 		{
 		}
-		public System.EventHandler CustomIconBuilder = null;
+		public EventHandler CustomIconBuilder = null;
 
 		/// <summary>
 		/// The distance to the hover item
@@ -139,7 +139,15 @@ namespace AK.Wwise.TreeView
 
 		public bool HasChildItems()
 		{
-			return null != Items && Items.Count > 0;
+			if (null == Items ||
+				Items.Count == 0)
+			{
+				return false;
+			}
+			else
+			{
+				return true;
+			}
 		}
 
 		public enum SiblingOrder
@@ -174,29 +182,6 @@ namespace AK.Wwise.TreeView
 			return Mathf.Abs(midPoint - pointA) / 50f;
 		}
 
-		private void SetIconExpansion(SiblingOrder siblingOrder, TextureIcons middle, TextureIcons last)
-		{
-			bool result;
-			switch (siblingOrder)
-			{
-				case SiblingOrder.FIRST_CHILD:
-				case SiblingOrder.MIDDLE_CHILD:
-					result = ParentControl.Button(middle);
-					break;
-				case SiblingOrder.LAST_CHILD:
-					result = ParentControl.Button(last);
-					break;
-				default:
-					result = false;
-					break;
-			}
-
-			if (result)
-			{
-				IsExpanded = !IsExpanded;
-			}
-		}
-
 		public void DisplayItem(int levels, SiblingOrder siblingOrder)
 		{
 			if (null == ParentControl || IsHidden)
@@ -213,16 +198,77 @@ namespace AK.Wwise.TreeView
 
 			if (!HasChildItems())
 			{
-				SetIconExpansion(siblingOrder, TextureIcons.MIDDLE_SIBLING_NO_CHILD, TextureIcons.LAST_SIBLING_NO_CHILD);
-			}
-			else if (IsExpanded)
-			{
-				SetIconExpansion(siblingOrder, TextureIcons.MIDDLE_SIBLING_EXPANDED, TextureIcons.LAST_SIBLING_EXPANDED);
+				bool result;
+				switch (siblingOrder)
+				{
+					case SiblingOrder.FIRST_CHILD:
+						result = ParentControl.Button(TextureIcons.MIDDLE_SIBLING_NO_CHILD);
+						break;
+					case SiblingOrder.MIDDLE_CHILD:
+						result = ParentControl.Button(TextureIcons.MIDDLE_SIBLING_NO_CHILD);
+						break;
+					case SiblingOrder.LAST_CHILD:
+						result = ParentControl.Button(TextureIcons.LAST_SIBLING_NO_CHILD);
+						break;
+					default:
+						result = false;
+						break;
+				}
+				if (result)
+				{
+					IsExpanded = !IsExpanded;
+				}
 			}
 			else
 			{
-				SetIconExpansion(siblingOrder, TextureIcons.MIDDLE_SIBLING_COLLAPSED, TextureIcons.LAST_SIBLING_COLLAPSED);
+				if (IsExpanded)
+				{
+					bool result;
+					switch (siblingOrder)
+					{
+						case SiblingOrder.FIRST_CHILD:
+							result = ParentControl.Button(TextureIcons.MIDDLE_SIBLING_EXPANDED);
+							break;
+						case SiblingOrder.MIDDLE_CHILD:
+							result = ParentControl.Button(TextureIcons.MIDDLE_SIBLING_EXPANDED);
+							break;
+						case SiblingOrder.LAST_CHILD:
+							result = ParentControl.Button(TextureIcons.LAST_SIBLING_EXPANDED);
+							break;
+						default:
+							result = false;
+							break;
+					}
+					if (result)
+					{
+						IsExpanded = !IsExpanded;
+					}
+				}
+				else
+				{
+					bool result;
+					switch (siblingOrder)
+					{
+						case SiblingOrder.FIRST_CHILD:
+							result = ParentControl.Button(TextureIcons.MIDDLE_SIBLING_COLLAPSED);
+							break;
+						case SiblingOrder.MIDDLE_CHILD:
+							result = ParentControl.Button(TextureIcons.MIDDLE_SIBLING_COLLAPSED);
+							break;
+						case SiblingOrder.LAST_CHILD:
+							result = ParentControl.Button(TextureIcons.LAST_SIBLING_COLLAPSED);
+							break;
+						default:
+							result = false;
+							break;
+					}
+					if (result)
+					{
+						IsExpanded = !IsExpanded;
+					}
+				}
 			}
+
 
 			bool clicked = false;
 

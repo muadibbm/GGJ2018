@@ -9,12 +9,16 @@ public class Bootstrap : MonoBehaviour {
     public InteractionManager im;
     public LayerMask interactionLayer;
 
+    public CoreGame cg;
+
     void Awake () {
         if (instance != null) Destroy(this);
         instance = this;
 
         this.im = this.gameObject.AddComponent<InteractionManager>();
         this.im.interactionLayer = this.interactionLayer;
+
+        this.cg = this.gameObject.AddComponent<CoreGame>();
 
         DontDestroyOnLoad(this.gameObject);
     }

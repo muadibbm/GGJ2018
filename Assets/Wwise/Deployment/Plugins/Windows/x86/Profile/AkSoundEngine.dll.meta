@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 31e8f86986af959409c9de34053d6389
-timeCreated: 1516996397
+guid: 7c8424d7c8ebc7d44b74c59d767aba52
+timeCreated: 1517118324
 licenseType: Pro
 PluginImporter:
   serializedVersion: 2
@@ -65,21 +65,21 @@ PluginImporter:
       second:
         enabled: 0
         settings:
-          CPU: AnyCPU
+          CPU: None
     data:
       first:
         Standalone: OSXIntel64
       second:
         enabled: 0
         settings:
-          CPU: AnyCPU
+          CPU: None
     data:
       first:
         Standalone: OSXUniversal
       second:
         enabled: 0
         settings:
-          CPU: AnyCPU
+          CPU: None
     data:
       first:
         Standalone: Win
