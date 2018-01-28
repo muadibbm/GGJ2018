@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
+	<RootPaths>
+		<ProjectRoot>E:\GGJ2018\GGJ2018_Wwise\</ProjectRoot>
+		<SourceFilesRoot>E:\GGJ2018\GGJ2018_Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>E:\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>E:\GGJ2018\GGJ2018_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3303504045" Language="SFX">
+			<ObjectPath>\SoundBanks\Master\GGJ_2018_SB</ObjectPath>
+			<ShortName>GGJ_2018_SB</ShortName>
+			<Path>GGJ_2018_SB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4085851028" Name="Button_Down" ObjectPath="\Events\Interactive\Button_Down"/>
+				<Event Id="1972958575" Name="Button_Up" ObjectPath="\Events\Interactive\Button_Up"/>
+				<Event Id="3358031724" Name="Jack_Drop" ObjectPath="\Events\Interactive\Jack_Drop"/>
+				<Event Id="567069407" Name="Jacks_In" ObjectPath="\Events\Interactive\Jacks_In"/>
+				<Event Id="4251432562" Name="Jacks_Out" ObjectPath="\Events\Interactive\Jacks_Out"/>
+				<Event Id="3064564823" Name="Lever_Lock" ObjectPath="\Events\Interactive\Lever_Lock"/>
+				<Event Id="728309430" Name="Lever_Start" ObjectPath="\Events\Interactive\Lever_Start"/>
+				<Event Id="319362870" Name="Lever_Stop" ObjectPath="\Events\Interactive\Lever_Stop"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="3926204" Language="SFX">
+					<ShortName>JackDrop_v10.wav</ShortName>
+					<Path>SFX\JackDrop_v10_9E69E797.wem</Path>
+				</File>
+				<File Id="24098843" Language="SFX">
+					<ShortName>Jack_Out_v_04.wav</ShortName>
+					<Path>SFX\Jack_Out_v_04_9E69E797.wem</Path>
+				</File>
+				<File Id="39929424" Language="SFX">
+					<ShortName>Jack_Out_v_06.wav</ShortName>
+					<Path>SFX\Jack_Out_v_06_9E69E797.wem</Path>
+				</File>
+				<File Id="69219853" Language="SFX">
+					<ShortName>Jack_In_v_07.wav</ShortName>
+					<Path>SFX\Jack_In_v_07_9E69E797.wem</Path>
+				</File>
+				<File Id="88175084" Language="SFX">
+					<ShortName>Lever_Stop.wav</ShortName>
+					<Path>SFX\Lever_Stop_9E69E797.wem</Path>
+				</File>
+				<File Id="96348338" Language="SFX">
+					<ShortName>Lever_Motion.wav</ShortName>
+					<Path>SFX\Lever_Motion_3394906C.wem</Path>
+				</File>
+				<File Id="123541602" Language="SFX">
+					<ShortName>Jack_In_v_10.wav</ShortName>
+					<Path>SFX\Jack_In_v_10_9E69E797.wem</Path>
+				</File>
+				<File Id="149133509" Language="SFX">
+					<ShortName>Button_Down_v_02.wav</ShortName>
+					<Path>SFX\Button_Down_v_02_9E69E797.wem</Path>
+				</File>
+				<File Id="156131340" Language="SFX">
+					<ShortName>JackDrop_v14.wav</ShortName>
+					<Path>SFX\JackDrop_v14_9E69E797.wem</Path>
+				</File>
+				<File Id="197747696" Language="SFX">
+					<ShortName>JackDrop_v08.wav</ShortName>
+					<Path>SFX\JackDrop_v08_9E69E797.wem</Path>
+				</File>
+				<File Id="232509102" Language="SFX">
+					<ShortName>Jack_Out_v_08.wav</ShortName>
+					<Path>SFX\Jack_Out_v_08_9E69E797.wem</Path>
+				</File>
+				<File Id="249015812" Language="SFX">
+					<ShortName>Lever_Start_v2.wav</ShortName>
+					<Path>SFX\Lever_Start_v2_9E69E797.wem</Path>
+				</File>
+				<File Id="319451329" Language="SFX">
+					<ShortName>Lever_Lock_v2.wav</ShortName>
+					<Path>SFX\Lever_Lock_v2_9E69E797.wem</Path>
+				</File>
+				<File Id="333069930" Language="SFX">
+					<ShortName>JackDrop_v09.wav</ShortName>
+					<Path>SFX\JackDrop_v09_9E69E797.wem</Path>
+				</File>
+				<File Id="342757762" Language="SFX">
+					<ShortName>Lever_Lock_v1.wav</ShortName>
+					<Path>SFX\Lever_Lock_v1_9E69E797.wem</Path>
+				</File>
+				<File Id="376686856" Language="SFX">
+					<ShortName>JackDrop_v05.wav</ShortName>
+					<Path>SFX\JackDrop_v05_9E69E797.wem</Path>
+				</File>
+				<File Id="401426476" Language="SFX">
+					<ShortName>Button_Down_v_01.wav</ShortName>
+					<Path>SFX\Button_Down_v_01_9E69E797.wem</Path>
+				</File>
+				<File Id="436577555" Language="SFX">
+					<ShortName>Jack_In_v_11.wav</ShortName>
+					<Path>SFX\Jack_In_v_11_9E69E797.wem</Path>
+				</File>
+				<File Id="464956006" Language="SFX">
+					<ShortName>Jack_In_v_04.wav</ShortName>
+					<Path>SFX\Jack_In_v_04_9E69E797.wem</Path>
+				</File>
+				<File Id="480690068" Language="SFX">
+					<ShortName>Button_Up_v_02.wav</ShortName>
+					<Path>SFX\Button_Up_v_02_9E69E797.wem</Path>
+				</File>
+				<File Id="501071161" Language="SFX">
+					<ShortName>Jack_Out_v_07.wav</ShortName>
+					<Path>SFX\Jack_Out_v_07_9E69E797.wem</Path>
+				</File>
+				<File Id="507246278" Language="SFX">
+					<ShortName>Jack_In_v_03.wav</ShortName>
+					<Path>SFX\Jack_In_v_03_9E69E797.wem</Path>
+				</File>
+				<File Id="521862541" Language="SFX">
+					<ShortName>Button_Up_v_01.wav</ShortName>
+					<Path>SFX\Button_Up_v_01_9E69E797.wem</Path>
+				</File>
+				<File Id="524869743" Language="SFX">
+					<ShortName>JackDrop_v06.wav</ShortName>
+					<Path>SFX\JackDrop_v06_9E69E797.wem</Path>
+				</File>
+				<File Id="535884236" Language="SFX">
+					<ShortName>Jack_In_v_01.wav</ShortName>
+					<Path>SFX\Jack_In_v_01_9E69E797.wem</Path>
+				</File>
+				<File Id="538679054" Language="SFX">
+					<ShortName>Jack_In_v_02.wav</ShortName>
+					<Path>SFX\Jack_In_v_02_9E69E797.wem</Path>
+				</File>
+				<File Id="556174251" Language="SFX">
+					<ShortName>JackDrop_v13.wav</ShortName>
+					<Path>SFX\JackDrop_v13_9E69E797.wem</Path>
+				</File>
+				<File Id="567123186" Language="SFX">
+					<ShortName>Button_Up_v_03.wav</ShortName>
+					<Path>SFX\Button_Up_v_03_9E69E797.wem</Path>
+				</File>
+				<File Id="570211737" Language="SFX">
+					<ShortName>Jack_In_v_12.wav</ShortName>
+					<Path>SFX\Jack_In_v_12_9E69E797.wem</Path>
+				</File>
+				<File Id="585587110" Language="SFX">
+					<ShortName>Jack_Out_v_05.wav</ShortName>
+					<Path>SFX\Jack_Out_v_05_9E69E797.wem</Path>
+				</File>
+				<File Id="598944132" Language="SFX">
+					<ShortName>Jack_In_v_05.wav</ShortName>
+					<Path>SFX\Jack_In_v_05_9E69E797.wem</Path>
+				</File>
+				<File Id="606129075" Language="SFX">
+					<ShortName>Jack_In_v_16.wav</ShortName>
+					<Path>SFX\Jack_In_v_16_9E69E797.wem</Path>
+				</File>
+				<File Id="624892348" Language="SFX">
+					<ShortName>JackDrop_v07.wav</ShortName>
+					<Path>SFX\JackDrop_v07_9E69E797.wem</Path>
+				</File>
+				<File Id="624902897" Language="SFX">
+					<ShortName>JackDrop_v04.wav</ShortName>
+					<Path>SFX\JackDrop_v04_9E69E797.wem</Path>
+				</File>
+				<File Id="628424225" Language="SFX">
+					<ShortName>Jack_In_v_15.wav</ShortName>
+					<Path>SFX\Jack_In_v_15_9E69E797.wem</Path>
+				</File>
+				<File Id="663522822" Language="SFX">
+					<ShortName>JackDrop_v03.wav</ShortName>
+					<Path>SFX\JackDrop_v03_9E69E797.wem</Path>
+				</File>
+				<File Id="699405169" Language="SFX">
+					<ShortName>Lever_Lock_v3.wav</ShortName>
+					<Path>SFX\Lever_Lock_v3_9E69E797.wem</Path>
+				</File>
+				<File Id="708398422" Language="SFX">
+					<ShortName>Lever_Start_v1.wav</ShortName>
+					<Path>SFX\Lever_Start_v1_9E69E797.wem</Path>
+				</File>
+				<File Id="782849002" Language="SFX">
+					<ShortName>Lever_Start_v4.wav</ShortName>
+					<Path>SFX\Lever_Start_v4_9E69E797.wem</Path>
+				</File>
+				<File Id="790942207" Language="SFX">
+					<ShortName>JackDrop_v11.wav</ShortName>
+					<Path>SFX\JackDrop_v11_9E69E797.wem</Path>
+				</File>
+				<File Id="806346644" Language="SFX">
+					<ShortName>JackDrop_v01.wav</ShortName>
+					<Path>SFX\JackDrop_v01_9E69E797.wem</Path>
+				</File>
+				<File Id="853810432" Language="SFX">
+					<ShortName>Jack_In_v_09.wav</ShortName>
+					<Path>SFX\Jack_In_v_09_9E69E797.wem</Path>
+				</File>
+				<File Id="862879094" Language="SFX">
+					<ShortName>JackDrop_v12.wav</ShortName>
+					<Path>SFX\JackDrop_v12_9E69E797.wem</Path>
+				</File>
+				<File Id="865634880" Language="SFX">
+					<ShortName>Button_Down_v_03.wav</ShortName>
+					<Path>SFX\Button_Down_v_03_9E69E797.wem</Path>
+				</File>
+				<File Id="909537007" Language="SFX">
+					<ShortName>JackDrop_v02.wav</ShortName>
+					<Path>SFX\JackDrop_v02_9E69E797.wem</Path>
+				</File>
+				<File Id="913682298" Language="SFX">
+					<ShortName>Jack_In_v_06.wav</ShortName>
+					<Path>SFX\Jack_In_v_06_9E69E797.wem</Path>
+				</File>
+				<File Id="934985853" Language="SFX">
+					<ShortName>Button_Down_v_04.wav</ShortName>
+					<Path>SFX\Button_Down_v_04_9E69E797.wem</Path>
+				</File>
+				<File Id="947756875" Language="SFX">
+					<ShortName>Jack_In_v_14.wav</ShortName>
+					<Path>SFX\Jack_In_v_14_9E69E797.wem</Path>
+				</File>
+				<File Id="971535935" Language="SFX">
+					<ShortName>Jack_In_v_13.wav</ShortName>
+					<Path>SFX\Jack_In_v_13_9E69E797.wem</Path>
+				</File>
+				<File Id="1018990833" Language="SFX">
+					<ShortName>Lever_Start_v3.wav</ShortName>
+					<Path>SFX\Lever_Start_v3_9E69E797.wem</Path>
+				</File>
+				<File Id="1037410136" Language="SFX">
+					<ShortName>Jack_Out_v_02.wav</ShortName>
+					<Path>SFX\Jack_Out_v_02_9E69E797.wem</Path>
+				</File>
+				<File Id="1064058649" Language="SFX">
+					<ShortName>Jack_Out_v_01.wav</ShortName>
+					<Path>SFX\Jack_Out_v_01_9E69E797.wem</Path>
+				</File>
+				<File Id="1068645329" Language="SFX">
+					<ShortName>Jack_Out_v_03.wav</ShortName>
+					<Path>SFX\Jack_Out_v_03_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
