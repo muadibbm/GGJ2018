@@ -1,4 +1,4 @@
-#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
 //////////////////////////////////////////////////////////////////////
 //
 // Copyright (c) 2014 Audiokinetic Inc. / All Rights Reserved
@@ -14,19 +14,18 @@ using System.Collections.Generic;
 /// Event callback information.
 /// Event callback functions can receive this structure as a parameter
 /// </summary>
-public class AkEventCallbackMsg
+public struct AkEventCallbackMsg
 {
 	public AkCallbackType	type;	///AkSoundEngine.PostEvent callback flags. See the AkCallbackType enumeration for a list of all callbacks
 	public GameObject		sender;	///GameObject from whom the callback function was called  
-	public AkCallbackInfo info;   ///For more information about the event callback, see the classes derived from AkCallbackInfo.
+	public object			info;	///More information about the event callback, see the structs in AkCallbackManager.cs
 }
 
 [AddComponentMenu("Wwise/AkEvent")]
-[RequireComponent(typeof(AkGameObj))]
 /// @brief Helper class that knows a Wwise Event and when to trigger it in Unity.
 /// \sa
 /// - \ref unity_use_AkEvent_AkAmbient
-/// - <a href="https://www.audiokinetic.com/library/edge/?source=SDK&id=soundengine__events.html" target="_blank">Integration Details - Events</a> (Note: This is described in the Wwise SDK documentation.)
+/// - \ref soundengine_events
 public class AkEvent : AkUnityEventHandler 
 {
 #if UNITY_EDITOR
@@ -48,7 +47,7 @@ public class AkEvent : AkUnityEventHandler
 	//
 	public AkEventCallbackData m_callbackData = null;
 
-	private void Callback(object in_cookie, AkCallbackType in_type, AkCallbackInfo in_info)
+	private void Callback(object in_cookie, AkCallbackType in_type, object in_info)
 	{
 		for(int i = 0; i < m_callbackData.callbackFunc.Count; i++)
 		{
@@ -65,7 +64,7 @@ public class AkEvent : AkUnityEventHandler
 	}
     public uint playingId = AkSoundEngine.AK_INVALID_PLAYING_ID;
     public override void HandleEvent(GameObject in_gameObject)
-	{
+	{        
 		GameObject gameObj = (useOtherObject && in_gameObject != null) ? in_gameObject : gameObject;
 
 		soundEmitterObject = gameObj;
@@ -73,7 +72,7 @@ public class AkEvent : AkUnityEventHandler
         if (enableActionOnEvent)
         {
             AkSoundEngine.ExecuteActionOnEvent((uint)eventID, actionOnEventType, gameObj, (int)transitionDuration * 1000, curveInterpolation);
-			return;
+            return;
         }
         else if (m_callbackData != null)
             playingId = AkSoundEngine.PostEvent((uint)eventID, gameObj, (uint)m_callbackData.uFlags, Callback, null, 0, null, AkSoundEngine.AK_INVALID_PLAYING_ID);
@@ -91,4 +90,4 @@ public class AkEvent : AkUnityEventHandler
 		AkSoundEngine.ExecuteActionOnEvent((uint)eventID, AkActionOnEventType.AkActionOnEventType_Stop, soundEmitterObject, _transitionDuration, _curveInterpolation);
     }
 }
-#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

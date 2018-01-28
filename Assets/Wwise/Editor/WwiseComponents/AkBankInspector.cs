@@ -47,7 +47,7 @@ public class AkBankInspector : AkBaseInspector
 		m_LoadBankEventHandlerInspector.OnGUI();
 		m_UnloadBankEventHandlerInspector.OnGUI ();
 		
-		GUILayout.Space(EditorGUIUtility.standardVerticalSpacing);
+		GUILayout.Space(5);
 
 		GUILayout.BeginVertical("Box");
 		{
@@ -75,6 +75,7 @@ public class AkBankInspector : AkBaseInspector
 						Debug.Log("WwiseUnity: Could not delete existing decoded SoundBank. Please delete it manually. " + e.ToString());
 					}
                 }
+            
             }
 		}
 		GUILayout.EndVertical ();
@@ -93,7 +94,7 @@ public class AkBankInspector : AkBaseInspector
 				serializedObject.Update();
 				bankName.stringValue = bank.Name;
 				serializedObject.ApplyModifiedProperties();
-
+  
 				return bank.Name;
 			}
 		}

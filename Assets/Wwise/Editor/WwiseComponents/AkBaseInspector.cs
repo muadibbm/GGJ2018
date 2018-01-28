@@ -25,63 +25,46 @@ public abstract class AkBaseInspector : Editor
 	Rect			m_pickerPos = new Rect();
 
 	public abstract void	OnChildInspectorGUI ();
-	public abstract string	UpdateIds(Guid[] in_guid);  //set object properties and return its name
-
-	private AkDragDropData GetAkDragDropData()
-	{
-		AkDragDropData DDData = DragAndDrop.GetGenericData(AkDragDropHelper.DragDropIdentifier) as AkDragDropData;
-		return (DDData != null && DDData.typeName.Equals(m_typeName)) ? DDData : null;
-	}
-
-	private void HandleDragAndDrop(Event currentEvent, Rect dropArea)
-	{
-		if (currentEvent.type == EventType.DragExited)
-		{
-			// clear dragged data
-			DragAndDrop.PrepareStartDrag();
-		}
-		else if (currentEvent.type == EventType.DragUpdated || currentEvent.type == EventType.DragPerform)
-		{
-			if (dropArea.Contains(currentEvent.mousePosition))
-			{
-				var DDData = GetAkDragDropData();
-
-				if (currentEvent.type == EventType.DragUpdated)
-				{
-					DragAndDrop.visualMode = DDData != null ? DragAndDropVisualMode.Link : DragAndDropVisualMode.Rejected;
-				}
-				else
-				{
-					DragAndDrop.AcceptDrag();
-
-					if (DDData != null)
-					{
-						AkUtilities.SetByteArrayProperty(m_guidProperty[0], DDData.guid.ToByteArray());
-
-						AkDragDropGroupData DDGroupData = DDData as AkDragDropGroupData;
-						if (DDGroupData != null && m_guidProperty.Length > 1)
-							AkUtilities.SetByteArrayProperty(m_guidProperty[1], DDGroupData.groupGuid.ToByteArray());
-
-						//needed for the undo operation to work
-						GUIUtility.hotControl = 0;
-					}
-				}
-				currentEvent.Use();
-			}
-		}
-	}
-
+	public abstract string	UpdateIds(Guid[] in_guid);	//set object properties and return its name
 
 	public override void OnInspectorGUI()
 	{
-		GUILayout.Space(EditorGUIUtility.standardVerticalSpacing);
+		serializedObject.ApplyModifiedProperties ();
 
-		OnChildInspectorGUI();
+		/***************************************Handle Drag and Drop********************************************************/
+		object[] DDInfo = (object[])DragAndDrop.GetGenericData("AKWwiseDDInfo");
+		if(DDInfo != null && DDInfo.Length >= 4)
+		{
+			string DDTypeName = (string)DDInfo[3];
+			if(DDTypeName.Equals(m_typeName))
+			{
+				if(Event.current.type == EventType.DragUpdated)
+				{
+					//mousePosition is not available during DragExited event but is available during the DragUpdated event.
+					m_isInDropArea = m_dropAreaRelativePos.Contains(Event.current.mousePosition);
+				
+					if(m_isInDropArea)
+					{
+						DragAndDrop.visualMode = DragAndDropVisualMode.Copy;
+						DragAndDrop.AcceptDrag();
+					}
+					return;
+				}
+				if(Event.current.type == EventType.DragExited && m_isInDropArea) 
+				{
+					Guid DDGuid = (Guid)DDInfo[1];
+					AkUtilities.SetByteArrayProperty(m_guidProperty[0], DDGuid.ToByteArray());
+						
+					//needed for the undo operation to work
+					GUIUtility.hotControl = 0;
 
-		serializedObject.ApplyModifiedProperties();
+					m_isInDropArea = false;
+					return;
+				}
+			}
+		}
+		/*******************************************************************************************************************/
 
-		var currentEvent = Event.current;
-		HandleDragAndDrop(currentEvent, m_dropAreaRelativePos);
 
 		/************************************************Update Properties**************************************************/
 		Guid[] componentGuid = new Guid[m_guidProperty.Length];
@@ -96,8 +79,9 @@ public abstract class AkBaseInspector : Editor
 
 
 		/********************************************Draw GUI***************************************************************/
+		OnChildInspectorGUI ();
 
-		GUILayout.Space(EditorGUIUtility.standardVerticalSpacing);
+		GUILayout.Space(3);
 
 		GUILayout.BeginHorizontal("box");
 		{
@@ -122,7 +106,7 @@ public abstract class AkBaseInspector : Editor
 			}
 
 			//GUILayoutUtility.GetLastRect and AkUtilities.GetLastRectAbsolute must be called in repaint mode 
-			if(currentEvent.type == EventType.Repaint)
+			if(Event.current.type == EventType.Repaint)
 			{
 				m_dropAreaRelativePos = GUILayoutUtility.GetLastRect();
 				
@@ -136,6 +120,7 @@ public abstract class AkBaseInspector : Editor
 		}
 		GUILayout.EndHorizontal ();
 		
+		GUILayout.Space(5);
 		/***********************************************************************************************************************/  
 
 		if (GUI.changed)
@@ -146,7 +131,7 @@ public abstract class AkBaseInspector : Editor
 
 	void DelayCreateCall()
 	{
-		AkWwiseComponentPicker.Create(m_objectType, m_guidProperty, null, serializedObject, m_pickerPos);
+		AkWwiseComponentPicker.Create(m_objectType, m_guidProperty, serializedObject, m_pickerPos);
 	}
 }
 

@@ -28,6 +28,11 @@ public class WwiseSetupWizard
 
     public static void RunModify()
     {
+        EditorApplication.delayCall += RunModifyImpl;
+    }
+
+    private static void RunModifyImpl()
+    {
         try
         {
             Debug.Log("WwiseUnity: Running modify setup...");
@@ -50,6 +55,11 @@ public class WwiseSetupWizard
     }
 
     public static void RunSetup()
+    {
+        EditorApplication.delayCall += RunSetupImpl;
+    }
+    
+    private static void RunSetupImpl()
     {
         try
         {
@@ -74,6 +84,11 @@ public class WwiseSetupWizard
 
     public static void RunDemoSceneSetup()
     {
+        EditorApplication.delayCall += RunDemoSceneSetupImpl;
+    }
+
+    private static void RunDemoSceneSetupImpl()
+    {
         try
         {
             Debug.Log("WwiseUnity: Running demo scene setup...");
@@ -97,12 +112,17 @@ public class WwiseSetupWizard
         }
     }
     
+    public static void RunMigrate()
+    {
+        EditorApplication.delayCall += RunMigrateImpl;
+    }
+
     private static void UpdateProgressBar(float progress)
     {
         EditorUtility.DisplayProgressBar("Wwise Integration", "Migration in progress - Please wait...", progress);
     }
 
-    public static void RunMigrate()
+    private static void RunMigrateImpl()
     {
         try
         {
@@ -169,62 +189,41 @@ public class WwiseSetupWizard
 
     private static void MigrateCurrentScene(FileInfo[] files, int migrateStart, int migrateStop)
     {
-		var objectTypeMap = new Dictionary<Type, UnityEngine.Object[]>();
+        for (int j = 0; j < files.Length; ++j)
+        {
+            string className = Path.GetFileNameWithoutExtension(files[j].Name);
 
-		foreach (var file in files)
-		{
-			string className = Path.GetFileNameWithoutExtension(file.Name);
+            // Since monobehaviour scripts need to have the same name as the class it contains, we can use it to get the type of the object.
+            Type objectType = Type.GetType(className + ", Assembly-CSharp");
 
-			// Since monobehaviour scripts need to have the same name as the class it contains, we can use it to get the type of the object.
-			Type objectType = Type.GetType(className + ", Assembly-CSharp");
+            if (objectType.IsSubclassOf(typeof(UnityEngine.Object)))
+            {
+                // Get all objects in the scene with the specified type.
+                UnityEngine.Object[] objects = UnityEngine.Object.FindObjectsOfType(objectType);
 
-			if (objectType.IsSubclassOf(typeof(UnityEngine.Object)))
-			{
-				// Get all objects in the scene with the specified type.
-				UnityEngine.Object[] objects = UnityEngine.Object.FindObjectsOfType(objectType);
+                if (objects != null && objects.Length > 0)
+                {
+                    Debug.Log("WwiseUnity: Migrating for class " + className);
 
-				if (objects != null && objects.Length > 0)
-					objectTypeMap[objectType] = objects;
-			}
-		}
+                    for (int k = migrateStart; k <= migrateStop; ++k)
+                    {
+                        string currentMigrate = "Migrate" + k;
 
-		for (int ii = migrateStart; ii <= migrateStop; ++ii)
-		{
-			string migrationMethodName = "Migrate" + ii;
-			string preMigrationMethodName = "PreMigration" + ii;
-			string postMigrationMethodName = "PostMigration" + ii;
+                        // Get the migration methods.
+                        MethodInfo migrateInfo = objectType.GetMethod(currentMigrate, BindingFlags.Public | BindingFlags.Instance);
 
-			foreach (var objectTypePair in objectTypeMap)
-			{
-				Type objectType = objectTypePair.Key;
-				UnityEngine.Object[] objects = objectTypePair.Value;
-				string className = objectType.Name;
-
-				MethodInfo preMigrationMethodInfo = objectType.GetMethod(preMigrationMethodName, BindingFlags.Public | BindingFlags.Static);
-				if (preMigrationMethodInfo != null)
-				{
-					Debug.Log("WwiseUnity: PreMigration step <" + ii + "> for class <" + className + ">");
-					preMigrationMethodInfo.Invoke(null, null);
-				}
-
-				MethodInfo migrationMethodInfo = objectType.GetMethod(migrationMethodName, BindingFlags.Public | BindingFlags.Instance);
-				if (migrationMethodInfo != null)
-				{
-					Debug.Log("WwiseUnity: Migration step <" + ii + "> for class <" + className +">");
-
-					// Call the migration method of each object.
-					foreach (var currentObject in objects)
-						migrationMethodInfo.Invoke(currentObject, null);
-				}
-
-				MethodInfo postMigrationMethodInfo = objectType.GetMethod(postMigrationMethodName, BindingFlags.Public | BindingFlags.Static);
-				if (postMigrationMethodInfo != null)
-				{
-					Debug.Log("WwiseUnity: PostMigration step <" + ii + "> for class <" + className + ">");
-					postMigrationMethodInfo.Invoke(null, null);
-				}
-			}
-		}
+                        if (migrateInfo != null)
+                        {
+                            // Call the migration method of each object.
+                            foreach (UnityEngine.Object currentObject in objects)
+                            {
+                                migrateInfo.Invoke(currentObject, null);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     public static void PerformMigration(int migrateStart, int migrateStop)
@@ -390,7 +389,7 @@ public class WwiseSetupWizard
         return true;
     }
 
-    // Disable the built-in audio listener, and add the AkGameObj to the camera
+    // Disable the built-in audio listener, and add the AkAudioListener to the camera
     private static void SetListener()
     {
         WwiseSettings settings = WwiseSettings.LoadSettings();		
@@ -404,13 +403,11 @@ public class WwiseSetupWizard
 				Component.DestroyImmediate(listener);
 			}
 
-            // Add the AkGameObj script
-            {
-                Camera.main.gameObject.AddComponent<AkAudioListener>();
-
-                AkGameObj akGameObj = Camera.main.gameObject.GetComponent<AkGameObj>();
-				akGameObj.isEnvironmentAware = false;
-            }
+			// Add the AkAudioListener script
+			if (Camera.main.gameObject.GetComponent<AkAudioListener>() == null)
+			{
+				Camera.main.gameObject.AddComponent<AkAudioListener>();
+			}
 		}
     }
 
@@ -419,7 +416,7 @@ public class WwiseSetupWizard
     {
 		if (string.IsNullOrEmpty(Settings.WwiseProjectPath))
         {
-            // Nothing to do here, because setup should succeed if Wwise project is not given
+            // Nothing to do here, because setup should succees if Wwise project is not given
             return true;
         }
 

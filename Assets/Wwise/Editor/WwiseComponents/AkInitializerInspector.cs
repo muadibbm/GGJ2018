@@ -25,7 +25,6 @@ public class AkInitializerInspector : Editor
 	SerializedProperty m_streamingPoolSize;
 	SerializedProperty m_preparePoolSize;
 	SerializedProperty m_memoryCutoffThreshold;
-	SerializedProperty m_callbackManagerBufferSize;
 	SerializedProperty m_engineLogging;
 
 	void OnEnable()
@@ -39,7 +38,6 @@ public class AkInitializerInspector : Editor
 		m_streamingPoolSize = serializedObject.FindProperty("streamingPoolSize");
 		m_preparePoolSize = serializedObject.FindProperty("preparePoolSize");
 		m_memoryCutoffThreshold = serializedObject.FindProperty("memoryCutoffThreshold");
-		m_callbackManagerBufferSize = serializedObject.FindProperty("callbackManagerBufferSize");
 		m_engineLogging = serializedObject.FindProperty("engineLogging");
 	}
 
@@ -55,7 +53,6 @@ public class AkInitializerInspector : Editor
 		EditorGUILayout.PropertyField(m_streamingPoolSize, new GUIContent("Streaming Pool Size (KB)"));
 		EditorGUILayout.PropertyField(m_preparePoolSize, new GUIContent("Prepare Pool Size (KB)"));
 		EditorGUILayout.PropertyField(m_memoryCutoffThreshold, new GUIContent("Memory Cutoff Threshold"));
-		EditorGUILayout.PropertyField(m_callbackManagerBufferSize, new GUIContent("CallbackManager Buffer Size (KB)"));
 		EditorGUILayout.PropertyField(m_engineLogging, new GUIContent("Enable Wwise engine logging"));
 		GUILayout.EndVertical();
 

@@ -17,12 +17,11 @@ public class AkWwiseComponentPicker : EditorWindow
 
 	AkWwiseTreeView						m_treeView = new AkWwiseTreeView();
 	SerializedProperty[]				m_selectedItemGuid;
-	SerializedProperty[]				m_selectedItemID;
-	SerializedObject m_serializedObject;
+	SerializedObject					m_serializedObject;
 	AkWwiseProjectData.WwiseObjectType	m_type;
 	bool 								m_close = false;
 
-	static public void Create(AkWwiseProjectData.WwiseObjectType in_type, SerializedProperty[] in_guid, SerializedProperty[] in_ID, SerializedObject in_serializedObject, Rect in_pos)
+	static public void Create(AkWwiseProjectData.WwiseObjectType in_type, SerializedProperty[] in_guid, SerializedObject in_serializedObject, Rect in_pos)
 	{
 		if(s_componentPicker == null)
 		{
@@ -38,10 +37,9 @@ public class AkWwiseComponentPicker : EditorWindow
 			}
 
 			//We show a drop down window which is automatically destroyed when focus is lost
-			s_componentPicker.ShowAsDropDown(pos, new Vector2 (in_pos.width >= 250 ? in_pos.width : 250, Screen.currentResolution.height / 2));
+			s_componentPicker.ShowAsDropDown(pos, new Vector2 (in_pos.width >= 250 ? in_pos.width : 250, Screen.currentResolution.height / 2));  
 
-			s_componentPicker.m_selectedItemGuid = in_guid;
-			s_componentPicker.m_selectedItemID = in_ID;
+			s_componentPicker.m_selectedItemGuid	= in_guid;
 			s_componentPicker.m_serializedObject	= in_serializedObject;
 			s_componentPicker.m_type 				= in_type;
 
@@ -74,21 +72,9 @@ public class AkWwiseComponentPicker : EditorWindow
 			{
 				s_componentPicker.m_treeView.PopulateItem(s_componentPicker.m_treeView.RootItem, "Auxiliary Busses", AkWwiseProjectInfo.GetData().AuxBusWwu);
 			}
-            else if (in_type == AkWwiseProjectData.WwiseObjectType.GAMEPARAMETER)
-            {
-                s_componentPicker.m_treeView.PopulateItem(s_componentPicker.m_treeView.RootItem, "Game Parameters", AkWwiseProjectInfo.GetData().RtpcWwu);
-            }
-            else if (in_type == AkWwiseProjectData.WwiseObjectType.TRIGGER)
-            {
-                s_componentPicker.m_treeView.PopulateItem(s_componentPicker.m_treeView.RootItem, "Triggers", AkWwiseProjectInfo.GetData().TriggerWwu);
-            }
 
-            TreeViewItem item = null;
 
-            byte[] byteArray = AkUtilities.GetByteArrayProperty(in_guid[0]);
-            if (byteArray != null)
-                item = s_componentPicker.m_treeView.GetItemByGuid(new Guid(byteArray));
-
+			TreeViewItem item = s_componentPicker.m_treeView.GetItemByGuid(new Guid(AkUtilities.GetByteArrayProperty( in_guid[0])));
 			if(item != null)
 			{
 				item.ParentControl.SelectedItem = item;
@@ -148,17 +134,8 @@ public class AkWwiseComponentPicker : EditorWindow
 				{
 					m_close = true;
 				}
-                else if (GUILayout.Button("Reset"))
-                {
-                    ResetGuid();
-                    m_close = true;
-                }
 				//We must be in 'used' mode in order for this to work
-#if UNITY_2017_3_OR_NEWER
-				else if(Event.current.type == EventType.Used && m_treeView.LastDoubleClickedItem != null && m_type == (m_treeView.LastDoubleClickedItem.DataContext as AkWwiseTreeView.AkTreeInfo).ObjectType)
-#else
 				else if(Event.current.type == EventType.used && m_treeView.LastDoubleClickedItem != null && m_type == (m_treeView.LastDoubleClickedItem.DataContext as AkWwiseTreeView.AkTreeInfo).ObjectType)
-#endif
 				{
 					SetGuid(m_treeView.LastDoubleClickedItem);
 					m_close = true;
@@ -172,52 +149,24 @@ public class AkWwiseComponentPicker : EditorWindow
 	void SetGuid(TreeViewItem in_item)
 	{
 		m_serializedObject.Update();
-
-		var obj = in_item.DataContext as AkWwiseTreeView.AkTreeInfo;
+		
 		//we set the items guid
-		AkUtilities.SetByteArrayProperty(m_selectedItemGuid[0], obj.Guid);
-		if (m_selectedItemID != null)
-			m_selectedItemID[0].intValue = obj.ID;
-
+		AkUtilities.SetByteArrayProperty(m_selectedItemGuid[0], (in_item.DataContext as AkWwiseTreeView.AkTreeInfo).Guid);
+		
 		//When its a State or a Switch, we set the group's guid
-		if (m_selectedItemGuid.Length == 2)
+		if(m_selectedItemGuid.Length == 2)
 		{
-			obj = in_item.Parent.DataContext as AkWwiseTreeView.AkTreeInfo;
-			AkUtilities.SetByteArrayProperty(m_selectedItemGuid[1], obj.Guid);
-			if (m_selectedItemID != null)
-				m_selectedItemID[1].intValue = obj.ID;
+			AkUtilities.SetByteArrayProperty(m_selectedItemGuid[1], (in_item.Parent.DataContext as AkWwiseTreeView.AkTreeInfo).Guid);
 		}
-
+		
 		m_serializedObject.ApplyModifiedProperties();
 	}
-
-    void ResetGuid()
-    {
-        m_serializedObject.Update();
-
-        byte[] emptyArray = new byte[16];
-
-        //we set the items guid
-        AkUtilities.SetByteArrayProperty(m_selectedItemGuid[0], emptyArray);
-		if (m_selectedItemID != null)
-			m_selectedItemID[0].intValue = 0;
-
-		//When its a State or a Switch, we set the group's guid
-		if (m_selectedItemGuid.Length == 2)
-        {
-            AkUtilities.SetByteArrayProperty(m_selectedItemGuid[1], emptyArray);
-			if (m_selectedItemID != null)
-				m_selectedItemID[1].intValue = 0;
-		}
-
-		m_serializedObject.ApplyModifiedProperties();
-    }
 
 	public void Update()
 	{
 		//Unity sometimes generates an error when the window is closed from the OnGUI function.
 		//So We close it here
-		if (m_close)
+		if(m_close)
 			Close();
 	}
 }

@@ -29,7 +29,7 @@ class AkWwisePicker : EditorWindow
 {
 	public static bool WwiseProjectFound = true;
 	
-    [UnityEditor.MenuItem("Window/Wwise Picker", false, (int)AkWwiseWindowOrder.WwisePicker)] 
+    [MenuItem("Window/Wwise Picker", false, (int)AkWwiseWindowOrder.WwisePicker)] 
     public static void init()
     {
 		EditorWindow.GetWindow<AkWwisePicker>("Wwise Picker", true, typeof(EditorWindow).Assembly.GetType("UnityEditor.ConsoleWindow"));
@@ -46,7 +46,7 @@ class AkWwisePicker : EditorWindow
         }
         
         treeView.SaveExpansionStatus();
-        if (AkWwiseWWUBuilder.Populate())
+        if (AkWwiseWWUBuilder.AutoPopulate())
             PopulateTreeview();
     }
 
@@ -116,9 +116,8 @@ class AkWwisePicker : EditorWindow
         treeView.PopulateItem(treeView.RootItem, "States", AkWwiseProjectInfo.GetData().StateWwu);
 		treeView.PopulateItem(treeView.RootItem, "SoundBanks", AkWwiseProjectInfo.GetData().BankWwu);
         treeView.PopulateItem(treeView.RootItem, "Auxiliary Busses", AkWwiseProjectInfo.GetData().AuxBusWwu);
-		//treeView.PopulateItem(treeView.RootItem, "Game Parameters", AkWwiseProjectInfo.GetData().RtpcWwu);
-		//treeView.PopulateItem(treeView.RootItem, "Triggers", AkWwiseProjectInfo.GetData().TriggerWwu);
-	}
+
+    }
 
 }
 #endif

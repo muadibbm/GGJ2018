@@ -15,26 +15,23 @@ public static class AkWwiseProjectInfo
 {
     public static AkWwiseProjectData m_Data;
 
-	private const string WwiseEditorProjectDataDirectory = "Wwise/Editor/ProjectData";
-	private const string AssetsWwiseProjectDataPath = "Assets/" + WwiseEditorProjectDataDirectory + "/AkWwiseProjectData.asset";
-
-	public static AkWwiseProjectData GetData()
+    public static AkWwiseProjectData GetData()
     {
         if (m_Data == null && Directory.Exists(Path.Combine(Application.dataPath, "Wwise")))
         {
 			try
 			{
-				m_Data = (AkWwiseProjectData)AssetDatabase.LoadAssetAtPath(AssetsWwiseProjectDataPath, typeof(AkWwiseProjectData));
+				m_Data = (AkWwiseProjectData)AssetDatabase.LoadAssetAtPath("Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset", typeof(AkWwiseProjectData));
 
 				if (m_Data == null)
 				{
-                    if (!Directory.Exists(Path.Combine(Application.dataPath, WwiseEditorProjectDataDirectory)))
+                    if (!Directory.Exists(Path.Combine(Application.dataPath, "Wwise/Editor/ProjectData")))
                     {
-                        Directory.CreateDirectory(Path.Combine(Application.dataPath, WwiseEditorProjectDataDirectory));
+                        Directory.CreateDirectory(Path.Combine(Application.dataPath, "Wwise/Editor/ProjectData"));
                     }
 
 					m_Data = ScriptableObject.CreateInstance<AkWwiseProjectData>();
-					string assetPathAndName = AssetDatabase.GenerateUniqueAssetPath(AssetsWwiseProjectDataPath);
+					string assetPathAndName = AssetDatabase.GenerateUniqueAssetPath("Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset");
 					AssetDatabase.CreateAsset(m_Data, assetPathAndName);
 				}
 			}
@@ -54,10 +51,10 @@ public static class AkWwiseProjectInfo
         if (AkWwisePicker.WwiseProjectFound)
 		{
 			bDirty = AkWwiseWWUBuilder.Populate();
-			bDirty |= AkWwiseXMLBuilder.Populate();
+			bDirty |= AkWwiseXMLBuilder.Populate();			
 			if(bDirty)
 	        {            
-	    		EditorUtility.SetDirty(AkWwiseProjectInfo.GetData ());
+	    		EditorUtility.SetDirty(AkWwiseProjectInfo.GetData ());	            
 			}
 		}
         return bDirty;
