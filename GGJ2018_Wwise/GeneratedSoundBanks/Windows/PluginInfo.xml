@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Project="GGJ2018_Wwise" Platform="Windows" BasePlatform="Windows">
-	<Plugins/>
+	<Plugins>
+		<Plugin Name="Wwise Time Stretch" ID="8519683" DLL="AkTimeStretch"/>
+	</Plugins>
 </PluginInfo>
